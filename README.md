@@ -3,7 +3,7 @@ Copy this link and paste to "ReaPack - Import Repositories"
 ```
 https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml
 ```
-Contact me - b.yanushevich@gamil.com
+Contact me - b.yanushevich@gmail.com
 
 Donation - https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
