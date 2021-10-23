@@ -833,8 +833,10 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 My Lua Scripts for REAPER DAW! Copy this link and paste to "ReaPack - Import Repositories"\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\b My Lua Scripts for REAPER DAW!}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Copy this link and paste to "ReaPack - Import Repositories"\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Guide for my Lua scripts - https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Contact me - b.yanushevich@gmail.com\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Donation - https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Donation (for Russion users) - 5536 9139 4871 7349\par}
