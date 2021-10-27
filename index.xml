@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="3ff366111671ab209448d6579fe47408ebacf8ec">
+<index version="1" name="Yannick-ReaScripts" commit="984de42b795a6355a6fa3f46af877093d3295704">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -63,6 +63,12 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Insert%20region%20between%20the%20start%20and%20end%20point%20(relative%20to%20edit%20cursor).lua</source>
+      </version>
+      <version name="1.01" author="Yannick" time="2021-10-27T11:52:47Z">
+        <changelog><![CDATA[+ Added a new ability to enter the name of the region in the pop-up window 
++ The creation of a project marker for the start of a region is written in the undo history.
++ Added protection against incorrect user settings]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/984de42b795a6355a6fa3f46af877093d3295704/Arrange/Yannick_Insert%20region%20between%20the%20start%20and%20end%20point%20(relative%20to%20edit%20cursor).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
