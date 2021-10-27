@@ -1,16 +1,20 @@
 -- @description Yannick_Insert region between the start and end point (relative to edit cursor)
 -- @author Yannick
--- @version 1.0
+-- @version 1.01
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added a new ability to enter the name of the region in the pop-up window 
+--   + The creation of a project marker for the start of a region is written in the undo history.
+--   + Added protection against incorrect user settings
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
   ---------------------------------------------------------
     marker_name_for_start_of_region = 'START_FOR_REGION'
     region_name = ''
+    user_inputs = true     --- for entering new region name
+      window_width = 100   --- user input window width
     
     R = 0       --- Red
     G = 0       --- Green
@@ -19,6 +23,17 @@
   
   function bla() end
   function nothing() reaper.defer(bla) end
+  
+  if marker_name_for_start_of_region ~= tostring(marker_name_for_start_of_region)
+  or region_name ~= tostring(region_name)
+  or user_inputs ~= true and user_inputs ~= false
+  or not tonumber(window_width) or window_width < 0
+  or (not tonumber(R) or not tonumber(G) or not tonumber(B))
+  or (R < 0 or G < 0 or B < 0)
+  then
+    reaper.MB('Incorrect values at the beginning of the script', 'Error', 0)
+    nothing() return
+  end
   
   local _, num_markers, num_regions = reaper.CountProjectMarkers(0)
   local bool = false
@@ -44,16 +59,25 @@
   
   if bool == false then
   
-    local function main()
-      reaper.AddProjectMarker(0, false, cur_pos, 0, marker_name_for_start_of_region, -1)
-    end
-    reaper.defer(main)
+    reaper.Undo_BeginBlock()
+    
+    reaper.AddProjectMarker(0, false, cur_pos, 0, marker_name_for_start_of_region, -1)
+    
+    reaper.Undo_EndBlock('Insert start marker for region (relative to edit cursor)',-1)
     
   else
   
     if cur_pos == save_pos then
       reaper.MB('Please move edit cursor to a new position','Error',0)
       nothing() return
+    end
+    
+    if user_inputs == true then
+      local retval, retvals_csv = reaper.GetUserInputs('Set new region name', 1, 'Set region name:,extrawidth=' .. window_width, region_name)
+      if not retval then
+        nothing() return
+      end
+      region_name = retvals_csv
     end
     
     reaper.Undo_BeginBlock()
