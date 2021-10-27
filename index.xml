@@ -1,23 +1,830 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="58a3e39ba95bd0f35846aa1f39aa4cb2574295e1">
-  <category name="Example">
-    <reapack name="cfillion_Hello world.lua" type="script" desc="Hello world">
+<index version="1" name="Yannick-ReaScripts" commit="3ff366111671ab209448d6579fe47408ebacf8ec">
+  <category name="Arrange">
+    <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 This is an example of a package file. It installs itself as a ReaScript that does nothing but show "Hello World!" in REAPER's scripting console.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Packages may also include additional files specified using the @provides tag.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 This text is the documentation shown when using ReaPack's "About this package" feature. {\field{\*\fldinst{HYPERLINK "https://commonmark.org/"}}{\fldrslt{\ul
-Markdown
-}}}
- {\i formatting} is supported.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
       </metadata>
-      <version name="1.0" author="cfillion" time="2021-01-04T23:30:32Z">
-        <source main="main">https://github.com/cfillion/reapack-repository-template/raw/58a3e39ba95bd0f35846aa1f39aa4cb2574295e1/Example/cfillion_Hello%20world.lua</source>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Ableton%20loop%20(ctrl+L).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Adjust grid using mousewheel (alternation of straight and triplet).lua" type="script" desc="Yannick_Adjust grid using mousewheel (alternation of straight and triplet)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Adjust%20grid%20using%20mousewheel%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert =START marker, then =END marker at edit cursor.lua" type="script" desc="Yannick_Insert =START marker, then =END marker at edit cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Insert%20=START%20marker,%20then%20=END%20marker%20at%20edit%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert region between the start and end point (relative to edit cursor).lua" type="script" desc="Yannick_Insert region between the start and end point (relative to edit cursor)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Insert%20region%20between%20the%20start%20and%20end%20point%20(relative%20to%20edit%20cursor).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Set%20project%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step.lua" type="script" desc="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Snap%20the%20grid%20at%20edit%20cursor%20using%20mousewheel%20or%20move%20edit%20cursor%20by%20step.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Switch next grid (alternation of straight and triplet).lua" type="script" desc="Yannick_Switch next grid (alternation of straight and triplet)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Switch%20next%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Switch previous grid (alternation of straight and triplet).lua" type="script" desc="Yannick_Switch previous grid (alternation of straight and triplet)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Switch%20previous%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Items">
+    <reapack name="Yannick_Add or open Melodyne VST3 in selected items.lua" type="script" desc="Yannick_Add or open Melodyne VST3 in selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Adjust take pitch using mousewheel (fine).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (fine)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(fine).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Adjust take pitch using mousewheel (semitones).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (semitones)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(semitones).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Bounce selection (like in Studio One).lua" type="script" desc="Yannick_Bounce selection (like in Studio One)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Bounce%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Glue selected items independently.lua" type="script" desc="Yannick_Glue selected items independently">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Glue%20selected%20items%20independently.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Increase or decrease peaks on all items using mousewheel.lua" type="script" desc="Yannick_Increase or decrease peaks on all items using mousewheel">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Increase%20or%20decrease%20peaks%20on%20all%20items%20using%20mousewheel.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Mixdown selection (like in Studio One).lua" type="script" desc="Yannick_Mixdown selection (like in Studio One)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX.lua" type="script" desc="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Show%20or%20hide%20peaks%20on%20all%20items%20(global).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Split selected items at grid and set mute state for every even item.lua" type="script" desc="Yannick_Split selected items at grid and set mute state for every even item">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20even%20item.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Split selected items at grid and set mute state for every odd item.lua" type="script" desc="Yannick_Split selected items at grid and set mute state for every odd item">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20odd%20item.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Trim left edge of item or selected items to mouse cursor.lua" type="script" desc="Yannick_Trim left edge of item or selected items to mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Trim%20left%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Trim right edge of item or selected items to mouse cursor.lua" type="script" desc="Yannick_Trim right edge of item or selected items to mouse cursor">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Trim%20right%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Unselect every even item of selected items.lua" type="script" desc="Yannick_Unselect every even item of selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Unselect%20every%20even%20item%20of%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Unselect every odd item of selected items.lua" type="script" desc="Yannick_Unselect every odd item of selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Unselect%20every%20odd%20item%20of%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Warn about all items that have the offline takes.lua" type="script" desc="Yannick_Warn about all items that have the offline takes.lua">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Warn%20about%20all%20items%20that%20have%20the%20offline%20takes.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="MIDI Editor">
+    <reapack name="Yannick_Erase notes along with moving edit cursor (like Back in Studio One).lua" type="script" desc="Yannick_Erase notes along with moving edit cursor (like Back in Studio One)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Erase%20notes%20along%20with%20moving%20edit%20cursor%20(like%20Back%20in%20Studio%20One).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Float instrument from midi editor (from insert or send at track).lua" type="script" desc="Yannick_Float instrument from midi editor (from insert or send at track)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Float%20instrument%20from%20midi%20editor%20(from%20insert%20or%20send%20at%20track).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set midi editor grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Mouse modifiers">
+    <reapack name="Yannick_Float instruments from insert or send at selected track or toggle folder collapse.lua" type="script" desc="Yannick_Float instruments from insert or send at selected track or toggle folder collapse">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Float%20instruments%20from%20insert%20or%20send%20at%20selected%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert item at mouse cursor within a measure (like in Studio One).lua" type="script" desc="Yannick_Insert item at mouse cursor within a measure (like in Studio One)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Insert%20item%20at%20mouse%20cursor%20within%20a%20measure%20(like%20in%20Studio%20One).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set exclusive record arm for track or toggle folder collapse.lua" type="script" desc="Yannick_Set exclusive record arm for track or toggle folder collapse">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Tracks">
+    <reapack name="Yannick_Create audio track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create audio track from multichannel VSTi (selected track)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create folder track from selected tracks.lua" type="script" desc="Yannick_Create folder track from selected tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20folder%20track%20from%20selected%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create midi and audio track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create midi and audio track from multichannel VSTi (selected track)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20midi%20and%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create midi track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create midi track from multichannel VSTi (selected track)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20midi%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create multichannel routing (send track) from selected tracks.lua" type="script" desc="Yannick_Create multichannel routing (send track) from selected tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20multichannel%20routing%20(send%20track)%20from%20selected%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create new track (audio+midi) from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create new track (audio+midi) from multichannel VSTi (selected track)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20new%20track%20(audio+midi)%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create send track or create sends from selected track to existed track (windowless).lua" type="script" desc="Yannick_Create send track or create sends from selected track to existed track (windowless)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track%20(windowless).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Create send track or create sends from selected track to existed track.lua" type="script" desc="Yannick_Create send track or create sends from selected track to existed track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Decrease all first identical sends from selected tracks at once.lua" type="script" desc="Yannick_Decrease all first identical sends from selected tracks at once">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Decrease%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Increase all first identical sends from selected tracks at once.lua" type="script" desc="Yannick_Increase all first identical sends from selected tracks at once">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Increase%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Rename selected tracks (like in Pro Tools).lua" type="script" desc="Yannick_Rename selected tracks (like in Pro Tools)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Rename%20selected%20tracks%20(like%20in%20Pro%20Tools).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Render selected tracks to multichannel track obeying time selection (ignore routing).lua" type="script" desc="Yannick_Render selected tracks to multichannel track obeying time selection (ignore routing)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Render%20selected%20tracks%20to%20multichannel%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing).lua" type="script" desc="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Various">
+    <reapack name="Yannick_Float instrument from insert or send at selected tracks.lua" type="script" desc="Yannick_Float instrument from insert or send at selected tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Float%20instrument%20from%20insert%20or%20send%20at%20selected%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu.lua" type="script" desc="Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert FX by name to master track or selected tracks or selected items.lua" type="script" desc="Yannick_Insert FX by name to master track or selected tracks or selected items">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert VSTi by name to new track in Popup Menu.lua" type="script" desc="Yannick_Insert VSTi by name to new track in Popup Menu">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Insert VSTi by name to new track.lua" type="script" desc="Yannick_Insert VSTi by name to new track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Split items at mouse cursor or set track to exclusive solo.lua" type="script" desc="Yannick_Split items at mouse cursor or set track to exclusive solo">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Split%20items%20at%20mouse%20cursor%20or%20set%20track%20to%20exclusive%20solo.lua</source>
       </version>
     </reapack>
   </category>
@@ -26,29 +833,13 @@ Markdown
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 ReaPack Repository Template\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 A template for GitHub-hosted ReaPack repositories with automated {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index"}}{\fldrslt{\ul
-reapack-index
-}}}
- running from GitHub Actions.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the name of the repository in {\field{\*\fldinst{HYPERLINK "/index.xml"}}{\fldrslt{\ul
-index.xml
-}}}
- when using this template. This will be the name shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 \f1 <index version="1" name="Name of your repository here">\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Replace the contents of this file ({\field{\*\fldinst{HYPERLINK "/README.md"}}{\fldrslt{\ul
-README.md
-}}}
-). This will be the text shown when using ReaPack's "About this repository" feature.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 reapack-index looks for package files in subfolders. The folder tree represents the package categories shown in ReaPack.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 Each package file is expected to begin with a metadata header. See {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-index/wiki/Packaging-Documentation"}}{\fldrslt{\ul
-Packaging Documentation
-}}}
- on reapack-index's wiki.\par}
-{\pard \ql \f0 \sa180 \li0 \fi0 The URL to import in ReaPack is {\field{\*\fldinst{HYPERLINK "https://github.com/cfillion/reapack-repository-template/raw/master/index.xml"}}{\fldrslt{\ul
-https://github.com/{\f1 <your username>}/{\f1 <repository name>}/raw/master/index.xml
-}}}
-.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs28 {\b My Lua Scripts for REAPER DAW!}\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Copy this link and paste to "ReaPack - Import Repositories"\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 \f1 https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Guide for my Lua scripts - https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Contact me - b.yanushevich@gmail.com\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Donation - https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Donation (for Russion users) - 5536 9139 4871 7349\par}
 }
 ]]></description>
   </metadata>
