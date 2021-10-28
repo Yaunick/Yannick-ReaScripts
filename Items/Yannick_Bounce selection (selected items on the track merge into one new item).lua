@@ -1,10 +1,11 @@
 -- @description Yannick_Bounce selection (selected items on the track merge into one new item)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Improved protection against incorrect user settings
+--   + Fixed incorrect work with certain settings in prefs
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -28,9 +29,15 @@
   or unser_inputs_for_entering_tail ~= true and unser_inputs_for_entering_tail ~= false
   or mute_original_items ~= true and mute_original_items ~= false
   or mute_original_tracks ~= true and mute_original_tracks ~= false
+  or render_in ~= 1 and render_in ~= 2 and render_in ~= 3
   then
     reaper.MB('Incorrect values at the beginning of the script', 'Error', 0)
     nothing() return
+  end
+  
+  local test_SWS = reaper.CF_EnumerateActions
+  if not test_SWS then
+    reaper.MB('Please install or update SWS extension', 'Error', 0) nothing() return
   end
   
   if reaper.CountSelectedMediaItems(0) == 0 then
@@ -71,6 +78,14 @@
   end
   
   reaper.Undo_BeginBlock()
+  
+  render_ts = reaper.SNM_GetIntConfigVar('workrender',0)
+  change_setting = false
+  if render_ts&8192 == 8192 then
+    local render_ts2 = render_ts&~(render_ts&8192)
+    reaper.SNM_SetIntConfigVar('workrender',render_ts2)
+    change_setting = true
+  end
   
   reaper.Main_OnCommand(40289,0) -- unsecelt all items
   
@@ -131,5 +146,9 @@
   
   reaper.GetSet_LoopTimeRange(true, false, save_start, save_end, false)
   reaper.SetEditCurPos(cur_pos, false, false)
+  
+  if change_setting == true then
+    reaper.SNM_SetIntConfigVar('workrender',render_ts)
+  end
   
   reaper.Undo_EndBlock('Bounce selection (selected items on the track merge into one new item)',-1)
