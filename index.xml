@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="ae64fa4c53d659e70eb3b3b941094920466fee37">
+<index version="1" name="Yannick-ReaScripts" commit="8d773665aeac78e8bbc7a49fa8eadfacb332f18b">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -826,6 +826,22 @@
     </reapack>
   </category>
   <category name="Various">
+    <reapack name="Yannick_Copy all existed plugins names to the clipboard.lua" type="script" desc="Yannick_Copy all existed plugins names to the clipboard">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-10-29T14:41:13Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/8d773665aeac78e8bbc7a49fa8eadfacb332f18b/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
+      </version>
+    </reapack>
     <reapack name="Yannick_Float instrument from insert or send at selected tracks.lua" type="script" desc="Yannick_Float instrument from insert or send at selected tracks">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
