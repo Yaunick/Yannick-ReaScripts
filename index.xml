@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="82ffa2c8cab2935335d9125b18fe6b6f703e5ab5">
+<index version="1" name="Yannick-ReaScripts" commit="ae64fa4c53d659e70eb3b3b941094920466fee37">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -235,6 +235,11 @@
       <version name="1.0" author="Yannick" time="2021-10-28T18:39:22Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/82ffa2c8cab2935335d9125b18fe6b6f703e5ab5/Items/Yannick_Bounce%20selection%20(selected%20items%20on%20the%20track%20merge%20into%20one%20new%20item).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-10-28T18:54:40Z">
+        <changelog><![CDATA[+ Improved protection against incorrect user settings
++ Fixed incorrect work with certain settings in prefs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ae64fa4c53d659e70eb3b3b941094920466fee37/Items/Yannick_Bounce%20selection%20(selected%20items%20on%20the%20track%20merge%20into%20one%20new%20item).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Glue selected items independently.lua" type="script" desc="Yannick_Glue selected items independently">
