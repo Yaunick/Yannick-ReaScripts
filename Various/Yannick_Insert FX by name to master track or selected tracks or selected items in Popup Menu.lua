@@ -1,10 +1,10 @@
 -- @description Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Improving behavior with different settings
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -41,7 +41,7 @@
   
   --FX settings--------------------------------------------------
   
-    add_fx_to_track = true
+    add_fx_to_track = true  --- to master track and normal track
     add_fx_to_item = true
   
   ---------------------------------------------------------------
@@ -96,8 +96,8 @@
     local add_to_master = false
     insert_string = ""
     
-    if add_fx_to_item == false and reaper.IsTrackSelected(master) == true
-    or cursor == 0 and reaper.IsTrackSelected(master) == true 
+    if (add_fx_to_item == false and add_fx_to_track == true and reaper.IsTrackSelected(master) == true)
+    or (add_fx_to_item == true and add_fx_to_track == true and cursor == 0 and reaper.IsTrackSelected(master) == true)
     then
       if reaper.TrackFX_AddByName(master, name, false, -1) ~= -1 then
         add_to_master = true
@@ -108,7 +108,9 @@
       end
       insert_string = "to master track"
     end
-    if add_fx_to_item == false or cursor == 0 then
+    if (add_fx_to_item == false and add_fx_to_track == true)
+    or (add_fx_to_item == true and add_fx_to_track == true and cursor == 0)
+    then
       if reaper.CountSelectedTracks(0) > 0 then
         for i=0, reaper.CountSelectedTracks(0)-1 do
           local track = reaper.GetSelectedTrack(0,i)
@@ -123,7 +125,9 @@
         end
         insert_string = "to selected tracks"
       end
-    elseif add_fx_to_track == false or cursor == 1 then
+    elseif (add_fx_to_track == false and add_fx_to_item == true)
+    or (add_fx_to_track == true and add_fx_to_item == true and cursor == 1)
+    then
       if reaper.CountSelectedMediaItems(0) > 0 then
         for i=0, reaper.CountSelectedMediaItems(0)-1 do
           local item = reaper.GetSelectedMediaItem(0,i)
@@ -215,19 +219,3 @@
   gfx.init(header_name, menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)
   Main()
   
-  
-  
-  
-  
-  
-
-  
-
-
-  
-
-
-
-    
-   
- 
