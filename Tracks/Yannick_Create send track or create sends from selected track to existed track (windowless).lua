@@ -1,10 +1,11 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track (windowless)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added new settings to select send track and open FX browser
+--   + Added new setting to set height size for new send track
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -38,11 +39,17 @@
   
   ----Other parameters for new send track, if no existed------------------------
     show_in_tcp = true        ---- Show new send track in TCP --- true or false
+    set_height = 0            ---- 0 to disable, any number for height size (in pixels)
   ------------------------------------------------------------------------------
   
   ----Where will be the new send track, if no existed?--------------------------
     where_track = 1         ---- 1 - start, 2 - end of all tracks
                             ---- 3 - start, 4 - end of selected tracks
+  ------------------------------------------------------------------------------
+  
+  ----Other parameters for send track-------------------------------------------
+    select_send_track = false
+      show_fx_browser_for_selected_send_track = true
   ------------------------------------------------------------------------------
   
   --\\\\\\\\\\\\----RUN--RUN--RUN----/////////----START--SCRIPT------\\\\\\\\\\\\\\
@@ -58,10 +65,11 @@
   or not tonumber(ratio)
   or (not tonumber(R) or not tonumber(G) or not tonumber(B))
   or (R < 0 or G < 0 or B < 0)
+  or (select_send_track ~= true and select_send_track ~= false)
+  or (show_fx_browser_for_selected_send_track ~= true and show_fx_browser_for_selected_send_track ~= false)
+  or (not tonumber(set_height) or set_height < 0)
   then
-    reaper.MB('Incorrect values for "send_volume" or "show_in_tcp" or "where track" or "RGB" ' ..
-    'or "add_reacomp_for_sidechain" or "show_reacomp" or "threshold" or "ratio" parameters. Look at the beginning of the script',
-    'Error',0)
+    reaper.MB('Incorrect values at the beginnig of the script','Error',0)
     nothing() return
   end
   
@@ -209,6 +217,9 @@
     end
     reaper.GetSetMediaTrackInfo_String(save_tr, 'P_NAME', val_name, true)
     reaper.SetMediaTrackInfo_Value(save_tr, 'B_SHOWINTCP', show_in_tcp)
+    if set_height > 0 then
+      reaper.SetMediaTrackInfo_Value(save_tr, 'I_HEIGHTOVERRIDE', set_height)
+    end
   end
   
   if reaper.GetMediaTrackInfo_Value(save_tr, "I_NCHAN") < val_dst_2 then 
@@ -238,6 +249,15 @@
     reaper.SetTrackSendInfo_Value( get_track, 0, send_indx, 'I_SENDMODE', val_mode_tnbr)
     reaper.SetTrackSendInfo_Value( get_track, 0, send_indx, 'D_VOL', 10^(0.05*send_volume))          
     reaper.BR_GetSetTrackSendInfo( get_track, 0, send_indx, 'I_MIDI_SRCCHAN', true, -1)
+  end
+  
+  if select_send_track == true then
+    reaper.SetOnlyTrackSelected(save_tr, true)
+    if show_fx_browser_for_selected_send_track == true then
+      if reaper.GetToggleCommandState(40271) == 0 then
+        reaper.Main_OnCommand(40271,0)
+      end
+    end
   end
 
   reaper.Undo_EndBlock('Create send track with sends parameters from selected tracks (windowless)',-1)
