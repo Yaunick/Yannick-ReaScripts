@@ -1,19 +1,21 @@
 -- @description Yannick_Set selected track color to project markers and regions at edit cursor position
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + crash fixed
+--   + improved text of warnings
+--   + added setting for detecting regions (only at the starting point or along the entire length of the region)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
-  
-  ---------------------------------------------------
+
+  --------------------------------------------------------
     
     set_color_to_markers = true
     set_color_to_regions = true
+      detect_the_regions_only_at_the_starting_point = true
   
-  ---------------------------------------------------
+  --------------------------------------------------------
   
   function bla() end
   function nothing() reaper.defer(bla) end
@@ -21,6 +23,7 @@
   if (set_color_to_markers ~= true and set_color_to_markers ~= false)
   or (set_color_to_regions ~= true and set_color_to_regions ~= false)
   or (set_color_to_markers == false and set_color_to_regions == false)
+  or (detect_the_regions_only_at_the_starting_point ~= true and detect_the_regions_only_at_the_starting_point ~= false)
   then
     reaper.MB('Incorrect values at the beginning of the script', 'Error', 0)
     nothing() return
@@ -32,8 +35,8 @@
   end
   
   local retval, num_markers, num_regions = reaper.CountProjectMarkers(0)
-  if num_regions == 0 then
-    reaper.MB('No regions in this project', 'Error', 0)
+  if num_regions+num_markers == 0 then
+    reaper.MB('No regions and project markers in this project', 'Error', 0)
     nothing() return
   end
   
@@ -48,8 +51,14 @@
     local retval2, isrgn, pos, rgnend, name, markrgnindexnumber = reaper.EnumProjectMarkers(i)
     if isrgn == true then
       if set_color_to_regions == true then
-        if cur_pos >= pos and cur_pos <= rgnend then
-          reaper.SetProjectMarker3(0, markrgnindexnumber, isrgn, pos, rgnend, name, track_color)
+        if detect_the_regions_only_at_the_starting_point == false then
+          if cur_pos >= pos and cur_pos <= rgnend then
+            reaper.SetProjectMarker3(0, markrgnindexnumber, isrgn, pos, rgnend, name, track_color)
+          end
+        else
+          if cur_pos == pos then
+            reaper.SetProjectMarker3(0, markrgnindexnumber, isrgn, pos, rgnend, name, track_color)
+          end
         end
       end
     else
