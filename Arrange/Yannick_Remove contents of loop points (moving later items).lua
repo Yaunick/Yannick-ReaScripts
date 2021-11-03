@@ -1,10 +1,10 @@
--- @description Yannick_Insert region from loop points and edit
+-- @description Yannick_Remove contents of loop points (moving later items)
 -- @author Yannick
--- @version 1.1
+-- @version 1.0
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added warning if no loop points selection
+--   Initial release
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -24,10 +24,12 @@
   
   reaper.GetSet_LoopTimeRange(true, false, lp_start, lp_end, false)
   
-  reaper.Main_OnCommand(40306,0)
+  reaper.Main_OnCommand(40201,0)
   
   reaper.GetSet_LoopTimeRange(true, false, save_ts_start, save_ts_end, false)
   
-  reaper.Undo_EndBlock('Insert region from loop points and edit',-1)
+  reaper.Main_OnCommand(40634,0)
+  
+  reaper.Undo_EndBlock('Remove contents of loop points (moving later items)',-1)
   reaper.PreventUIRefresh(-1)
   
