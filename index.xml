@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="e2b47b283f99b7238ef13791041b1270598bb039">
+<index version="1" name="Yannick-ReaScripts" commit="2a0a30a6656449f1e6e23058d232fb110b26209e">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -137,6 +137,10 @@
       <version name="1.0" author="Yannick" time="2021-11-03T10:15:02Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e2b47b283f99b7238ef13791041b1270598bb039/Arrange/Yannick_Set%20selected%20track%20color%20to%20project%20markers%20and%20regions%20at%20edit%20cursor%20position.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-11-03T10:23:42Z">
+        <changelog><![CDATA[+ crash fixed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/2a0a30a6656449f1e6e23058d232fb110b26209e/Arrange/Yannick_Set%20selected%20track%20color%20to%20project%20markers%20and%20regions%20at%20edit%20cursor%20position.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step.lua" type="script" desc="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step">
