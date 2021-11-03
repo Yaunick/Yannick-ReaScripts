@@ -1,13 +1,13 @@
 -- @description Yannick_Set selected track color to project markers and regions at edit cursor position
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + crash fixed
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
-
+  
   ---------------------------------------------------
     
     set_color_to_markers = true
@@ -48,7 +48,7 @@
     local retval2, isrgn, pos, rgnend, name, markrgnindexnumber = reaper.EnumProjectMarkers(i)
     if isrgn == true then
       if set_color_to_regions == true then
-        if cur_pos = pos and cur_pos = rgnend then
+        if cur_pos >= pos and cur_pos <= rgnend then
           reaper.SetProjectMarker3(0, markrgnindexnumber, isrgn, pos, rgnend, name, track_color)
         end
       end
