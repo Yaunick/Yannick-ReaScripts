@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="431d8549557d219659ea8d88fedb57d45e75a0f1">
+<index version="1" name="Yannick-ReaScripts" commit="94fb132eb9beabed4f697f0344e828f6e459bab3">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -69,6 +69,22 @@
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/657f2e94b7e7f623173a4f3f2d4f52f614890874/Arrange/Yannick_Insert%20=START%20marker,%20then%20=END%20marker%20at%20edit%20cursor.lua</source>
       </version>
     </reapack>
+    <reapack name="Yannick_Insert empty space at loop points (moving later items).lua" type="script" desc="Yannick_Insert empty space at loop points (moving later items)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-11-03T16:24:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Insert%20empty%20space%20at%20loop%20points%20(moving%20later%20items).lua</source>
+      </version>
+    </reapack>
     <reapack name="Yannick_Insert region between the start and end point (relative to edit cursor).lua" type="script" desc="Yannick_Insert region between the start and end point (relative to edit cursor)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -106,6 +122,10 @@
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/431d8549557d219659ea8d88fedb57d45e75a0f1/Arrange/Yannick_Insert%20region%20from%20loop%20points%20and%20edit.lua</source>
       </version>
+      <version name="1.1" author="Yannick" time="2021-11-03T16:24:50Z">
+        <changelog><![CDATA[+ Added warning if no loop points selection]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Insert%20region%20from%20loop%20points%20and%20edit.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Remove (clear) time selection then loop points.lua" type="script" desc="Yannick_Remove (clear) time selection then loop points">
       <metadata>
@@ -121,6 +141,22 @@
       <version name="1.0" author="Yannick" time="2021-11-03T12:08:09Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/431d8549557d219659ea8d88fedb57d45e75a0f1/Arrange/Yannick_Remove%20(clear)%20time%20selection%20then%20loop%20points.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Remove contents of loop points (moving later items).lua" type="script" desc="Yannick_Remove contents of loop points (moving later items)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-11-03T16:24:50Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Remove%20contents%20of%20loop%20points%20(moving%20later%20items).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
