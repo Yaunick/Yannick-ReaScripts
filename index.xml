@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="5d37fd0af85bdbee4b29771865f4f4e36ff6d156">
+<index version="1" name="Yannick-ReaScripts" commit="e2b47b283f99b7238ef13791041b1270598bb039">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -121,6 +121,22 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Set selected track color to project markers and regions at edit cursor position.lua" type="script" desc="Yannick_Set selected track color to project markers and regions at edit cursor position">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-11-03T10:15:02Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e2b47b283f99b7238ef13791041b1270598bb039/Arrange/Yannick_Set%20selected%20track%20color%20to%20project%20markers%20and%20regions%20at%20edit%20cursor%20position.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step.lua" type="script" desc="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step">
