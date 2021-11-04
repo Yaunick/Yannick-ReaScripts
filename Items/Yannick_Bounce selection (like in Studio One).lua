@@ -1,10 +1,10 @@
 -- @description Yannick_Bounce selection (like in Studio One)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Fixed logic with receives in source tracks
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -141,16 +141,17 @@
   reaper.GetSet_LoopTimeRange(true, false, crnt_start, crnt_end + tail_for_every_item, false)
   
   local count_mute = {}
-  for i=0, reaper.CountSelectedMediaItems(0)-1 do
-    count_mute[i+1] = reaper.GetMediaItemInfo_Value
-    (reaper.GetSelectedMediaItem(0,i), 'B_MUTE')
-  end
- 
-  reaper.Main_OnCommand(41559,0) -- solo items
- 
-  for i=0, reaper.CountSelectedMediaItems(0)-1 do
-    reaper.SetMediaItemInfo_Value
-    (reaper.GetSelectedMediaItem(0,i), 'B_MUTE', count_mute[i+1])
+  local sel_track = reaper.GetSelectedTrack(0,0)
+  for i=0, reaper.CountTrackMediaItems(sel_track)-1 do
+    local item = reaper.GetTrackMediaItem(sel_track,i)
+    if reaper.GetMediaItemInfo_Value(item, 'D_POSITION') >= crnt_start 
+    and reaper.GetMediaItemInfo_Value(item, 'D_POSITION') <= crnt_end + tail_for_every_item + 1
+    then
+      count_mute[#count_mute+1] = { item, reaper.GetMediaItemInfo_Value(item, 'B_MUTE') }
+      if reaper.IsMediaItemSelected(item) == false then
+        reaper.SetMediaItemInfo_Value(item, 'B_MUTE', 1)
+      end
+    end
   end
   
   local count_tracks_one = reaper.CountTracks(0)
@@ -165,7 +166,9 @@
   
   local count_tracks_two = reaper.CountTracks(0)
 
-  reaper.Main_OnCommand(41560,0) -- unsolo items
+  for i=1, #count_mute do
+    reaper.SetMediaItemInfo_Value(count_mute[i][1], 'B_MUTE', count_mute[i][2])
+  end
   
   if count_tracks_one == count_tracks_two then
     bool_end = true

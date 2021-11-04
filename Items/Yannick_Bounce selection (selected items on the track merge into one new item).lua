@@ -1,11 +1,10 @@
 -- @description Yannick_Bounce selection (selected items on the track merge into one new item)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Improved protection against incorrect user settings
---   + Fixed incorrect work with certain settings in prefs
+--   + Fixed logic with receives in source tracks
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -100,7 +99,20 @@
       reaper.GetSet_LoopTimeRange(true, false, get_st, get_en+tail_for_new_item, false)
       
       reaper.PreventUIRefresh(1)
-      reaper.Main_OnCommand(41559,0) -- solo items
+      
+      local count_mute = {}
+      local sel_track = reaper.GetSelectedTrack(0,0)
+      for i=0, reaper.CountTrackMediaItems(sel_track)-1 do
+        local item = reaper.GetTrackMediaItem(sel_track,i)
+        if reaper.GetMediaItemInfo_Value(item, 'D_POSITION') >= get_st 
+        and reaper.GetMediaItemInfo_Value(item, 'D_POSITION') <= get_en + tail_for_new_item + 1
+        then
+          count_mute[#count_mute+1] = { item, reaper.GetMediaItemInfo_Value(item, 'B_MUTE') }
+          if reaper.IsMediaItemSelected(item) == false then
+            reaper.SetMediaItemInfo_Value(item, 'B_MUTE', 1)
+          end
+        end
+      end
       
       local count_tr_before = reaper.CountTracks(0)
       -------------------------------------------
@@ -114,7 +126,10 @@
       -------------------------------------------
       local count_tr_after = reaper.CountTracks(0)
       
-      reaper.Main_OnCommand(41560,0) -- unsolo items
+      for i=1, #count_mute do
+        reaper.SetMediaItemInfo_Value(count_mute[i][1], 'B_MUTE', count_mute[i][2])
+      end
+      
       reaper.PreventUIRefresh(-1)
     
       if count_tr_before == count_tr_after then
