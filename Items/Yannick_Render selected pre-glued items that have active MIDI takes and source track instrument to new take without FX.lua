@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + improving control over missing multiple instruments on tracks (instrument identification by its actual type, not by name, this requires REAPER v6.37 or higher)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -63,23 +63,33 @@
   local msg_2 = false
   local overlap = false
   local test_instr = true
+  local find_second_instr = false
   
   for i=0, reaper.CountSelectedMediaItems(0)-1 do
     local item_1 = reaper.GetSelectedMediaItem(0,i)
-    
     local track_1 = reaper.GetMediaItemTrack(item_1)
     if test_instr == true then
-      if reaper.TrackFX_GetInstrument(track_1) == -1 then
-        reaper.MB("Please select items on tracks with online instruments", "Error", 0)
-        nothing() return
-      end
       for h=1, reaper.TrackFX_GetCount(track_1) do
-        local _, buf = reaper.TrackFX_GetFXName(track_1, h-1, '')
-        if buf:sub(0,6) == "VSTi: " and h-1 ~= reaper.TrackFX_GetInstrument(track_1) then
+        local retval, buf = reaper.TrackFX_GetNamedConfigParm( track_1, h-1, 'fx_type')
+        if buf == "" then
+          reaper.MB("For the script to check that there are no multiple instruments, you need to update REAPER to version 6.37 or higher", 
+          "Error", 0)
+          nothing() return
+        end
+        if buf == "VSTi" and find_second_instr == false
+        or buf == "AUi" and find_second_instr == false 
+        then
+          find_second_instr = true
+        elseif buf == "VSTi" or buf == "AUi" then
           reaper.MB("Please select items on tracks with only one instrument", "Error", 0)
           nothing() return
         end
       end
+      if find_second_instr == false then
+        reaper.MB("Please select items on tracks with active instruments", "Error", 0)
+        nothing() return
+      end
+      find_second_instr = false
       test_instr = false
     end
     
@@ -360,3 +370,4 @@
   'Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX',
   -1)
   reaper.PreventUIRefresh(-1)
+  
