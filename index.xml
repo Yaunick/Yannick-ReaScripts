@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="da2486c202831baa2f38b6d1ee7ccb512a134f2d">
+<index version="1" name="Yannick-ReaScripts" commit="61bf7223d183fc8b3bf00dd2afe50621b0e4f8c9">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -405,6 +405,15 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-11-04T20:04:54Z">
+        <changelog><![CDATA[+ Fixed logic with receives in source tracks
++ Remove "Auto_unsolo_all_tracks_before_render" and "Auto_unmute_all_tracks_before_render" settings, because now they doesn't work correctly :(
++ Added "Mute_original_items" setting
++ Added "Name_for_new_track" setting
++ Now only the one item is selected on the new mixdown track
++ Some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/61bf7223d183fc8b3bf00dd2afe50621b0e4f8c9/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected item to all selected items.lua" type="script" desc="Yannick_Propagate first selected item to all selected items">
