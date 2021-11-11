@@ -1,15 +1,10 @@
 -- @description Yannick_Mixdown selection (like in Studio One)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Fixed logic with receives in source tracks
---   + Remove "Auto_unsolo_all_tracks_before_render" and "Auto_unmute_all_tracks_before_render" settings, because now they doesn't work correctly :(
---   + Added "Mute_original_items" setting
---   + Added "Name_for_new_track" setting
---   + Now only the one item is selected on the new mixdown track
---   + Some code improvements
+--   + scroll to the new mixdown track now works not only in TCP but also in MCP
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -209,13 +204,15 @@
         end
       end
       reaper.Main_OnCommand(40289,0) -- unselect all items
-      reaper.SetMediaItemSelected(reaper.GetTrackMediaItem(reaper.GetSelectedTrack(0,0),0), true)
+      reaper.SetMediaItemSelected(reaper.GetTrackMediaItem(sel_tr,0), true)
       if Insert_new_track_at_end_of_all_tracks == true then
         reaper.ReorderSelectedTracks(count_tr_ar,0)
-        reaper.Main_OnCommand(reaper.NamedCommandLookup("_XENAKIOS_TVPAGEEND"),0)
-      else
-        reaper.Main_OnCommand(reaper.NamedCommandLookup("_XENAKIOS_TVPAGEHOME"),0)
       end
+      reaper.PreventUIRefresh(-1)
+      reaper.SetMixerScroll(sel_tr)
+      reaper.Main_OnCommand(40914,0) -- set selected track as last touched track
+      reaper.Main_OnCommand(40913,0) -- go to last touched track
+      reaper.PreventUIRefresh(1)
     elseif count_tr_br == count_tr_ar then --if render is canceled
       reaper.DeleteTrack(reaper.GetTrack(0,0)) --delete folder track
       ---Restore selection of tracks------------
