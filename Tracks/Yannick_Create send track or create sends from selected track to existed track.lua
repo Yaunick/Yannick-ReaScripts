@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added new experimental setting to set the send track as folder track
+--   + New logic for moving tracks to a folder
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -279,7 +279,21 @@
       end
       if where_track == 5 then
         local numb_frst_tr = reaper.GetMediaTrackInfo_Value(save_tr,'IP_TRACKNUMBER')
-        reaper.ReorderSelectedTracks(numb_frst_tr,1)
+        local find_fold_t = false
+        if reaper.GetMediaTrackInfo_Value(save_tr,'I_FOLDERDEPTH') == 1 then
+          for i = numb_frst_tr-1, reaper.CountTracks(0)-1 do
+            local track = reaper.GetTrack(0,i)
+            if track == reaper.GetSelectedTrack(0,0) then
+              find_fold_t = true
+            end
+            if reaper.GetMediaTrackInfo_Value(track,'I_FOLDERDEPTH') <= -1 then
+              break
+            end
+          end
+        end
+        if find_fold_t == false then
+          reaper.ReorderSelectedTracks(numb_frst_tr,1)
+        end
       end
     elseif found_tr == false then
       if where_track == 1 then
