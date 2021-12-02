@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + fixed VST3i detection
+--   + fixed the work of the script after the v6.37 update, related to the temporary disabling of bypass envelopes for render without FX
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -249,10 +249,10 @@
   for i=1, #t_tracks do
     for s=1, reaper.TrackFX_GetCount(t_tracks[i]) do
       local num_par = reaper.TrackFX_GetNumParams(t_tracks[i], s-1)
-      local env_fx = reaper.GetFXEnvelope(t_tracks[i], s-1, num_par-2, false)  --- get native Bypass FX envelope
+      local env_fx = reaper.GetFXEnvelope(t_tracks[i], s-1, num_par-3, false)  --- get native Bypass FX envelope
       if env_fx ~= nil and s-1 == reaper.TrackFX_GetInstrument(t_tracks[i]) 
       and after_rendering_set_the_instrument_to == 1 then
-        t_instr_byp[#t_instr_byp+1] = {s-1, t_tracks[i], num_par-2}
+        t_instr_byp[#t_instr_byp+1] = {s-1, t_tracks[i], num_par-3}
       elseif env_fx ~= nil and s-1 > reaper.TrackFX_GetInstrument(t_tracks[i]) then
         local br_envelope = reaper.BR_EnvAlloc(env_fx, true)
         
