@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="c4688fdc79bc7bd932ad6798db6499d446995f1b">
+<index version="1" name="Yannick-ReaScripts" commit="a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1053,6 +1053,10 @@
         <changelog><![CDATA[+ Improving behavior with different settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e155c75bc8038f2d10f0565bd25b251609d93e58/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.2" author="Yannick" time="2021-12-02T18:30:49Z">
+        <changelog><![CDATA[+ Improved creation of a menu with plugins, the names of which contain ">", "<", "#"]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Insert FX by name to master track or selected tracks or selected items.lua" type="script" desc="Yannick_Insert FX by name to master track or selected tracks or selected items">
       <metadata>
@@ -1090,6 +1094,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-12-02T18:30:49Z">
+        <changelog><![CDATA[+ Improved creation of a menu with plugins, the names of which contain ">", "<", "#"]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert VSTi by name to new track.lua" type="script" desc="Yannick_Insert VSTi by name to new track">
