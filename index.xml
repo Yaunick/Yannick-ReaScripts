@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="827a4392869f66bb999d473f2a6bcac7ec03eb4f">
+<index version="1" name="Yannick-ReaScripts" commit="6e16521422fddcfd86ce635414302142e76b5f80">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -502,6 +502,10 @@
       <version name="1.1" author="Yannick" time="2021-11-09T16:24:52Z">
         <changelog><![CDATA[+ improving control over missing multiple instruments on tracks (instrument identification by its actual type, not by name, this requires REAPER v6.37 or higher)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/4e2cbfd9fabf5614b1f3ca9b6297c37e5fd8396f/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2021-12-02T13:49:21Z">
+        <changelog><![CDATA[+ fixed VST3i detection]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6e16521422fddcfd86ce635414302142e76b5f80/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
