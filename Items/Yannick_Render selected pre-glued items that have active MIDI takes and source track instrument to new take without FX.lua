@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + improving control over missing multiple instruments on tracks (instrument identification by its actual type, not by name, this requires REAPER v6.37 or higher)
+--   + fixed VST3i detection
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -77,10 +77,11 @@
           nothing() return
         end
         if buf == "VSTi" and find_second_instr == false
+        or buf == "VST3i" and find_second_instr == false
         or buf == "AUi" and find_second_instr == false 
         then
           find_second_instr = true
-        elseif buf == "VSTi" or buf == "AUi" then
+        elseif buf == "VSTi" or buf == "VST3i" or buf == "AUi" then
           reaper.MB("Please select items on tracks with only one instrument", "Error", 0)
           nothing() return
         end
