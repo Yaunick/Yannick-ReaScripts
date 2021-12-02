@@ -1,10 +1,10 @@
 -- @description Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Improving behavior with different settings
+--   + Improved creation of a menu with plugins, the names of which contain ">", "<", "#"
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -14,7 +14,7 @@
   
     -- Use quotes (" or ') for plugin names 
     -- Use guotes (" or ') and # for tags to group plugins by type
-    -- Use guotes (" or ') and > for submenu start
+    -- Use guotes (" or ') and > + name for submenu start
     -- Use guotes (" or ') and < for submenu end
     -- Be sure to put a comma after each string!!!
     
@@ -162,17 +162,30 @@
     local find_start = 0
     local find_end = 0
     for i=1, #table_fx do
-      if table_fx[i]:find('!') or table_fx[i]:find('|') then
+      save_rts = ""
+      for s in string.gmatch(table_fx[i],'.') do
+        if s ~= '>'
+        and s ~= '<'
+        and s ~= '#'
+        and s ~= '!'
+        and s ~= '|'
+        then
+          break
+        end
+        save_rts = s
+      end
+
+      if save_rts == '!' or save_rts == '|' then
         gfx.quit()
         reaper.MB("Don't use ! or | for menu items", "Error",0)
         nothing() return
-      elseif string.find(table_fx[i], '#') and i == 1 then
+      elseif save_rts == '#' and i == 1 then
         string_fx = string_fx .. table_fx[i] .. '||'
         count_table[#count_table+1] = table_fx[i]
-      elseif string.find(table_fx[i], '#') then
+      elseif save_rts == '#' then
         string_fx = string_fx .. '|' .. table_fx[i] .. '||'
         count_table[#count_table+1] = table_fx[i]
-      elseif string.find(table_fx[i], '>') then
+      elseif save_rts == '>' then
         string_fx = string_fx .. '>' .. space .. table_fx[i]:sub(2,table_fx[i]:len()) .. '|'
         if not table_fx[i+1] or table_fx[i+1] == '<' then
           count_table[#count_table+1] = table_fx[i]:sub(2,table_fx[i]:len())
@@ -181,7 +194,7 @@
       elseif table_fx[i] == '<' then
         string_fx = string_fx .. '<' .. '|'
         find_end = find_end + 1
-      elseif string.find(table_fx[i], '<') then
+      elseif save_rts == '<' then
         string_fx = string_fx .. '<' .. space .. table_fx[i]:sub(2,table_fx[i]:len()) .. '|'
         count_table[#count_table+1] = table_fx[i]:sub(2,table_fx[i]:len())
         find_end = find_end + 1
