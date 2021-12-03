@@ -1,19 +1,25 @@
 -- @description Yannick_Split items at mouse cursor or set track to exclusive solo
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added new settings
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
     
-  --------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------
 
     split_item = true
+      snap_mouse_cursor_to_grid_if_snap_enabled = true
+      
+      leave_items_selected_after_splitting = true       ----  unselect all items if false
+        select_items_when_splitting_selected_items = 2  ----  1 = select left
+                                                        ----  2 = select right
+                                                        
     solo_track = true
   
-  --------------------------------------------------------------------------------------
+  ------------------------------------------------------------------------------------------
     
   function bla() end function nothing() reaper.defer(bla) end
   
@@ -57,14 +63,26 @@
       if get_group == 0 or (get_group > 0 and group_state == 0) then
         if reaper.IsMediaItemSelected(Item) == false then
           if grid_state == 1 then
-            reaper.SplitMediaItem(Item, grid_mouse_position)
+            if snap_mouse_cursor_to_grid_if_snap_enabled == true then
+              reaper.SplitMediaItem(Item, grid_mouse_position)
+            else
+              reaper.SplitMediaItem(Item, mouse_position)
+            end
           elseif grid_state == 0 then
             reaper.SplitMediaItem(Item, mouse_position)
           end
         elseif reaper.IsMediaItemSelected(Item) == true then
           local cur_pos = reaper.GetCursorPosition()
-          reaper.SetEditCurPos(grid_mouse_position,false,false)
-          reaper.Main_OnCommand(40759, 0)
+          if snap_mouse_cursor_to_grid_if_snap_enabled == true then 
+            reaper.SetEditCurPos(grid_mouse_position,false,false)
+          else
+            reaper.SetEditCurPos(mouse_position,false,false)
+          end
+          if select_items_when_splitting_selected_items == 1 then
+            reaper.Main_OnCommand(40758, 0)
+          else
+            reaper.Main_OnCommand(40759, 0)
+          end
           reaper.SetEditCurPos(cur_pos,false,false)
         end
       elseif get_group > 0 then
@@ -72,14 +90,25 @@
         reaper.SetMediaItemSelected(Item, 1)
         local cur_pos = reaper.GetCursorPosition()
         if grid_state == 1 then
-          reaper.SetEditCurPos(grid_mouse_position,false,false)
+          if snap_mouse_cursor_to_grid_if_snap_enabled == true then
+            reaper.SetEditCurPos(grid_mouse_position,false,false)
+          else
+            reaper.SetEditCurPos(mouse_position,false,false)
+          end
         elseif grid_state == 0 then
           reaper.SetEditCurPos(mouse_position,false,false)
         end  
-        reaper.Main_OnCommand(40759, 0)
+        if select_items_when_splitting_selected_items == 1 then
+          reaper.Main_OnCommand(40758, 0)
+        else
+          reaper.Main_OnCommand(40759, 0)
+        end
         reaper.SetEditCurPos(cur_pos,false,false)
       end 
       undo_name = "Split items at mouse cursor"
+    end
+    if leave_items_selected_after_splitting == false then
+      reaper.Main_OnCommand(40289,0)
     end
   else
     if solo_track == true then
