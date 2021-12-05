@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="cd024c9b1a6494c79aff66e0d14b315d65d80c3a">
+<index version="1" name="Yannick-ReaScripts" commit="87e715a5a73b34a1eda21d4faa8ba832f3fe5ec5">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -950,6 +950,22 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Increase%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Move last project track to last selected track.lua" type="script" desc="Yannick_Move last project track to last selected track">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2021-12-05T20:27:16Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/87e715a5a73b34a1eda21d4faa8ba832f3fe5ec5/Tracks/Yannick_Move%20last%20project%20track%20to%20last%20selected%20track.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Rename selected tracks (like in Pro Tools).lua" type="script" desc="Yannick_Rename selected tracks (like in Pro Tools)">
