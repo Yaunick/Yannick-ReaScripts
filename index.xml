@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="5e19705adee7bdb95b7560c88d396d43b6598cd1">
+<index version="1" name="Yannick-ReaScripts" commit="12d1722bcd02d93f155c29ddc72fec716d4c94e5">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -982,6 +982,10 @@
       <version name="1.0" author="Yannick" time="2021-12-05T22:11:51Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5e19705adee7bdb95b7560c88d396d43b6598cd1/Tracks/Yannick_Mute%20or%20unmute%20all%20sends%20and%20receives%20from%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-12-05T22:17:59Z">
+        <changelog><![CDATA[+ fixed typos]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/12d1722bcd02d93f155c29ddc72fec716d4c94e5/Tracks/Yannick_Mute%20or%20unmute%20all%20sends%20and%20receives%20from%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Rename selected tracks (like in Pro Tools).lua" type="script" desc="Yannick_Rename selected tracks (like in Pro Tools)">
