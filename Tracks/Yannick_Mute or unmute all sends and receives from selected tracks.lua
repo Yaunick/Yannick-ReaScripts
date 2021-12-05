@@ -1,12 +1,13 @@
 -- @description Yannick_Mute or unmute all sends and receives from selected tracks
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + fixed typos
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
+  
   
   -----------------------------------------------------------------
   
@@ -30,9 +31,6 @@
     reaper.MB("No tracks. Please select tracks", "Error", 0)
     nothing() return
   end
-  
-  reaper.Undo_BeginBlock()
-  reaper.PreventUIRefresh(1)
   
   local toggle_mute = 1
   local change_sends = false
@@ -65,6 +63,8 @@
   or (change_sends == true and change_receives == true)
   or (change_sends == false and change_receives == true)
   then
+    reaper.Undo_BeginBlock()
+    reaper.PreventUIRefresh(1)
     for i=0, reaper.CountSelectedTracks(0)-1 do
       local track = reaper.GetSelectedTrack(0,i)
       if change_sends == true then
@@ -78,9 +78,8 @@
         end
       end
     end
+    reaper.Undo_EndBlock("Mute or unmute all sends and receives from selected tracks", -1)
+    reaper.PreventUIRefresh(-1)
   end
-  
-  reaper.Undo_BeginBlock("Mute or unmute all sends and receives from selected tracks", -1)
-  reaper.PreventUIRefresh(-1)
   
   
