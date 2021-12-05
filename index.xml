@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30">
+<index version="1" name="Yannick-ReaScripts" commit="cd024c9b1a6494c79aff66e0d14b315d65d80c3a">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1130,6 +1130,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Split%20items%20at%20mouse%20cursor%20or%20set%20track%20to%20exclusive%20solo.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-12-03T10:47:22Z">
+        <changelog><![CDATA[+ Added new settings]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/cd024c9b1a6494c79aff66e0d14b315d65d80c3a/Various/Yannick_Split%20items%20at%20mouse%20cursor%20or%20set%20track%20to%20exclusive%20solo.lua</source>
       </version>
     </reapack>
   </category>
