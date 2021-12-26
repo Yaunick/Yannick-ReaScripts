@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track (windowless)
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + added new option "always create a new send track"
+--   + Added new experimental setting to set the send track as folder track
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -44,6 +44,7 @@
   ----Where will be the new send track, if no existed?--------------------------
     where_track = 1         ---- 1 - start, 2 - end of all tracks
                             ---- 3 - start, 4 - end of selected tracks
+                            ---- 5 - experimental - new folder from selected tracks (or reorder selected tracks to existing folder)
   ------------------------------------------------------------------------------
   
   ----Other parameters for send track-------------------------------------------
@@ -57,7 +58,7 @@
   function bla() end function nothing() reaper.defer(bla) end
   
   if (show_in_tcp ~= true and show_in_tcp ~= false)
-  or (where_track ~= 1 and where_track ~= 2 and where_track ~= 3 and where_track ~= 4) 
+  or (where_track ~= 1 and where_track ~= 2 and where_track ~= 3 and where_track ~= 4 and where_track ~= 5) 
   or not tonumber(send_volume)
   or (add_reacomp_for_sidechain ~= true and add_reacomp_for_sidechain ~= false)
   or (show_reacomp ~= true and show_reacomp ~= false)
@@ -182,6 +183,24 @@
       reaper.MB('The send track has already been selected, take a closer look :)','Error',0)
       nothing() return
     end
+    if where_track == 5 then
+      local numb_frst_tr = reaper.GetMediaTrackInfo_Value(save_tr,'IP_TRACKNUMBER')
+      local find_fold_t = false
+      if reaper.GetMediaTrackInfo_Value(save_tr,'I_FOLDERDEPTH') == 1 then
+        for i = numb_frst_tr-1, reaper.CountTracks(0)-1 do
+          local track = reaper.GetTrack(0,i)
+          if track == reaper.GetSelectedTrack(0,0) then
+            find_fold_t = true
+          end
+          if reaper.GetMediaTrackInfo_Value(track,'I_FOLDERDEPTH') <= -1 then
+            break
+          end
+        end
+      end
+      if find_fold_t == false then
+        reaper.ReorderSelectedTracks(numb_frst_tr,1)
+      end
+    end
   elseif found_tr == false then
     if where_track == 1 then
       reaper.InsertTrackAtIndex(0,false)
@@ -190,6 +209,11 @@
       local numb_frst_tr = reaper.GetMediaTrackInfo_Value(reaper.GetSelectedTrack(0,0),'IP_TRACKNUMBER')
       reaper.InsertTrackAtIndex(numb_frst_tr-1,false)
       save_tr = reaper.GetTrack(0,numb_frst_tr-1)       
+    elseif where_track == 5 then
+      local numb_frst_tr = reaper.GetMediaTrackInfo_Value(reaper.GetSelectedTrack(0,0),'IP_TRACKNUMBER')
+      reaper.InsertTrackAtIndex(numb_frst_tr-1,false)
+      save_tr = reaper.GetTrack(0,numb_frst_tr-1)    
+      reaper.ReorderSelectedTracks(numb_frst_tr,1)
     else
       local t_sel_tracks = {}
       for i=1, count_sel_tracks do
