@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + New logic for moving tracks to a folder
+--   + added new option "always create a new send track"
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -55,6 +55,7 @@
   ------------------------------------------------------------------------------
   
   ----Other parameters for send track-------------------------------------------
+    always_create_a_new_send_track = false
     select_send_track = false
       show_fx_browser_for_selected_send_track = true
   ------------------------------------------------------------------------------
@@ -74,6 +75,7 @@
   or (where_track ~= 1 and where_track ~= 2 and where_track ~= 3 and where_track ~= 4 and where_track ~= 5)
   or (not tonumber(R) or not tonumber(G) or not tonumber(B))
   or (R < 0 or G < 0 or B < 0)
+  or (always_create_a_new_send_track ~= true and always_create_a_new_send_track ~= false)
   or (select_send_track ~= true and select_send_track ~= false)
   or (show_fx_browser_for_selected_send_track ~= true and show_fx_browser_for_selected_send_track ~= false)
   or (not tonumber(set_height) or set_height < 0)
@@ -258,16 +260,18 @@
     end
 
     local found_tr = false
-    for i=0, reaper.CountTracks(0)-1 do
-      local get_tr = reaper.GetTrack(0,i)
-      retval, buf = reaper.GetTrackName(get_tr)
-      if buf == val_name then
-        if found_tr == false then
-          save_tr = get_tr
-          found_tr = true
-        else
-          reaper.MB('You have several tracks with this name','Error',0)
-          nothing() return
+    if always_create_a_new_send_track == false then
+      for i=0, reaper.CountTracks(0)-1 do
+        local get_tr = reaper.GetTrack(0,i)
+        retval, buf = reaper.GetTrackName(get_tr)
+        if buf == val_name then
+          if found_tr == false then
+            save_tr = get_tr
+            found_tr = true
+          else
+            reaper.MB('You have several tracks with this name','Error',0)
+            nothing() return
+          end
         end
       end
     end
