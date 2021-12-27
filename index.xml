@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="610d019c757d16f9dee3c4f3abb01ab910bde3bf">
+<index version="1" name="Yannick-ReaScripts" commit="d32a2adbcae2cf23c25c9c0d52a6b0e0687d4f6d">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -893,6 +893,10 @@
       <version name="1.2" author="Yannick" time="2021-12-26T18:02:01Z">
         <changelog><![CDATA[+ added new option "always create a new send track"]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/610d019c757d16f9dee3c4f3abb01ab910bde3bf/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track%20(windowless).lua</source>
+      </version>
+      <version name="1.3" author="Yannick" time="2021-12-26T18:26:40Z">
+        <changelog><![CDATA[+ Added new experimental setting to set the send track as folder track]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d32a2adbcae2cf23c25c9c0d52a6b0e0687d4f6d/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track%20(windowless).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create send track or create sends from selected track to existed track.lua" type="script" desc="Yannick_Create send track or create sends from selected track to existed track">
