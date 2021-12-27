@@ -1,16 +1,17 @@
 -- @description Yannick_Create folder track from selected tracks
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added new setting to set the track icon
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
   ----------------------------------------------------------------------------------------------------------------------------------
   
     number_of_custom_layouts = 0          ---- enter from 0 to 20 number of layouts for new folder track, 0 = disable layout
+    icon_name = ""                        ---- enter the track icon name in REAPER conf folder, "" or '' = disable track icon
     name_for_folder_track = ''            ---- '' or "" is no name for new folder track, 'Bass' or "Bass" as example for new name  
     user_input = false                    ---- show user input to entering new folder name
     defaults_for_folder_track = false     ---- set default parameters for new folder track from global prefs
@@ -113,6 +114,10 @@
   
   if number_of_custom_layouts > 0 then
     reaper.Main_OnCommand(number_of_custom_layouts+41695,0)
+  end
+  
+  if icon_name ~= "" then
+    reaper.GetSetMediaTrackInfo_String( tr, "P_ICON", icon_name .. ".png", true)
   end
   
   reaper.GetSetMediaTrackInfo_String(tr, 'P_NAME', name, true)
