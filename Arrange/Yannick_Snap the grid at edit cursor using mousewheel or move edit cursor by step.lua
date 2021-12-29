@@ -1,10 +1,10 @@
 -- @description Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + reduced the step of moving the edit cursor when snapping to grid
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
     
@@ -62,7 +62,7 @@
       reaper.SetEditCurPos(get_cr_ps+measure,true,false)
     else
       if get_cr_ps > 0 then
-        reaper.SetEditCurPos(get_cr_ps-0.0026,true,false)
+        reaper.SetEditCurPos(get_cr_ps-0.00026,true,false)
         reaper.Main_OnCommand(reaper.NamedCommandLookup("_BR_MOVE_GRID_TO_EDIT_CUR"),0)
       else
         reaper.Main_OnCommand(42330,0)
@@ -72,7 +72,7 @@
     reaper.MB('Please create only one take marker','Error',0)
   end
   
-  reaper.GetSetProjectGrid(0, true, division  , 0, 0)
+  reaper.GetSetProjectGrid(0, true, division , 0, 0)
   
   reaper.PreventUIRefresh(-1)
   reaper.Undo_EndBlock('Convert selected item stretch markers to project markers', -1)
