@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="d32a2adbcae2cf23c25c9c0d52a6b0e0687d4f6d">
+<index version="1" name="Yannick-ReaScripts" commit="7bed24e83c6e5822ea11606fdc651f32885ab239">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -804,6 +804,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20folder%20track%20from%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-12-27T19:26:16Z">
+        <changelog><![CDATA[+ Added new setting to set the track icon]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7bed24e83c6e5822ea11606fdc651f32885ab239/Tracks/Yannick_Create%20folder%20track%20from%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create midi and audio track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create midi and audio track from multichannel VSTi (selected track)">
