@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="7bed24e83c6e5822ea11606fdc651f32885ab239">
+<index version="1" name="Yannick-ReaScripts" commit="48d73532df416aa88014323bdef6d30f810b67ea">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -230,6 +230,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Snap%20the%20grid%20at%20edit%20cursor%20using%20mousewheel%20or%20move%20edit%20cursor%20by%20step.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2021-12-29T15:56:05Z">
+        <changelog><![CDATA[+ reduced the step of moving the edit cursor when snapping to grid]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/48d73532df416aa88014323bdef6d30f810b67ea/Arrange/Yannick_Snap%20the%20grid%20at%20edit%20cursor%20using%20mousewheel%20or%20move%20edit%20cursor%20by%20step.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Switch next grid (alternation of straight and triplet).lua" type="script" desc="Yannick_Switch next grid (alternation of straight and triplet)">
