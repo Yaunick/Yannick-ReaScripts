@@ -1,10 +1,10 @@
 -- @description Yannick_Create midi and audio track from multichannel VSTi (selected track)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added new record mode settings for MIDI track
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -17,7 +17,27 @@
     number_of_channel_in_names = true
       midi_postfix = 'MIDI'
       audio_postfix = 'st'
+      
     defaults_midi_track = false
+    -- if false then --------------------
+    
+      monitor_rec_for_MIDI_track = true
+      
+      record_mode = 1      -- 1 = Record: input (audio or MIDI)
+      
+                           -- 2 = Record: MIDI overdub
+                           -- 3 = Record: MIDI replace
+                           -- 4 = Record: MIDI touch-replace
+                           -- 5 = Record: MIDI latch-replace
+                           
+                           -- 6 = Record: output (MIDI)
+                           
+                           -- 7 = Record: input (force MIDI)
+                           
+                           -- 8 = Record: disable (input monitoring only)
+                             
+    -- end ------------------------------
+    
     defaults_audio_track = false
     select_the_midi_track = false
     insert_the_smallest_unused_midi_channel = true
@@ -56,6 +76,9 @@
   or midi_postfix ~= tostring(midi_postfix)
   or audio_postfix ~= tostring(audio_postfix)
   or (defaults_midi_track ~= true and defaults_midi_track ~= false)
+  or (monitor_rec_for_MIDI_track ~= true and monitor_rec_for_MIDI_track ~= false)
+  or (record_mode ~= 1 and record_mode ~= 2 and record_mode ~= 3 and record_mode ~= 4 
+    and record_mode ~= 5 and record_mode ~= 6 and record_mode ~= 7 and record_mode ~= 8)
   or (defaults_audio_track ~= true and defaults_audio_track ~= false)
   or (select_the_midi_track ~= true and select_the_midi_track ~= false)
   or (insert_the_smallest_unused_midi_channel ~= true and insert_the_smallest_unused_midi_channel ~= false)
@@ -66,12 +89,7 @@
   then
     reaper.MB
     (
-    'Incorrect value for "input_width" or "show_audio_on_tcp" ' ..
-    'or "show_midi_on_mcp" or "number_of_channel_in_names" ' ..
-    'or "defaults_midi_track" or "defaults_audio_track" ' ..
-    'or "select_the_midi_track" ' ..
-    'or "insert_the_smallest_unused_midi_channel" ' ..
-    'or "RGB" parameters. Look at the beginning of the script',
+    'Incorrect values at the beginning of the script',
     'Error',0
     )
     nothing() return
@@ -194,16 +212,42 @@
               reaper.GetSetMediaTrackInfo_String(get_midi_track, 'P_NAME', name, true)
             end
        
-            if reaper.GetMediaTrackInfo_Value(get_midi_track, 'I_RECMON') == 0 then
-              reaper.SetMediaTrackInfo_Value(get_midi_track, 'I_RECMON', 1)
-            end
-       
             reaper.SetMediaTrackInfo_Value(get_midi_track, 'B_SHOWINMIXER', convert_bool(show_midi_on_mcp))
        
             if R_m == 0 and G_m == 0 and B_m == 0 then
               nothing()
             else
               reaper.SetTrackColor(get_midi_track, reaper.ColorToNative(R_m,G_m,B_m)|0x1000000)
+            end
+            
+            if defaults_midi_track == false then
+              
+              if monitor_rec_for_MIDI_track == true then
+                reaper.SetMediaTrackInfo_Value(get_midi_track, 'I_RECMON', 1)
+              else
+                reaper.SetMediaTrackInfo_Value(get_midi_track, 'I_RECMON', 0)
+              end
+            
+              if record_mode == 1 then
+                record_mode = 0
+              elseif record_mode == 2 then
+                record_mode = 7
+              elseif record_mode == 3 then
+                record_mode = 8
+              elseif record_mode == 4 then
+                record_mode = 9
+              elseif record_mode == 5 then
+                record_mode = 16
+              elseif record_mode == 6 then
+                record_mode = 4
+              elseif record_mode == 7 then
+                record_mode = 15
+              elseif record_mode == 8 then
+                record_mode = 2
+              end
+              
+              reaper.SetMediaTrackInfo_Value(get_midi_track, 'I_RECMODE', record_mode)
+            
             end
        
             reaper.CreateTrackSend(get_midi_track, get_instrument_track)
