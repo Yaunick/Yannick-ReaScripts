@@ -1,14 +1,27 @@
 -- @description Yannick_Set exclusive record arm for track or toggle folder collapse
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added new setting to unarm tracks with "Record: disable (input monitoring only)" mode - true or false
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
+  -------------------------------------------------------------------
+  
+    unarm_tracks_with_record_input_monitoring_only_mode = true
+    
+  -------------------------------------------------------------------
+
   function bla() end function nothing() reaper.defer(bla) end
+  
+  if unarm_tracks_with_record_input_monitoring_only_mode ~= true 
+  and unarm_tracks_with_record_input_monitoring_only_mode ~= false
+  then
+    reaper.MB('Incorrect values at the beginnig of the script','Error',0)
+    nothing() return
+  end
   
   local test_SWS = reaper.CF_EnumerateActions 
   if not test_SWS then
@@ -39,8 +52,21 @@
   elseif track_info == 1 and window == 'mcp' then
     reaper.Main_OnCommand(41665, 0)
   elseif track_info ~= 1 then
-    reaper.Main_OnCommand( 40491, 0)  --- unrecord all tracks
-    reaper.Main_OnCommand( 40294, 0)  --- set record one track
+    if unarm_tracks_with_record_input_monitoring_only_mode == false then
+      for i=0, reaper.CountTracks(0)-1 do
+        local track = reaper.GetTrack(0,i)
+        if reaper.IsTrackSelected(track) == true then
+          reaper.SetMediaTrackInfo_Value(track, 'I_RECARM', 1)
+        else
+          if reaper.GetMediaTrackInfo_Value(track, 'I_RECMODE') ~= 2 then
+            reaper.SetMediaTrackInfo_Value(track, 'I_RECARM', 0)
+          end
+        end
+      end
+    else
+      reaper.Main_OnCommand(40491,0)
+      reaper.Main_OnCommand(40294,0)
+    end
   end
   
   reaper.UpdateArrange()
