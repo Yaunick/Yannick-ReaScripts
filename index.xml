@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="48d73532df416aa88014323bdef6d30f810b67ea">
+<index version="1" name="Yannick-ReaScripts" commit="75f78d601fcbbabdaeb757483033460cfb3ffbbd">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1154,6 +1154,10 @@
       <version name="1.1" author="Yannick" time="2021-12-02T18:30:49Z">
         <changelog><![CDATA[+ Improved creation of a menu with plugins, the names of which contain ">", "<", "#"]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-01-04T16:21:24Z">
+        <changelog><![CDATA[+ Added new record mode settings]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/75f78d601fcbbabdaeb757483033460cfb3ffbbd/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert VSTi by name to new track.lua" type="script" desc="Yannick_Insert VSTi by name to new track">
