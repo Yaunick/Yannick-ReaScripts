@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="36c5ffe1f4ac8ebf1464861c729e74aa17f425fb">
+<index version="1" name="Yannick-ReaScripts" commit="5ee39fa82d73c600382484d0d772dca4e86c54bd">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -852,6 +852,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20midi%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T19:56:09Z">
+        <changelog><![CDATA[+ Added new record mode settings for MIDI track]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5ee39fa82d73c600382484d0d772dca4e86c54bd/Tracks/Yannick_Create%20midi%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create multichannel routing (send track) from selected tracks.lua" type="script" desc="Yannick_Create multichannel routing (send track) from selected tracks">
