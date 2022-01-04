@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="5ee39fa82d73c600382484d0d772dca4e86c54bd">
+<index version="1" name="Yannick-ReaScripts" commit="af02a9b55dcc421765288d598a365ead703fb7c9">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -174,6 +174,10 @@
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Set%20project%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
+        <changelog><![CDATA[+ Added postfixes]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/Arrange/Yannick_Set%20project%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
       <metadata>
@@ -189,6 +193,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
+        <changelog><![CDATA[+ Fixed typo]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set selected track color to project markers and regions at edit cursor position.lua" type="script" desc="Yannick_Set selected track color to project markers and regions at edit cursor position">
@@ -693,6 +701,10 @@
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
+        <changelog><![CDATA[+ Added postfixes ]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
       <metadata>
@@ -708,6 +720,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
+        <changelog><![CDATA[+ Fixed typo]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
   </category>
