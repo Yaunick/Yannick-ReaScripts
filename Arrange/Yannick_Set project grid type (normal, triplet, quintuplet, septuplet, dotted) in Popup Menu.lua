@@ -1,10 +1,10 @@
 -- @description Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Fixed typo
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -166,7 +166,7 @@
     t_convert[1] .. "Normal Grid" .. '|' ..
     '|' .. t_convert[2] .. "Triplet Grid (3)" .. '|' ..
     t_convert[3] .. "Quintuplet Grid (5)" .. '|' ..
-    t_convert[4] .. "Suptuplet Grid (7)" .. '|' ..
+    t_convert[4] .. "Septuplet Grid (7)" .. '|' ..
     '|' .. t_convert[5] .. "Dotted Grid"
   
   local x, y = reaper.GetMousePosition()
@@ -197,5 +197,4 @@
   else
     nothing()
   end
-
 

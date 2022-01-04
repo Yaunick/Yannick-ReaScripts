@@ -1,10 +1,10 @@
 -- @description Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + Added postfixes
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -95,6 +95,7 @@
   for i=1, #t_normal do
     if division == t_normal[i] then
       t_save_dv = t_normal
+      postfix = ""
       grid_one_t[i-2] = 1
       goto NEXT
     end
@@ -103,6 +104,7 @@
   for i=1, #t_trip do
     if division == t_trip[i] then
       t_save_dv = t_trip
+      postfix = "  ---  Triplet"
       grid_one_t[i-2] = 1
       goto NEXT
     end
@@ -111,6 +113,7 @@
   for i=1, #t_guinttup do
     if division == t_guinttup[i] then
       t_save_dv = t_guinttup
+      postfix = "  ---  Quintuplet"
       grid_one_t[i-2] = 1
       goto NEXT
     end
@@ -119,6 +122,7 @@
   for i=1, #t_suptup do
     if division == t_suptup[i] then
       t_save_dv = t_suptup
+      postfix = "  ---  Septuplet"
       grid_one_t[i-2] = 1
       goto NEXT
     end
@@ -127,6 +131,7 @@
   for i=1, #t_dott do
     if division == t_dott[i] then
       t_save_dv = t_dott
+      postfix = "  ---  Dotted"
       grid_one_t[i-2] = 1
       goto NEXT
     end
@@ -134,6 +139,7 @@
   
   if not t_save_dv then
     t_save_dv = t_normal
+    postfix = ""
   end
   
   ::NEXT::
@@ -149,15 +155,15 @@
   end
   
   string =  
-    t_convert[1] .. "1" .. '|' ..
-    t_convert[2] .. "1/2" .. '|' ..
-    t_convert[3] .. "1/4" .. '|' ..
-    t_convert[4] .. "1/8" .. '|' ..
-    t_convert[5] .. "1/16" .. '|' ..
-    t_convert[6] .. "1/32" .. '|' ..
-    t_convert[7] .. "1/64" .. '|' ..
-    t_convert[8] .. "1/128" .. '|' ..
-    t_convert[9] .. "1/256"
+    t_convert[1] .. "1" .. postfix .. '|' ..
+    t_convert[2] .. "1/2" .. postfix .. '|' ..
+    t_convert[3] .. "1/4" .. postfix .. '|' ..
+    t_convert[4] .. "1/8" .. postfix .. '|' ..
+    t_convert[5] .. "1/16" .. postfix .. '|' ..
+    t_convert[6] .. "1/32" .. postfix .. '|' ..
+    t_convert[7] .. "1/64" .. postfix .. '|' ..
+    t_convert[8] .. "1/128" .. postfix .. '|' ..
+    t_convert[9] .. "1/256" .. postfix
   
   local x, y = reaper.GetMousePosition()
   gfx.init(header_name, menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)
