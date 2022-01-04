@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="45dd835b2af0c291fe4d25f7bc866d68ba2c2c3e">
+<index version="1" name="Yannick-ReaScripts" commit="525c2af64bd28986a6c2b4d027faba7edcc2b306">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -758,6 +758,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-01-04T19:17:49Z">
+        <changelog><![CDATA[+ Added new setting to unarm tracks with "Record: disable (input monitoring only)" mode - true or false]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/525c2af64bd28986a6c2b4d027faba7edcc2b306/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
       </version>
     </reapack>
   </category>
