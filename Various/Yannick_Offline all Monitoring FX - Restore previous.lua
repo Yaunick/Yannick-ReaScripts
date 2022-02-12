@@ -1,15 +1,24 @@
 -- @description Yannick_Offline all Monitoring FX - Restore previous
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   initial release
+--   + Added new option "show warning window" - false by default
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+
+  ---------------------------------
+    show_warning_window = false
+  ---------------------------------
   
   function bla() end
   function nothing() reaper.defer(bla) end
+  
+  if show_warning_window ~= false and show_warning_window ~= true then
+    reaper.MB("Incorrect values at the beginning of the script", "Error",0)
+    nothing() return
+  end
   
   local retval, val = reaper.GetProjExtState(0, "Monitoring_fx_yannick_reasc", "monit_fx")
   
@@ -68,6 +77,8 @@
     reaper.PreventUIRefresh(-1)
   
   else
-    reaper.MB("No saved online states of monitoring FX!", "Error",0)
+    if show_warning_window == true then
+      reaper.MB("No saved online states of monitoring FX!", "Error",0)
+    end
     nothing()
   end
