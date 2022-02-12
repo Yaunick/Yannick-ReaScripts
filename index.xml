@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="b9b5244291ec0b6d6d12533156f63dc03d9a5d36">
+<index version="1" name="Yannick-ReaScripts" commit="97d8cb4ee81d6ae1586b6d6da4fb37e601b0aee1">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1226,6 +1226,70 @@
       <version name="1.1" author="Yannick" time="2022-01-04T16:56:29Z">
         <changelog><![CDATA[+ Added new record mode settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/45dd835b2af0c291fe4d25f7bc866d68ba2c2c3e/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all FX from Master track - Restore previous.lua" type="script" desc="Yannick_Offline all FX from Master track - Restore previous">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/97d8cb4ee81d6ae1586b6d6da4fb37e601b0aee1/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Restore%20previous.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all FX from Master track - Save previous.lua" type="script" desc="Yannick_Offline all FX from Master track - Save previous">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/97d8cb4ee81d6ae1586b6d6da4fb37e601b0aee1/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Save%20previous.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all Monitoring FX - Restore previous.lua" type="script" desc="Yannick_Offline all Monitoring FX - Restore previous">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/97d8cb4ee81d6ae1586b6d6da4fb37e601b0aee1/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Restore%20previous.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all Monitoring FX - Save previous.lua" type="script" desc="Yannick_Offline all Monitoring FX - Save previous">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/97d8cb4ee81d6ae1586b6d6da4fb37e601b0aee1/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Save%20previous.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Split items at mouse cursor or set track to exclusive solo.lua" type="script" desc="Yannick_Split items at mouse cursor or set track to exclusive solo">
