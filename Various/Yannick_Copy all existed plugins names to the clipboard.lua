@@ -1,10 +1,10 @@
 -- @description Yannick_Copy all existed plugins names to the clipboard
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + some code improvements
+--   + JS plugin names support
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -25,11 +25,12 @@
     reaper.MB('Please install or update SWS extension', 'Error', 0) nothing() return
   end
 
-  local t_vst, t_vsti = {}, {}
+  local t_vst, t_vsti, t_js = {}, {}, {}
   
   local path = reaper.GetResourcePath() .. "/reaper-vstplugins64.ini"
-  local file = io.open(path, 'r')
+  local js_path = reaper.GetResourcePath() .. "/reaper-jsfx.ini"
   
+  local file = io.open(path, 'r')
   for l in file:lines() do
     if l:find("!!!VSTi") then
       local vst_i_str = l:match("[^,]+,[^,]+,([^+]+)!!!VSTi")
@@ -43,17 +44,42 @@
       end
     end
   end
-  
   io.close(file)
+  
+  local js_file = io.open(js_path, 'r')
+  for l in js_file:lines() do
+    if l:find('"JS: ') then
+      if l:find(".txt") then
+        test_js_str = l:match('"JS: ([^+]+)')
+      elseif not l:find("/") then
+        test_js_str = l:match('NAME ([^+]+) "JS:')
+      else
+        test_js_str = l:match('([^/]+) "JS:')
+      end
+      if test_js_str:sub( test_js_str:len() ) == '"' then
+        test_js_str = test_js_str:sub(1, test_js_str:len()-1)
+      end
+      if test_js_str:sub( 1, 1 ) == '"' then
+        test_js_str = test_js_str:sub(2, test_js_str:len())
+      end
+      t_js[#t_js+1] = '"' .. test_js_str .. '",' .. '\n'
+    end
+  end
+  io.close(js_file)
   
   local insrt_str = 
   "=============================================================================================\n" ..
-  "    All INSTRUMENTS            All INSTRUMENTS            All INSTRUMENTS\n" .. 
+  "    All INSTRUMENTS             All INSTRUMENTS             All INSTRUMENTS\n" .. 
   "=============================================================================================\n\n"
   
   local vst_str = 
   "=============================================================================================\n" ..
-  "    All FX              All FX              All FX              All FX\n" ..
+  "    All VST FX             All VST FX             All VST FX             All VST FX\n" ..
+  "=============================================================================================\n\n"
+  
+  local js_str = 
+  "=============================================================================================\n" ..
+  "    All JS-fx              All JS-fs              All JS-fx              All JS-fx\n" ..
   "=============================================================================================\n\n"
   
   if #t_vsti > 0 then
@@ -62,14 +88,18 @@
   if #t_vst > 0 then
     table.insert(t_vst, 1, vst_str)
   end
+  if #t_js > 0 then
+    table.insert(t_js, 1, js_str)
+  end
   
-  local new_str = table.concat(t_vst) .. '\n' .. table.concat(t_vsti)
+  local new_str = table.concat(t_vst) .. '\n' .. table.concat(t_vsti) .. '\n' .. table.concat(t_js)
   
   reaper.CF_SetClipboard(new_str)
   
   if show_window == true then
     reaper.MB("Success! All plugins names have been copied to the clipboard!\n" .. 
-    '\nPaste the text into a text editor to see the list of names ("Notepad++" for example)', "Warning", 0)
+    '\nPaste the text into a text editor to see the list of names ("Notepad++" for example)\n' ..
+    '\nNote! - JS plugin names are not always correct, try adding "JS:" to the beginning of the name or omitting parts of the name', "Warning", 0)
   end
-  
+
   nothing()
