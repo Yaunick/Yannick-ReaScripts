@@ -1,10 +1,10 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   initial release
+--   + some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -18,9 +18,7 @@
   function bla() end
   function nothing() reaper.defer(bla) end
   
-  local str_sep = package.config:sub(1,1)
-  
-  local filename = reaper.GetResourcePath() .. str_sep .. "reaper.ini"
+  local filename = reaper.get_ini_file()
   local table_proj = {}
   local projects_not_found = {}
   
