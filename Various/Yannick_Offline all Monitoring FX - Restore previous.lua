@@ -1,10 +1,10 @@
 -- @description Yannick_Offline all Monitoring FX - Restore previous
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added new option "show warning window" - false by default
+--   + Some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -27,30 +27,15 @@
     reaper.Undo_BeginBlock()
     reaper.PreventUIRefresh(1) 
     
-    local t = {}
-    local t_2 = {}
-    local count = 0
-    local string_bool = ""
-    
-    for s in string.gmatch(val, "[^,]+") do
-      if count == 0 then
-        table.insert(t,s)
-        count = 1
-      else
-        if s == '0' then
-          string_bool = false
-        else
-          string_bool = true
-        end
-        table.insert(t_2,string_bool)
-        count = 0
-      end
-    end
-    
     local t_dual = {}
     
-    for i=1, #t do
-      t_dual[#t_dual+1] = { t[i], t_2[i] }
+    for s in val:gmatch("[^,]+,[^,]+,") do
+      if s:match("[^,]+,([^,]+),") == '0' then
+        bl_string = false
+      else
+        bl_string = true
+      end
+      t_dual[#t_dual+1] = { s:match("([^,]+),[^,]+,"), bl_string }
     end
     
     local master_track = reaper.GetMasterTrack(0)
