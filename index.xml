@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="1bb4ebb70cd91d6a517a625fcaa230a34f9db930">
+<index version="1" name="Yannick-ReaScripts" commit="7d0e8d5c1254de3e65197989f62769408c814cdd">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -157,6 +157,38 @@
       <version name="1.0" author="Yannick" time="2021-11-03T16:24:50Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Remove%20contents%20of%20loop%20points%20(moving%20later%20items).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Restore (past) tempo markers to the project by replacing the old ones.lua" type="script" desc="Yannick_Restore (past) tempo markers to the project by replacing the old ones">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-14T16:54:19Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7d0e8d5c1254de3e65197989f62769408c814cdd/Arrange/Yannick_Restore%20(past)%20tempo%20markers%20to%20the%20project%20by%20replacing%20the%20old%20ones.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Save (copy) all tempo markers from the project.lua" type="script" desc="Yannick_Save (copy) all tempo markers from the project">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-14T16:54:19Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7d0e8d5c1254de3e65197989f62769408c814cdd/Arrange/Yannick_Save%20(copy)%20all%20tempo%20markers%20from%20the%20project.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
