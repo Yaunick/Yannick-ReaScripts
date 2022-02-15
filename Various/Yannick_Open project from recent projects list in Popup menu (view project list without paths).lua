@@ -1,6 +1,6 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -24,21 +24,10 @@
   
   for l in io.lines(filename) do
     if string.sub(l,0,6) == "recent" then
-      local count = 0
-      local count1 = 0
-      local find_number = false
-      local string_num = ""
-      for s in string.gmatch(l, ".") do
-        if find_number == false and s == string.match(s,"%d") then
-          string_num = string_num .. s
-        elseif find_number == false and s == "=" then
-          find_number = true
-        end
-      end
-      if reaper.file_exists(l:match("([^=]+)$")) == true then
-        table_proj[#table_proj+1] = { l:match("([^=]+)$"), tonumber(string_num) }
+      if reaper.file_exists(l:match("recent%d+=(.+)")) == true then
+        table_proj[#table_proj+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
       else
-        projects_not_found[#projects_not_found+1] = { l:match("([^=]+)$"), tonumber(string_num) }
+        projects_not_found[#projects_not_found+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
       end
     end
   end

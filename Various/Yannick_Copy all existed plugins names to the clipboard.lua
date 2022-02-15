@@ -1,10 +1,10 @@
 -- @description Yannick_Copy all existed plugins names to the clipboard
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + JS plugin names support
+--   + some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -33,12 +33,12 @@
   local file = io.open(path, 'r')
   for l in file:lines() do
     if l:find("!!!VSTi") then
-      local vst_i_str = l:match("[^,]+,[^,]+,([^+]+)!!!VSTi")
+      local vst_i_str = l:match("[^,]+,[^,]+,(.+)!!!VSTi")
       if vst_i_str ~= nil and vst_i_str ~= "<SHELL>" then
         t_vsti[#t_vsti+1] = '"' .. vst_i_str .. '",' .. '\n'
       end
     else
-      local vst_str = l:match("[^,]+,[^,]+,([^+]+)")
+      local vst_str = l:match("[^,]+,[^,]+,(.+)")
       if vst_str ~= nil and vst_str ~= "<SHELL>" then
         t_vst[#t_vst+1] = '"' .. vst_str .. '",' .. '\n'
       end
@@ -50,9 +50,9 @@
   for l in js_file:lines() do
     if l:find('"JS: ') then
       if l:find(".txt") then
-        test_js_str = l:match('"JS: ([^+]+)')
+        test_js_str = l:match('"JS: (.+)')
       elseif not l:find("/") then
-        test_js_str = l:match('NAME ([^+]+) "JS:')
+        test_js_str = l:match('NAME (.+) "JS:')
       else
         test_js_str = l:match('([^/]+) "JS:')
       end
