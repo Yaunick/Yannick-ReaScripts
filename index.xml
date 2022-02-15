@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="7d0e8d5c1254de3e65197989f62769408c814cdd">
+<index version="1" name="Yannick-ReaScripts" commit="b945dcef4785c3ac9ae21e88c0b14c2bbfb8719a">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1082,6 +1082,38 @@
       <version name="1.1" author="Yannick" time="2021-12-05T22:17:59Z">
         <changelog><![CDATA[+ fixed typos]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/12d1722bcd02d93f155c29ddc72fec716d4c94e5/Tracks/Yannick_Mute%20or%20unmute%20all%20sends%20and%20receives%20from%20selected%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all FX from selected tracks - Restore previous (slot n).lua" type="script" desc="Yannick_Offline all FX from selected tracks - Restore previous (slot n)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-15T22:18:46Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b945dcef4785c3ac9ae21e88c0b14c2bbfb8719a/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Restore%20previous%20(slot%20n).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Offline all FX from selected tracks - Save previous (slot n).lua" type="script" desc="Yannick_Offline all FX from selected tracks - Save previous (slot n)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-15T22:18:46Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b945dcef4785c3ac9ae21e88c0b14c2bbfb8719a/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Save%20previous%20(slot%20n).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Rename selected tracks (like in Pro Tools).lua" type="script" desc="Yannick_Rename selected tracks (like in Pro Tools)">
