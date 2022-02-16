@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="b961701dae0a777dbaaec54dbf6a081e81516d3b">
+<index version="1" name="Yannick-ReaScripts" commit="4bf75ed46578346f474b7588c02c6f8ba2fffb26">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1212,6 +1212,10 @@
       <version name="1.3" author="Yannick" time="2022-02-15T22:48:23Z">
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b4c66c72d6a9d987bfa394cc4022b26f522e7aef/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
+      </version>
+      <version name="1.4" author="Yannick" time="2022-02-16T12:04:02Z">
+        <changelog><![CDATA[+ some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/4bf75ed46578346f474b7588c02c6f8ba2fffb26/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Float instrument from insert or send at selected tracks.lua" type="script" desc="Yannick_Float instrument from insert or send at selected tracks">
