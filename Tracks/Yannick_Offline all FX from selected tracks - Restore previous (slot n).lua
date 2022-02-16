@@ -1,19 +1,31 @@
 -- @description Yannick_Offline all FX from selected tracks - Restore previous (slot n)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + some code improvements
+--   + added warning option
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
  
   --===============
-    slot = 1        
+    slot = 1   
   --===============
+  ---------------------------------
+    show_warning_window = true
+  ---------------------------------
   
   function bla() end
   function nothing() reaper.defer(bla) end
+  
+  if tostring(slot) ~= tostring(slot):match("%d+")
+  or tonumber(slot) < 1
+  or (show_warning_window ~= false and show_warning_window ~= true) 
+  then
+    reaper.MB("Incorrect values at the beginning of the script", "Error",0)
+    nothing() return
+  end
   
   local count_tracks = reaper.CountSelectedTracks(0)
   if count_tracks == 0 then
@@ -73,11 +85,12 @@
   end
   
   if exist_ext == false then
-    reaper.MB("No saved online states of tracks FX!", "Error",0)
+    if show_warning_window == true then
+      reaper.MB("No saved online states of tracks FX! (slot " .. slot .. ")", "Error",0)
+    end
     nothing() return
   end
   
   reaper.Undo_EndBlock('Offline all FX from selected tracks - Restore previous (slot ' .. slot .. ')', -1)
   reaper.PreventUIRefresh(-1)
-
 
