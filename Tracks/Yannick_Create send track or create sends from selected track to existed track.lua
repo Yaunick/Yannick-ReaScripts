@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + added new option "always create a new send track"
+--   + Save new values with ProjExtState
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -20,7 +20,7 @@
   
   ------------------------------------------------------------------------------
     save_new_values_after_re_running_script = true
-    --- change old values in "User input default values" setting section after re-running the script
+    --- save new values in .rpp project file
   ------------------------------------------------------------------------------
   
   ------------------------------------------------------------------------------
@@ -102,12 +102,17 @@
   end
 
   show_in_tcp = bool_for_settings(show_in_tcp)
-
-  local values_for_script = send_track_name
-  ..","..source_send
-  ..","..destination_send
-  ..","..master_send
-  ..","..send_mode
+  
+  local retval_ext_st, val_ext_state = reaper.GetProjExtState(0, "Send_values_yannick_reasc", "yanni_values")
+  if retval_ext_st == 1 and save_new_values_after_re_running_script == true then
+    values_for_script = val_ext_state
+  else
+    values_for_script = send_track_name
+    ..","..source_send
+    ..","..destination_send
+    ..","..master_send
+    ..","..send_mode
+  end
 
   ::START::
   local retval, retvals_csv = reaper.GetUserInputs
@@ -199,64 +204,13 @@
     end
     
     if save_new_values_after_re_running_script == true then
-      if send_track_name == t_val[1]
-      and source_send == t_val[2]
-      and destination_send == t_val[3]
-      and master_send == t_val[4]
-      and send_mode == t_val[5]
-      then 
-        nothing()
-      else
-    
-        _,inputFile,_,_,_,_,_ = reaper.get_action_context()
-        
-        local file = io.open(inputFile, 'r')
-        local fileContent = {}
-        local numb_find_1, numb_find_2, numb_find_3, numb_find_4, numb_find_5 = 0,0,0,0,0
-        local bool_find_line_1, bool_find_line_2, bool_find_line_3, 
-        bool_find_line_4, bool_find_line_5 = false, false, false, false, false
-        local counter_lines = 0
-        
-        for line in file:lines() do
-          counter_lines = counter_lines + 1
-          table.insert (fileContent, line)
-          if string.find(line, "send_track_name") and bool_find_line_1 == false then
-            numb_find_1 = counter_lines
-            bool_find_line_1 = true
-          elseif string.find(line, "source_send") and bool_find_line_2 == false then
-            numb_find_2 = counter_lines
-            bool_find_line_2 = true
-          elseif string.find(line, "destination_send") and bool_find_line_3 == false then
-            numb_find_3 = counter_lines
-            bool_find_line_3 = true
-          elseif string.find(line, "master_send") and bool_find_line_4 == false then
-            numb_find_4 = counter_lines
-            bool_find_line_4 = true
-          elseif string.find(line, "send_mode") and bool_find_line_5 == false then
-            numb_find_5 = counter_lines
-            bool_find_line_5 = true
-          end
-        end
-        io.close(file)
-        
-        fileContent[numb_find_1] = "    send_track_name = " .. "'" .. t_val[1] .. "'" .. 
-        '    ---- "Set the send track name"'
-        fileContent[numb_find_2] = "    source_send = " .. "'" .. t_val[2] .. "'" .. 
-        '    ---- "Set source send (x or x/y)"'
-        fileContent[numb_find_3] = "    destination_send = " .. "'" .. t_val[3] .. "'" .. 
-        '    ---- "Set destination send (x or x/y)"'
-        fileContent[numb_find_4] = "    master_send = " .. "'" .. t_val[4] .. "'" ..
-        '    ---- "Master send on source tracks" --- Set 1 for enable or 0 for disable master send'
-        fileContent[numb_find_5] = "    send_mode = " .. "'" .. t_val[5] .. "'" ..
-        '    ---- "Post-fd (0) pre-fx (1) post-fx (3)"'
-        
-        file = io.open(inputFile, 'w')
-        for index, value in ipairs(fileContent) do
-            file:write(value..'\n')
-        end
-        io.close(file)
-        
-      end
+      reaper.SetProjExtState(0, "Send_values_yannick_reasc", "yanni_values", 
+        t_val[1] .. ',' .. 
+        t_val[2] .. ',' .. 
+        t_val[3] .. ',' .. 
+        t_val[4] .. ',' .. 
+        t_val[5]
+        )
     end
 
     local found_tr = false
