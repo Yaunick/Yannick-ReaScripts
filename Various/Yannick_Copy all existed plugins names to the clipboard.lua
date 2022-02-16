@@ -1,6 +1,6 @@
 -- @description Yannick_Copy all existed plugins names to the clipboard
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -24,11 +24,16 @@
   if not test_SWS then
     reaper.MB('Please install or update SWS extension', 'Error', 0) nothing() return
   end
-
-  local t_vst, t_vsti, t_js = {}, {}, {}
   
   local path = reaper.GetResourcePath() .. "/reaper-vstplugins64.ini"
   local js_path = reaper.GetResourcePath() .. "/reaper-jsfx.ini"
+  if reaper.file_exists(path) == false or reaper.file_exists(js_path) == false then
+    reaper.MB("You don't have the following files - 'reaper-vstplugins64.ini' or 'reaper-jsfx.ini'\n\n" ..
+    "Install third party VST plugins and open FX Browser to generate these files", "Error", 0)
+    nothing() return
+  end
+  
+  local t_vst, t_vsti, t_js = {}, {}, {}
   
   local file = io.open(path, 'r')
   for l in file:lines() do
