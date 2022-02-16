@@ -1,6 +1,6 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -19,6 +19,10 @@
   function nothing() reaper.defer(bla) end
   
   local filename = reaper.get_ini_file()
+  if reaper.file_exists(filename) == false then
+    reaper.MB("No reaper.ini file!", "Error", 0)
+    nothing() return
+  end
   local table_proj = {}
   local projects_not_found = {}
   
