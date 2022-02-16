@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="b945dcef4785c3ac9ae21e88c0b14c2bbfb8719a">
+<index version="1" name="Yannick-ReaScripts" commit="b4c66c72d6a9d987bfa394cc4022b26f522e7aef">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1189,6 +1189,10 @@
         <changelog><![CDATA[+ JS plugin names support]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d33133c1c309ade5319dec1d31d86b263b77fd00/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-02-15T22:48:23Z">
+        <changelog><![CDATA[+ some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b4c66c72d6a9d987bfa394cc4022b26f522e7aef/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Float instrument from insert or send at selected tracks.lua" type="script" desc="Yannick_Float instrument from insert or send at selected tracks">
       <metadata>
@@ -1394,6 +1398,10 @@
       <version name="1.1" author="Yannick" time="2022-02-12T17:13:01Z">
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/413400d59869e363aca54f4c31df83749793c0ed/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-02-15T22:48:23Z">
+        <changelog><![CDATA[+ some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b4c66c72d6a9d987bfa394cc4022b26f522e7aef/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Split items at mouse cursor or set track to exclusive solo.lua" type="script" desc="Yannick_Split items at mouse cursor or set track to exclusive solo">
