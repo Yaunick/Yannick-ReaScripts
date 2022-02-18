@@ -1,5 +1,10 @@
 ### **My Lua Scripts for REAPER DAW!**
+
+**Warning!**
+Many scripts have settings at the beginning of the code, which sometimes significantly change how the script works. Click "Edit action" and see. Thank you for your attention to my scripts!
+
 Copy this link and paste to "ReaPack - Import Repositories"
+
 ```
 https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml
 ```
