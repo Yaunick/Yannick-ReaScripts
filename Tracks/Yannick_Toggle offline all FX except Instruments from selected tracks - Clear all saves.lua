@@ -1,10 +1,10 @@
--- @description Toggle offline all FX except instruments from selected tracks - Clear all saves
+-- @description Yannick_Toggle offline all FX except instruments from selected tracks - Clear all saves
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + changed the script name
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
   
