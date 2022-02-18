@@ -1,12 +1,24 @@
 -- @description Yannick_Offline all Monitoring FX - Save previous
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   initial release
+--   Added new option "offline_all_fx_before_saving" (true by default)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+
+  --------------------------------------------
+    offline_all_fx_before_saving = true
+  --------------------------------------------
+  
+  function bla() end function nothing() reaper.defer(bla) end
+  
+  if (offline_all_fx_before_saving ~= true and offline_all_fx_before_saving ~= false)
+  then
+    reaper.MB("Incorrect values at the beginning of the script", "Error",0)
+    nothing() return
+  end
   
   reaper.Undo_BeginBlock()
   reaper.PreventUIRefresh(1)
@@ -26,7 +38,9 @@
         offline_state = 0
       end
       offline_str = offline_str .. GUID .. ',' .. offline_state .. ','
-      reaper.TrackFX_SetOffline(master_track, 0x1000000 + i, true)
+      if offline_all_fx_before_saving == true then
+        reaper.TrackFX_SetOffline(master_track, 0x1000000 + i, true)
+      end
     end
     i = i + 1
   end
