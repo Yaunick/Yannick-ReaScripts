@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="80c3ef8010862c9bfc8b50741851bca1ea38d3db">
+<index version="1" name="Yannick-ReaScripts" commit="bacab4c72ccd52bc2e326e2d46f4b3d7e535a709">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1251,6 +1251,70 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Toggle bypass all FX except Instruments from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle bypass all FX except instruments from selected tracks (each track is individual)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/bacab4c72ccd52bc2e326e2d46f4b3d7e535a709/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Toggle bypass all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Toggle bypass all FX except instruments from selected tracks - Clear all saves">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/bacab4c72ccd52bc2e326e2d46f4b3d7e535a709/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Toggle offline all FX except Instruments from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/bacab4c72ccd52bc2e326e2d46f4b3d7e535a709/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Toggle offline all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Toggle offline all FX except instruments from selected tracks - Clear all saves">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/bacab4c72ccd52bc2e326e2d46f4b3d7e535a709/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
       </version>
     </reapack>
   </category>
