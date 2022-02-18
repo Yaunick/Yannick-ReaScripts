@@ -1,21 +1,25 @@
 -- @description Yannick_Offline all FX from selected tracks - Save previous (slot n)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + some code improvements
+--   + Added new option "offline_all_fx_before_saving" (true by default)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
     
   --===============
     slot = 1
   --===============
+  --------------------------------------------
+    offline_all_fx_before_saving = true
+  --------------------------------------------
   
   function bla() end function nothing() reaper.defer(bla) end
   
   if tostring(slot) ~= tostring(slot):match("%d+")
   or tonumber(slot) < 1
+  or (offline_all_fx_before_saving ~= true and offline_all_fx_before_saving ~= false)
   then
     reaper.MB("Incorrect values at the beginning of the script", "Error",0)
     nothing() return
@@ -42,7 +46,9 @@
       end
       local GUID = reaper.TrackFX_GetFXGUID(tr, i)
       offline_str = offline_str .. GUID .. ',' .. offline_state .. ','
-      reaper.TrackFX_SetOffline(tr, i, true)
+      if offline_all_fx_before_saving == true then
+        reaper.TrackFX_SetOffline(tr, i, true)
+      end
     end
     reaper.SetProjExtState(0, "Selected_tracks_fx_yannick_reasc" .. slot, tr_guid, offline_str)
   end
@@ -51,5 +57,4 @@
   reaper.PreventUIRefresh(-1)
 
   
-
 
