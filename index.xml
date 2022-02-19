@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="e029e20cc62cee4bfe45356bd899d5f1fc4773ee">
+<index version="1" name="Yannick-ReaScripts" commit="acd4a3a72993853acfc6736bda429dddd897efb7">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1323,6 +1323,10 @@
       <version name="1.1" author="Yannick" time="2022-02-18T20:55:30Z">
         <changelog><![CDATA[+ changed the script name]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e029e20cc62cee4bfe45356bd899d5f1fc4773ee/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-02-18T21:33:49Z">
+        <changelog><![CDATA[+ fixed error in warning text]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/acd4a3a72993853acfc6736bda429dddd897efb7/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
       </version>
     </reapack>
   </category>
