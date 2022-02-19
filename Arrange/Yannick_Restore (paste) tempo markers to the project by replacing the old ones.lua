@@ -1,4 +1,4 @@
--- @description Yannick_Restore (past) tempo markers to the project by replacing the old ones
+-- @description Yannick_Restore (paste) tempo markers to the project by replacing the old ones
 -- @author Yannick
 -- @version 1.0
 -- @about
@@ -64,7 +64,7 @@
     reaper.UpdateArrange()
     reaper.UpdateTimeline()
     
-    reaper.Undo_EndBlock('Restore (past) tempo markers to the project by replacing the old ones', -1)
+    reaper.Undo_EndBlock('Restore (paste) tempo markers to the project by replacing the old ones', -1)
     if show_warning_window == true then
       reaper.MB("Successfully restored!", "Warning", 0)
     end
