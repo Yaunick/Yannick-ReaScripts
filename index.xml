@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="acd4a3a72993853acfc6736bda429dddd897efb7">
+<index version="1" name="Yannick-ReaScripts" commit="ffa85fc87cd9df2bdb165efda10538eabcb776c1">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -159,7 +159,7 @@
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Remove%20contents%20of%20loop%20points%20(moving%20later%20items).lua</source>
       </version>
     </reapack>
-    <reapack name="Yannick_Restore (past) tempo markers to the project by replacing the old ones.lua" type="script" desc="Yannick_Restore (past) tempo markers to the project by replacing the old ones">
+    <reapack name="Yannick_Restore (paste) tempo markers to the project by replacing the old ones.lua" type="script" desc="Yannick_Restore (paste) tempo markers to the project by replacing the old ones">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -170,9 +170,9 @@
 ]]></description>
         <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
       </metadata>
-      <version name="1.0" author="Yannick" time="2022-02-14T16:54:19Z">
+      <version name="1.0" author="Yannick" time="2022-02-19T15:53:58Z">
         <changelog><![CDATA[Initial release]]></changelog>
-        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7d0e8d5c1254de3e65197989f62769408c814cdd/Arrange/Yannick_Restore%20(past)%20tempo%20markers%20to%20the%20project%20by%20replacing%20the%20old%20ones.lua</source>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ffa85fc87cd9df2bdb165efda10538eabcb776c1/Arrange/Yannick_Restore%20(paste)%20tempo%20markers%20to%20the%20project%20by%20replacing%20the%20old%20ones.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Save (copy) all tempo markers from the project.lua" type="script" desc="Yannick_Save (copy) all tempo markers from the project">
@@ -1615,6 +1615,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 {\b Warning!} Many scripts have settings at the beginning of the code, which sometimes significantly change how the script works. Click "Edit action" and see. Thank you for your attention to my scripts!\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Copy this link and paste to "ReaPack - Import Repositories"\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 \f1 https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 How to paste the link into ReaPack - https://telegra.ph/How-to-insert-my-repository-link-into-ReaPack-02-19\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Guide for my Lua scripts - https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Cockos forum thread - https://forum.cockos.com/showthread.php?t=258958\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Contact me - b.yanushevich@gmail.com\par}
