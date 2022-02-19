@@ -1,20 +1,22 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + added VST3 Melodyne to exclusions (identification by hash)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
 
   --------------------------------------
     one_instrument_limit = true
+    vst3_melodyne_offline = false
   --------------------------------------
   
   function bla() end function nothing() reaper.defer(bla) end
 
   if (one_instrument_limit ~= false and one_instrument_limit ~= true) 
+  or (vst3_melodyne_offline ~= false and vst3_melodyne_offline ~= true)
   then
     reaper.MB("Incorrect values at the beginning of the script", "Error",0)
     nothing() return
@@ -51,18 +53,31 @@
   reaper.PreventUIRefresh(1)
   
   function Offline_all_fx(tr)
+    local save_count_hash = -10
+    if vst3_melodyne_offline == false then
+      local retval, str = reaper.GetTrackStateChunk( tr, '', false)
+      local count_hash = 0
+      for s in str:gmatch("<VST.-\n") do -- find ARA2 Melodyne hash
+        if s:find("5653544D6C70676D656C6F64796E6520") then
+          save_count_hash = count_hash
+        end
+        count_hash = count_hash + 1
+      end
+    end
     local offline_str = ""
     local count_tra_fx = reaper.TrackFX_GetCount(tr)
     local instr = reaper.TrackFX_GetInstrument( tr ) + 1
     while instr <= count_tra_fx-1 do
-      if reaper.TrackFX_GetOffline(tr, instr) == true then
-        offline_state = 0
-      else
-        offline_state = 1
+      if instr ~= save_count_hash then
+        if reaper.TrackFX_GetOffline(tr, instr) == true then
+          offline_state = 0
+        else
+          offline_state = 1
+        end
+        local GUID = reaper.TrackFX_GetFXGUID(tr, instr)
+        offline_str = offline_str .. GUID .. ',' .. offline_state .. ','
+        reaper.TrackFX_SetOffline(tr, instr, true)
       end
-      local GUID = reaper.TrackFX_GetFXGUID(tr, instr)
-      offline_str = offline_str .. GUID .. ',' .. offline_state .. ','
-      reaper.TrackFX_SetOffline(tr, instr, true)
       instr = instr + 1
     end
     return offline_str
@@ -137,7 +152,4 @@
 
   reaper.Undo_EndBlock('Toggle offline all FX except instruments from selected tracks (each track is individual)', -1)
   reaper.PreventUIRefresh(-1)
-
-  
-
 
