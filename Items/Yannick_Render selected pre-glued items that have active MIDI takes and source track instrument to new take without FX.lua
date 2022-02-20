@@ -1,16 +1,16 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + fixed the work of the script after the v6.37 update, related to the temporary disabling of bypass envelopes for render without FX
+--   + Significantly reduced the use of the SWS API in favor of the native API
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
   --------------------------------------------------------------------------------------------
 
-    tail_for_item = 0   --- sec
+    tail_for_item = 0   --- sec 
     user_inputs = true
     
     bypass_active_preFX_envelopes = true
@@ -193,11 +193,14 @@
     for i=1, #t_tracks do
       for g=1, reaper.CountTrackEnvelopes(t_tracks[i]) do
         local tr_envelo = reaper.GetTrackEnvelope(t_tracks[i], g-1)
-        local tr_envelo_br = reaper.BR_EnvAlloc(tr_envelo, true)
-        local active, visible, armed, inLane, laneHeight, 
-        defaultShape, _, _, _, type_env, faderScaling, automationItemsOptions = reaper.BR_EnvGetProperties(tr_envelo_br)
-        if type_env == 1 or type_env == 3 or type_env == 5 then
-          if active == true then
+        local env_retval, env_str = reaper.GetEnvelopeStateChunk(tr_envelo, '', false)
+        local type_env = env_str:match("EGUID (.+})")
+        if type_env == "{421C2E97-8A11-42B5-A74C-11E71AB34BF3}" -- VOLUME PRE-FX
+        or type_env == "{9D55FAC5-E91D-4B42-B6D1-0080B6F8982A}" -- PAN PRE-FX
+        or type_env == "{5D788F00-173E-4646-9B16-427B3593A0A0}" -- WIDTH PRE-FX
+        then
+          local active = tonumber( env_str:match("ACT (%d)") )
+          if active == 1 then
             if warn_about_active_preFX_env == true then
               if msg == false then
                 local retval = reaper.MB("You have active Volume Pre-FX or Pan Pre-FX or Width Pre-FX envelopes! " .. 
@@ -210,10 +213,9 @@
                 msg = true
               end
             end
-            t_prefx_env[#t_prefx_env+1] = {tr_envelo, visible, armed, inLane, laneHeight, defaultShape, faderScaling, automationItemsOptions, t_tracks[i]}
+            t_prefx_env[#t_prefx_env+1] = {tr_envelo, t_tracks[i]}
           end
         end
-        reaper.BR_EnvFree(tr_envelo_br, true)
       end
     end
   end
@@ -254,19 +256,10 @@
       and after_rendering_set_the_instrument_to == 1 then
         t_instr_byp[#t_instr_byp+1] = {s-1, t_tracks[i], num_par-3}
       elseif env_fx ~= nil and s-1 > reaper.TrackFX_GetInstrument(t_tracks[i]) then
-        local br_envelope = reaper.BR_EnvAlloc(env_fx, true)
-        
-        local active, visible, armed, inLane, laneHeight, 
-        defaultShape, _, _, _, _, faderScaling, automationItemsOptions = reaper.BR_EnvGetProperties(br_envelope)
-        
-        t_env[#t_env+1] = {
-        env_fx, active, visible, armed, inLane, laneHeight, defaultShape, faderScaling, automationItemsOptions
-        }
-        
-        reaper.BR_EnvSetProperties(br_envelope, false, visible, armed, 
-        inLane, laneHeight, defaultShape, faderScaling, automationItemsOptions)
-        
-        reaper.BR_EnvFree(br_envelope, true)
+        local env_retval, env_str = reaper.GetEnvelopeStateChunk(env_fx, '', false)
+        local byp_env_active = tonumber( env_str:match("ACT (%d)") )
+        t_env[#t_env+1] = { env_fx, byp_env_active}
+        reaper.SetEnvelopeStateChunk( env_fx,env_str:gsub( 'ACT [%d]', 'ACT '.. 0), false)
       end
     end
     
@@ -296,7 +289,7 @@
    
   reaper.Main_OnCommand(apply_takes,0)
   
-  ::NEXT::
+  ::NEXT:: 
   
   local t_undo_tracks = {}
   for i=0, reaper.CountSelectedMediaItems(0)-1 do
@@ -307,14 +300,10 @@
       t_undo_tracks[#t_undo_tracks+1] = { reaper.GetMediaItem_Track(item), 0 }
     end
   end
-  
-  for s=1, #t_env do
-    local br_envelope = reaper.BR_EnvAlloc( t_env[s][1], true)
-    
-    reaper.BR_EnvSetProperties(br_envelope, t_env[s][2], t_env[s][3], t_env[s][4], 
-    t_env[s][5], t_env[s][6], t_env[s][7], t_env[s][8], t_env[s][9])
-    
-    reaper.BR_EnvFree(br_envelope, true)
+   
+  for s=1, #t_env do 
+    local b_env_retval, b_env_str = reaper.GetEnvelopeStateChunk(t_env[s][1], '', false)
+    reaper.SetEnvelopeStateChunk( t_env[s][1], b_env_str:gsub( 'ACT [%d]', 'ACT '.. t_env[s][2] ), false)
   end
   
   for j=1, #t_fx do
@@ -323,31 +312,22 @@
 
   for i=1, #t_instr_byp do
     local env_byp = reaper.GetFXEnvelope(t_instr_byp[i][2], t_instr_byp[i][1], t_instr_byp[i][3], false)
-    local br_envelope = reaper.BR_EnvAlloc(env_byp, true)
-    local active, visible, armed, inLane, laneHeight, 
-    defaultShape, _, _, _, _, faderScaling, automationItemsOptions = reaper.BR_EnvGetProperties(br_envelope)
-            
-    reaper.BR_EnvSetProperties(br_envelope, false, visible, armed, 
-    inLane, laneHeight, defaultShape, faderScaling, automationItemsOptions)
-            
-    reaper.BR_EnvFree(br_envelope, true)
+    local byp_env_retval, byp_env_str = reaper.GetEnvelopeStateChunk(env_byp, '', false)
+    reaper.SetEnvelopeStateChunk(env_byp, byp_env_str:gsub( 'ACT [%d]', 'ACT '.. 0 ), false)
   end
   
   local count_undo_tr = 1
   local j_cn = 1
   while j_cn <= #t_prefx_env do
-    if t_prefx_env[j_cn][9] ~= t_undo_tracks[count_undo_tr][1] then
+    if t_prefx_env[j_cn][2] ~= t_undo_tracks[count_undo_tr][1] then
       count_undo_tr = count_undo_tr + 1
-      j_cn = j_cn - 1
     else
       if t_undo_tracks[count_undo_tr][2] == 0 then
-        local br_envelope = reaper.BR_EnvAlloc(t_prefx_env[j_cn][1], true)
-        reaper.BR_EnvSetProperties(br_envelope, false, t_prefx_env[j_cn][2], t_prefx_env[j_cn][3], t_prefx_env[j_cn][4],
-        t_prefx_env[j_cn][5], t_prefx_env[j_cn][6], t_prefx_env[j_cn][7], t_prefx_env[j_cn][8])
-        reaper.BR_EnvFree(br_envelope, true)
+        local prefx_env_retval, prefx_env_str = reaper.GetEnvelopeStateChunk(t_prefx_env[j_cn][1], '', false)
+        reaper.SetEnvelopeStateChunk(t_prefx_env[j_cn][1], prefx_env_str:gsub( 'ACT [%d]', 'ACT '.. 0 ), false)
       end
+      j_cn = j_cn + 1
     end
-    j_cn = j_cn + 1
   end
 
   if after_rendering_set_the_instrument_to > 0 then
