@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Significantly reduced the use of the SWS API in favor of the native API
+--   + Fixed Pre-FX envelopes detection (v1.4 regression)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -194,10 +194,10 @@
       for g=1, reaper.CountTrackEnvelopes(t_tracks[i]) do
         local tr_envelo = reaper.GetTrackEnvelope(t_tracks[i], g-1)
         local env_retval, env_str = reaper.GetEnvelopeStateChunk(tr_envelo, '', false)
-        local type_env = env_str:match("EGUID (.+})")
-        if type_env == "{421C2E97-8A11-42B5-A74C-11E71AB34BF3}" -- VOLUME PRE-FX
-        or type_env == "{9D55FAC5-E91D-4B42-B6D1-0080B6F8982A}" -- PAN PRE-FX
-        or type_env == "{5D788F00-173E-4646-9B16-427B3593A0A0}" -- WIDTH PRE-FX
+        local type_env = env_str:match("(.-)\n")
+        if type_env == "<VOLENV" 
+        or type_env == "<PANENV" 
+        or type_env == "<WIDTHENV" 
         then
           local active = tonumber( env_str:match("ACT (%d)") )
           if active == 1 then
