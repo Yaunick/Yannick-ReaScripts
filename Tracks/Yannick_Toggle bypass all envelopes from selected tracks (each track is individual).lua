@@ -1,10 +1,10 @@
 -- @description Yannick_Toggle bypass all envelopes from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
   
@@ -86,7 +86,9 @@
         find_tr_for_rest = true
         if t_key_tracks[l][2] == '0' then
           local bypass_res_str = Bypass_all_envelopes(tr)
-          t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+          if bypass_res_str ~= "" then
+            t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+          end
         else
           Unbypass_all_envelopes(tr, t_key_tracks[l][2])
           t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, '0' }
@@ -97,7 +99,9 @@
     end
     if find_tr_for_rest == false then
       local bypass_res_str = Bypass_all_envelopes(tr)
-      t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+      if bypass_res_str ~= "" then
+        t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+      end
     end
   end
 
@@ -109,5 +113,4 @@
   reaper.PreventUIRefresh(-1)
 
   
-
 

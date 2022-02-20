@@ -1,10 +1,10 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + added VST3 Melodyne to exclusions (identification by hash)
+--   + some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
 
@@ -130,8 +130,10 @@
       if tr_GUID == t_key_tracks[l][1] then
         find_tr_for_rest = true
         if t_key_tracks[l][2] == '0' then
-          local bypass_res_str = Offline_all_fx(tr)
-          t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+          local offline_res_str = Offline_all_fx(tr)
+          if offline_res_str ~= "" then
+            t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, offline_res_str }
+          end
         else
           Online_all_fx(tr, t_key_tracks[l][2])
           t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, '0' }
@@ -141,8 +143,10 @@
       end
     end
     if find_tr_for_rest == false then
-      local bypass_res_str = Offline_all_fx(tr)
-      t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, bypass_res_str }
+      local offline_res_str = Offline_all_fx(tr)
+      if offline_res_str ~= "" then
+        t_key_tracks_restore[#t_key_tracks_restore+1] = { tr_GUID, offline_res_str }
+      end
     end
   end
 
@@ -152,4 +156,3 @@
 
   reaper.Undo_EndBlock('Toggle offline all FX except instruments from selected tracks (each track is individual)', -1)
   reaper.PreventUIRefresh(-1)
-
