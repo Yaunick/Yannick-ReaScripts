@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="434ec80f518677cbbca34dc5c59eb3d2edb7ceb8">
+<index version="1" name="Yannick-ReaScripts" commit="ae518710307dfbdec694c3addbc9dc4cb796a10d">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -574,6 +574,10 @@
       <version name="1.4" author="Yannick" time="2022-02-20T10:39:00Z">
         <changelog><![CDATA[+ Significantly reduced the use of the SWS API in favor of the native API]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/abeb4ec8f0275e0fa37cd09eb70d5c1cd2f8d7a2/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
+      <version name="1.5" author="Yannick" time="2022-02-20T16:13:30Z">
+        <changelog><![CDATA[+ Fixed Pre-FX envelopes detection (v1.4 regression)]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ae518710307dfbdec694c3addbc9dc4cb796a10d/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
