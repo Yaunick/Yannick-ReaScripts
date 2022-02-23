@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected tracks to multichannel track obeying time selection (ignore routing)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + improved work with different settings in Prefs
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -167,6 +167,8 @@
       for j=1, #new_table_sends do
         reaper.SetTrackSendInfo_Value(get_track, 0, new_table_sends[j], 'I_SRCCHAN', 1024+num_src_send) ---set source send channel
         reaper.SetTrackSendInfo_Value(get_track, 0, new_table_sends[j], 'I_DSTCHAN', 1024+num_src_send+num_dst_send) ---set dest send channel
+        reaper.SetTrackSendInfo_Value(get_track, 0, new_table_sends[j], 'D_VOL', 1)  ---set send vol
+        reaper.SetTrackSendInfo_Value(get_track, 0, new_table_sends[j], 'I_SENDMODE', 0)  ---send mode post fader
         reaper.BR_GetSetTrackSendInfo(get_track, 0, new_table_sends[j], 'I_MIDI_SRCCHAN', true, -1) ---disable default midi send
         num_src_send = num_src_send + 1
       end

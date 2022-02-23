@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected tracks to stereo track obeying time selection (ignore routing)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + improved work with different settings in Prefs
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -86,6 +86,8 @@
     t[i+1] = get_track
     reaper.SetTrackSendInfo_Value(get_track, 0, send_index, 'I_SRCCHAN', 0) ---set source send channel
     reaper.SetTrackSendInfo_Value(get_track, 0, send_index, 'I_DSTCHAN', 0) ---set dest send channel
+    reaper.SetTrackSendInfo_Value(get_track, 0, send_index, 'D_VOL', 1)  ---set send vol
+    reaper.SetTrackSendInfo_Value(get_track, 0, send_index, 'I_SENDMODE', 0)  ---send mode post fader
     reaper.BR_GetSetTrackSendInfo(get_track, 0, send_index, 'I_MIDI_SRCCHAN', true, -1) ---disable default midi send
   end
   
@@ -148,4 +150,3 @@
       
   reaper.Undo_EndBlock('Render selected tracks to stereo track (obeing time selection)',-1)
   reaper.PreventUIRefresh(-1)
-
