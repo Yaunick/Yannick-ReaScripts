@@ -1,6 +1,6 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -41,13 +41,6 @@
   if #projects_not_found == 0 and #table_proj == 0 then
     nothing()
   else
-  
-    if #table_proj > 0 then
-      table.sort(table_proj, function(a,b) return b[2] < a[2] end)
-    end
-    if #projects_not_found > 0 then
-      table.sort(projects_not_found, function(a,b) return b[2] < a[2] end)
-    end
     
     function remove_duplicates(input_table)
       local hash = {}
@@ -64,33 +57,18 @@
     
     ----------------------------------------------------------------------------
     if #table_proj > 0 then
+      table.sort(table_proj, function(a,b) return b[2] < a[2] end)
+      
       one_table_proj = {}
       
       for i=1, #table_proj do
         one_table_proj[#one_table_proj+1] = table_proj[i][1]
       end
-    end
-    
-    if #projects_not_found > 0 then
-      one_projects_not_found = {}
       
-      for i=1, #projects_not_found do
-        one_projects_not_found[#one_projects_not_found+1] = projects_not_found[i][1]
-      end
-    end
-    
-    if #table_proj > 0 then 
       table_proj = remove_duplicates(one_table_proj)
-    end
-    
-    if #projects_not_found > 0 then
-      projects_not_found = remove_duplicates(one_projects_not_found)
-    end
-    ----------------------------------------------------------------------------
-    
-    local new_table_proj_names = {}
-    if #table_proj > 0 then
-    
+      
+      new_table_proj_names = {}
+      
       table.insert(table_proj, 1, ">New project tab...")
       
       for i=2, #table_proj do
@@ -100,7 +78,6 @@
       table.insert(table_proj, (#table_proj-1)/2+2, "<|")
       
       for i=1, #table_proj do
-        local new_table_str_vsr = ""
         if table_proj[i] == ">New project tab..." then
           new_table_str_vsr = ">New project tab..."
         elseif table_proj[i] == "<|" then
@@ -112,9 +89,19 @@
       end
     end
     
-    local new_projects_not_found = {}
-    local projects_not_found_str = ""
     if #projects_not_found > 0 then
+      table.sort(projects_not_found, function(a,b) return b[2] < a[2] end)
+      
+      one_projects_not_found = {}
+      
+      for i=1, #projects_not_found do
+        one_projects_not_found[#one_projects_not_found+1] = projects_not_found[i][1]
+      end
+      
+      projects_not_found = remove_duplicates(one_projects_not_found)
+      
+      new_projects_not_found = {}
+      projects_not_found_str = ""
       for i=1, #projects_not_found do
         new_projects_not_found[#new_projects_not_found+1] = "#   " .. projects_not_found[i]:match(".+[\\/](.+)") .. '|'
       end
@@ -124,7 +111,8 @@
         projects_not_found_str = "|#Projects not found!||"
       end
     end
-  
+    ----------------------------------------------------------------------------
+    
     local x, y = reaper.GetMousePosition()
     gfx.init("Recent projects...",160,4,0,x+menu_position_x,y+menu_position_y)
     local retval = gfx.showmenu(
