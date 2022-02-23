@@ -1,10 +1,10 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.5
+-- @version 1.6
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + some code improvements
+--   + fixed bugs after v1.5
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -56,6 +56,7 @@
     end
     
     ----------------------------------------------------------------------------
+    new_table_proj_names_concat = ""
     if #table_proj > 0 then
       table.sort(table_proj, function(a,b) return b[2] < a[2] end)
       
@@ -87,8 +88,12 @@
         end
         new_table_proj_names[#new_table_proj_names+1] = new_table_str_vsr .. '|'
       end
+      
+      new_table_proj_names_concat = table.concat(new_table_proj_names) 
     end
     
+    projects_not_found_str = ""
+    new_projects_not_found_concat = ""
     if #projects_not_found > 0 then
       table.sort(projects_not_found, function(a,b) return b[2] < a[2] end)
       
@@ -101,7 +106,6 @@
       projects_not_found = remove_duplicates(one_projects_not_found)
       
       new_projects_not_found = {}
-      projects_not_found_str = ""
       for i=1, #projects_not_found do
         new_projects_not_found[#new_projects_not_found+1] = "#   " .. projects_not_found[i]:match(".+[\\/](.+)") .. '|'
       end
@@ -110,15 +114,16 @@
       else
         projects_not_found_str = "|#Projects not found!||"
       end
+      new_projects_not_found_concat = table.concat(new_projects_not_found)
     end
     ----------------------------------------------------------------------------
     
     local x, y = reaper.GetMousePosition()
     gfx.init("Recent projects...",160,4,0,x+menu_position_x,y+menu_position_y)
     local retval = gfx.showmenu(
-    table.concat(new_table_proj_names) 
+    new_table_proj_names_concat
     .. projects_not_found_str 
-    .. table.concat(new_projects_not_found)
+    .. new_projects_not_found_concat
     )
     
     if retval == 0 then
