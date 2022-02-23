@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="6e1ab11f42953f1a512a18cf85bde9345e5a51ec">
+<index version="1" name="Yannick-ReaScripts" commit="629a0798648c53cdeb107b7303b420a2919e4248">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1248,6 +1248,10 @@
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Render%20selected%20tracks%20to%20multichannel%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
       </version>
+      <version name="1.1" author="Yannick" time="2022-02-23T00:56:15Z">
+        <changelog><![CDATA[+ improved work with different settings in Prefs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/629a0798648c53cdeb107b7303b420a2919e4248/Tracks/Yannick_Render%20selected%20tracks%20to%20multichannel%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing).lua" type="script" desc="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing)">
       <metadata>
@@ -1263,6 +1267,10 @@
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-02-23T00:56:15Z">
+        <changelog><![CDATA[+ improved work with different settings in Prefs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/629a0798648c53cdeb107b7303b420a2919e4248/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all envelopes from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle bypass all envelopes from selected tracks (each track is individual)">
