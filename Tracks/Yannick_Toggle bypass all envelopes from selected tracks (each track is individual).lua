@@ -1,6 +1,6 @@
 -- @description Yannick_Toggle bypass all envelopes from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -20,7 +20,7 @@
   reaper.PreventUIRefresh(1)
 
   function Bypass_all_envelopes(tr)
-    local bypass_str = ""
+    local bypass_str = {}
     local i = 0
     local find_end = false
     while find_end == false do
@@ -29,12 +29,12 @@
         find_end = true
       else
         local retval, str = reaper.GetEnvelopeStateChunk( env, "", true)
-        bypass_str = bypass_str .. str:match("EGUID (.+})") .. ',' .. str:match("ACT (%d)") .. ','
+        bypass_str[#bypass_str+1] = str:match("EGUID (.+})") .. ',' .. str:match("ACT (%d)") .. ','
         reaper.SetEnvelopeStateChunk( env, str:gsub('ACT [%d]', 'ACT ' .. '0'), false)
       end
       i = i + 1
     end
-    return bypass_str
+    return table.concat(bypass_str)
   end
 
   function Unbypass_all_envelopes(tr, val)
@@ -113,4 +113,3 @@
   reaper.PreventUIRefresh(-1)
 
   
-

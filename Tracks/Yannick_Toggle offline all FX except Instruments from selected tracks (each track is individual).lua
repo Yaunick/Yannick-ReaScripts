@@ -1,6 +1,6 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -64,7 +64,7 @@
         count_hash = count_hash + 1
       end
     end
-    local offline_str = ""
+    local offline_str = {}
     local count_tra_fx = reaper.TrackFX_GetCount(tr)
     local instr = reaper.TrackFX_GetInstrument( tr ) + 1
     while instr <= count_tra_fx-1 do
@@ -75,12 +75,12 @@
           offline_state = 1
         end
         local GUID = reaper.TrackFX_GetFXGUID(tr, instr)
-        offline_str = offline_str .. GUID .. ',' .. offline_state .. ','
+        offline_str[#offline_str+1] = GUID .. ',' .. offline_state .. ','
         reaper.TrackFX_SetOffline(tr, instr, true)
       end
       instr = instr + 1
     end
-    return offline_str
+    return table.concat(offline_str)
   end
   
   function Online_all_fx(tr, val)
