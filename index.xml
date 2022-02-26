@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="d2634c3863db450a49eaf447ffd9e8a57013ce4c">
+<index version="1" name="Yannick-ReaScripts" commit="90c5c518cd6bab89fc307ab8b21eac2636f0ec34">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -856,6 +856,38 @@
       <version name="1.0" author="Yannick" time="2021-10-30T12:42:12Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e10a42ca02a0656c94c2524bfaf29a7db57095eb/Tracks/Yannick_Activate%20and%20set%20MIDI%20input%20quantize%20for%20selected%20tracks%20in%20Popup%20Menu.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Add envelope points at gridlines within Razor Edit (automation items support).lua" type="script" desc="Yannick_Add envelope points at gridlines within Razor Edit (automation items support)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-26T20:46:20Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/90c5c518cd6bab89fc307ab8b21eac2636f0ec34/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(automation%20items%20support).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Add envelope points at gridlines within Razor Edit (no automation items support - faster).lua" type="script" desc="Yannick_Add envelope points at gridlines within Razor Edit (no automation items support - faster)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-02-26T20:46:20Z">
+        <changelog><![CDATA[Initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/90c5c518cd6bab89fc307ab8b21eac2636f0ec34/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(no%20automation%20items%20support%20-%20faster).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n).lua" type="script" desc="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n)">
