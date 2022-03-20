@@ -1,6 +1,6 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.7
+-- @version 1.8
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -28,15 +28,22 @@
   
   local filename_read = io.open(filename, 'r')
   for l in filename_read:lines() do
-    if string.sub(l,0,6) == "recent"
-    and l:match("recent%d+=(.+)") ~= nil then
-      if reaper.file_exists(l:match("recent%d+=(.+)")) == true then
-        table_proj[#table_proj+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
-      else
-        projects_not_found[#projects_not_found+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
+    if l == '[Recent]' then 
+      found = true 
+    elseif found and l:match('%[.-%]') and l ~= '[Recent]' then
+      break
+    end
+    if found == true then
+      if l:match("recent%d+=.*[\\/](.+)") ~= nil then
+        if reaper.file_exists(l:match("recent%d+=(.+)")) == true then
+          table_proj[#table_proj+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
+        else
+          projects_not_found[#projects_not_found+1] = { l:match("recent%d+=(.+)"), tonumber(l:match("recent(%d+)=")) }
+        end
       end
     end
   end
+  
   io.close(filename_read)
   
   if #projects_not_found == 0 and #table_proj == 0 then
@@ -85,7 +92,7 @@
         elseif table_proj[i] == "<|" then
           new_table_str_vsr = "<|"
         else
-          new_table_str_vsr = table_proj[i]:match(".+[\\/](.+)")
+          new_table_str_vsr = table_proj[i]:match(".*[\\/](.+)")
         end
         new_table_proj_names[#new_table_proj_names+1] = new_table_str_vsr .. '|'
       end
@@ -108,7 +115,7 @@
       
       new_projects_not_found = {}
       for i=1, #projects_not_found do
-        new_projects_not_found[#new_projects_not_found+1] = "#   " .. projects_not_found[i]:match(".+[\\/](.+)") .. '|'
+        new_projects_not_found[#new_projects_not_found+1] = "#   " .. projects_not_found[i]:match(".*[\\/](.+)") .. '|'
       end
       if #table_proj == 0 then
         projects_not_found_str = "#Projects not found!||"
