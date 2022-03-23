@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="95ec3961bef6db717cb2fd584776737bee658d92">
+<index version="1" name="Yannick-ReaScripts" commit="3d640ed54fc8c2ffdf5a2d549fea10f0772a80c9">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1110,6 +1110,10 @@
       <version name="1.5" author="Yannick" time="2022-02-16T15:20:48Z">
         <changelog><![CDATA[+ Save new values with ProjExtState]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d4accbaa6444f40a3fba0478f9127dea480b8d18/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track.lua</source>
+      </version>
+      <version name="1.6" author="Yannick" time="2022-03-23T14:21:58Z">
+        <changelog><![CDATA[+ Restricted track names with ' and \ characters]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3d640ed54fc8c2ffdf5a2d549fea10f0772a80c9/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Decrease all first identical sends from selected tracks at once.lua" type="script" desc="Yannick_Decrease all first identical sends from selected tracks at once">
