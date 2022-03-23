@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track
 -- @author Yannick
--- @version 1.5
+-- @version 1.6
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Save new values with ProjExtState
+--   + Restricted track names with ' and \ characters
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -137,15 +137,24 @@
     for s in string.gmatch(retvals_csv, "[^,]+") do
       table.insert(t_val,s)
     end
-   
+    
     if #t_val ~= 5 then
       reaper.MB('Incorrect value or no value. Please enter a valid value for any line','Error',0)
+      goto START
+    end
+    
+    if t_val[1]:find("'") then
+      reaper.MB("Please enter the track name without quotes ( '' )", "Error", 0)
+      goto START
+    end
+    
+    if t_val[1]:find("\\") then
+      reaper.MB("Please enter the track name without backslashes ( \\ )", "Error", 0)
       goto START
     end
    
     local val_name, val_src_send, val_dst_send, val_main_send, val_mode =
     t_val[1], t_val[2], t_val[3], t_val[4], t_val[5]
-   
    
     val_main_send_tnbr = tonumber(val_main_send)
     val_mode_tnbr = tonumber(val_mode)
