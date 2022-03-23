@@ -1,10 +1,10 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track
 -- @author Yannick
--- @version 1.6
+-- @version 1.7
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Restricted track names with ' and \ characters
+--   + Restricted track names with " characters
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -145,6 +145,11 @@
     
     if t_val[1]:find("'") then
       reaper.MB("Please enter the track name without quotes ( '' )", "Error", 0)
+      goto START
+    end
+    
+    if t_val[1]:find('"') then
+      reaper.MB('Please enter the track name without quotes ( "" )', "Error", 0)
       goto START
     end
     
