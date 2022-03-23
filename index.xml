@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="2efb2fb69b511d60f52141c907a55584b8f02612">
+<index version="1" name="Yannick-ReaScripts" commit="95ec3961bef6db717cb2fd584776737bee658d92">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1719,6 +1719,10 @@
       <version name="1.7" author="Yannick" time="2022-03-20T14:27:34Z">
         <changelog><![CDATA[+ fixed some bugs]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/2efb2fb69b511d60f52141c907a55584b8f02612/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
+      </version>
+      <version name="1.8" author="Yannick" time="2022-03-20T17:10:50Z">
+        <changelog><![CDATA[+ fixed some bugs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/95ec3961bef6db717cb2fd584776737bee658d92/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Split items at mouse cursor or set track to exclusive solo.lua" type="script" desc="Yannick_Split items at mouse cursor or set track to exclusive solo">
