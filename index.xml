@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="50be2d6bc2d55cd66b001c16b2e503f721f4d979">
+<index version="1" name="Yannick-ReaScripts" commit="60aa729f891dacea1d8a1c5c5926ae6d6c6c5678">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -578,6 +578,10 @@
       <version name="1.5" author="Yannick" time="2022-02-20T16:13:30Z">
         <changelog><![CDATA[+ Fixed Pre-FX envelopes detection (v1.4 regression)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ae518710307dfbdec694c3addbc9dc4cb796a10d/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
+      <version name="1.6" author="Yannick" time="2022-03-30T23:34:47Z">
+        <changelog><![CDATA[+ fixed detection of LV2i, DXi plugins]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/60aa729f891dacea1d8a1c5c5926ae6d6c6c5678/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
@@ -1384,6 +1388,10 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d2634c3863db450a49eaf447ffd9e8a57013ce4c/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
       </version>
+      <version name="1.4" author="Yannick" time="2022-03-30T23:34:47Z">
+        <changelog><![CDATA[+ fixed detection of plugins JS, AU, LV2, DX]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/60aa729f891dacea1d8a1c5c5926ae6d6c6c5678/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Yannick_Toggle bypass all FX except instruments from selected tracks - Clear all saves">
       <metadata>
@@ -1431,6 +1439,10 @@
       <version name="1.3" author="Yannick" time="2022-02-26T20:35:21Z">
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d2634c3863db450a49eaf447ffd9e8a57013ce4c/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
+      <version name="1.4" author="Yannick" time="2022-03-30T23:34:47Z">
+        <changelog><![CDATA[+ fixed detection of plugins JS, AU, LV2, DX]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/60aa729f891dacea1d8a1c5c5926ae6d6c6c5678/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Toggle offline all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Yannick_Toggle offline all FX except instruments from selected tracks - Clear all saves">
