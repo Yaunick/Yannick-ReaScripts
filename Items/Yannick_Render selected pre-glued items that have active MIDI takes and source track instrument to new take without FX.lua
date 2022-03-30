@@ -1,10 +1,10 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.5
+-- @version 1.6
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Fixed Pre-FX envelopes detection (v1.4 regression)
+--   + fixed detection of LV2i, DXi plugins
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
 
@@ -78,7 +78,9 @@
         end
         if buf == "VSTi" and find_second_instr == false
         or buf == "VST3i" and find_second_instr == false
-        or buf == "AUi" and find_second_instr == false 
+        or buf == "AUi" and find_second_instr == false
+		or buf == "DXi" and find_second_instr == false
+		or buf == "LV2i" and find_second_instr == false
         then
           find_second_instr = true
         elseif buf == "VSTi" or buf == "VST3i" or buf == "AUi" then

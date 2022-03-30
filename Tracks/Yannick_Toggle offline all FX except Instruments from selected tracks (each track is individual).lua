@@ -1,10 +1,10 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + some code improvements
+--   + fixed detection of plugins JS, AU, LV2, DX
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
 
@@ -38,6 +38,8 @@
         if buf == "VSTi"
         or buf == "AUi"
         or buf == "VST3i"
+        or buf == "DXi"
+        or buf == "LV2i"
         then
           count_instr = count_instr + 1
         end
@@ -57,7 +59,7 @@
     if vst3_melodyne_offline == false then
       local retval, str = reaper.GetTrackStateChunk( tr, '', false)
       local count_hash = 0
-      for s in str:gmatch("<VST.-\n") do -- find ARA2 Melodyne hash
+      for s in str:gmatch("<[VSJSAULVDX].-\n") do -- find ARA2 Melodyne hash
         if s:find("5653544D6C70676D656C6F64796E6520") then
           save_count_hash = count_hash
         end
