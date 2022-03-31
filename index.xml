@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="83dab91f56b10b53b665cf0b27f31a12013c6aad">
+<index version="1" name="Yannick-ReaScripts" commit="42f7302f96fe57d26f5f6981b71e3513a183928e">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -582,6 +582,10 @@
       <version name="1.6" author="Yannick" time="2022-03-30T23:34:47Z">
         <changelog><![CDATA[+ fixed detection of LV2i, DXi plugins]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/60aa729f891dacea1d8a1c5c5926ae6d6c6c5678/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
+      <version name="1.7" author="Yannick" time="2022-03-31T14:48:55Z">
+        <changelog><![CDATA[+ fixed detection of LV2i, DXi plugins]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/42f7302f96fe57d26f5f6981b71e3513a183928e/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
