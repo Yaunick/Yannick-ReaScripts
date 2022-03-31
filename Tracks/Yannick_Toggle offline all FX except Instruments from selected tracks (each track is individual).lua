@@ -1,10 +1,10 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + fixed detection of plugins JS, AU, LV2, DX
+--   + some code improvements
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU 
 
@@ -59,11 +59,23 @@
     if vst3_melodyne_offline == false then
       local retval, str = reaper.GetTrackStateChunk( tr, '', false)
       local count_hash = 0
-      for s in str:gmatch("<[VSJSAULVDX].-\n") do -- find ARA2 Melodyne hash
-        if s:find("5653544D6C70676D656C6F64796E6520") then
-          save_count_hash = count_hash
+      local find = false
+      for s in str:gmatch('.-\n') do -- find ARA2 Melodyne hash
+        if s:match('<FXCHAIN\n') then
+          find = true
+        elseif s:match('<FXCHAIN_REC\n') then
+          find = false
         end
-        count_hash = count_hash + 1
+        if find == true then
+          if s:match('<[VJALD][SUVX].-\n') then
+            if s:find("{5653544D6C70676D656C6F64796E6520}") -- VST3 Melodyne
+            or s:find("<5653544D6C70676D656C6F64796E6520>") -- VST2 Melodyne
+            then
+              save_count_hash = count_hash
+            end
+            count_hash = count_hash + 1
+          end
+        end
       end
     end
     local offline_str = {}
