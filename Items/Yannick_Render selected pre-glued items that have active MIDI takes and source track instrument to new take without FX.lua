@@ -1,6 +1,6 @@
 -- @description Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX
 -- @author Yannick
--- @version 1.6
+-- @version 1.7
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -79,11 +79,11 @@
         if buf == "VSTi" and find_second_instr == false
         or buf == "VST3i" and find_second_instr == false
         or buf == "AUi" and find_second_instr == false
-		or buf == "DXi" and find_second_instr == false
-		or buf == "LV2i" and find_second_instr == false
+        or buf == "DXi" and find_second_instr == false
+        or buf == "LV2i" and find_second_instr == false
         then
           find_second_instr = true
-        elseif buf == "VSTi" or buf == "VST3i" or buf == "AUi" then
+        elseif buf == "VSTi" or buf == "VST3i" or buf == "AUi" or buf == "DXi" or buf == "LV2i" then
           reaper.MB("Please select items on tracks with only one instrument", "Error", 0)
           nothing() return
         end
