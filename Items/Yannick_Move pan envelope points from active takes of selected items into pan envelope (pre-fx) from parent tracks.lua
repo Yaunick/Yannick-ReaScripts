@@ -1,4 +1,4 @@
--- @description Yannick_Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks
+-- @description Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks
 -- @author Yannick
 -- @version 1.0
 -- @about
@@ -103,5 +103,5 @@
     reaper.SetTrackSelected(t_sel_tracks[i], true)
   end
     
-  reaper.Undo_EndBlock("Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks", -1)
+  reaper.Undo_EndBlock("Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks", -1)
   reaper.PreventUIRefresh(-1)
