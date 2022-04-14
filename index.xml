@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="b3df48149aa6c8685cb57be81a0f113890640113">
+<index version="1" name="Yannick-ReaScripts" commit="441566d225258a96574ef48dc2d4fc7960dac448">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -480,7 +480,7 @@
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3b6b86fdebd626936bca9930425a8a5b23d7b98f/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
-    <reapack name="Yannick_Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks">
+    <reapack name="Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -491,12 +491,12 @@
 ]]></description>
         <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
       </metadata>
-      <version name="1.0" author="Yannick" time="2022-04-14T00:43:13Z">
+      <version name="1.0" author="Yannick" time="2022-04-14T11:56:44Z">
         <changelog><![CDATA[+ initial release]]></changelog>
-        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b3df48149aa6c8685cb57be81a0f113890640113/Items/Yannick_Move%20pan%20envelope%20points%20form%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/441566d225258a96574ef48dc2d4fc7960dac448/Items/Yannick_Move%20pan%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
-    <reapack name="Yannick_Move volume envelope points form active takes of selected items into volume envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move volume envelope points form active takes of selected items into volume envelope (pre-fx) from parent tracks">
+    <reapack name="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -507,9 +507,9 @@
 ]]></description>
         <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
       </metadata>
-      <version name="1.0" author="Yannick" time="2022-04-14T00:43:13Z">
+      <version name="1.0" author="Yannick" time="2022-04-14T11:56:44Z">
         <changelog><![CDATA[+ initial release]]></changelog>
-        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b3df48149aa6c8685cb57be81a0f113890640113/Items/Yannick_Move%20volume%20envelope%20points%20form%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/441566d225258a96574ef48dc2d4fc7960dac448/Items/Yannick_Move%20volume%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected item to all selected items.lua" type="script" desc="Yannick_Propagate first selected item to all selected items">
