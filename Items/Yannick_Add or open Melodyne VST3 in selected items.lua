@@ -1,6 +1,6 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
