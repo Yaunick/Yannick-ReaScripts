@@ -4,9 +4,9 @@
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
+--   + changed donation link
 -- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+-- @donation https://telegra.ph/How-to-send-me-a-donation-03-23
 
   function bla() 
   end 
