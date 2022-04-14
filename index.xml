@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="755e8e9752acb7acc22d8d5c20165c334d4f8570">
+<index version="1" name="Yannick-ReaScripts" commit="f481c83fc156bccbdde17d2106fb8a86b2b78638">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -10,11 +10,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Ableton%20loop%20(ctrl+L).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Ableton%20loop%20(ctrl+L).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust grid using mousewheel (alternation of straight and triplet).lua" type="script" desc="Yannick_Adjust grid using mousewheel (alternation of straight and triplet)">
@@ -26,11 +31,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Adjust%20grid%20using%20mousewheel%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Adjust%20grid%20using%20mousewheel%20(alternation%20of%20straight%20and%20triplet).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Horizontal zoom center settings in Popup Menu.lua" type="script" desc="Yannick_Horizontal zoom center settings in Popup Menu">
@@ -42,11 +52,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.1" author="Yannick" time="2021-10-29T17:08:53Z">
         <changelog><![CDATA[+ Added protection against incorrect user settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6b3d00afc2f6f601fe82fcea91788dca603b775b/Arrange/Yannick_Horizontal%20zoom%20center%20settings%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Horizontal%20zoom%20center%20settings%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert =START marker, then =END marker at edit cursor.lua" type="script" desc="Yannick_Insert =START marker, then =END marker at edit cursor">
@@ -58,7 +73,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -67,6 +82,11 @@
       <version name="1.1" author="Yannick" time="2021-10-27T12:54:42Z">
         <changelog><![CDATA[+ Added protection against incorrect user settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/657f2e94b7e7f623173a4f3f2d4f52f614890874/Arrange/Yannick_Insert%20=START%20marker,%20then%20=END%20marker%20at%20edit%20cursor.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Insert%20=START%20marker,%20then%20=END%20marker%20at%20edit%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert empty space at loop points (moving later items).lua" type="script" desc="Yannick_Insert empty space at loop points (moving later items)">
@@ -78,11 +98,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-11-03T16:24:50Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Insert%20empty%20space%20at%20loop%20points%20(moving%20later%20items).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Insert%20empty%20space%20at%20loop%20points%20(moving%20later%20items).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert region between the start and end point (relative to edit cursor).lua" type="script" desc="Yannick_Insert region between the start and end point (relative to edit cursor)">
@@ -94,7 +119,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -106,6 +131,11 @@
 + Added protection against incorrect user settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/984de42b795a6355a6fa3f46af877093d3295704/Arrange/Yannick_Insert%20region%20between%20the%20start%20and%20end%20point%20(relative%20to%20edit%20cursor).lua</source>
       </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Insert%20region%20between%20the%20start%20and%20end%20point%20(relative%20to%20edit%20cursor).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Insert region from loop points and edit.lua" type="script" desc="Yannick_Insert region from loop points and edit">
       <metadata>
@@ -116,7 +146,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-11-03T12:08:09Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -125,6 +155,11 @@
       <version name="1.1" author="Yannick" time="2021-11-03T16:24:50Z">
         <changelog><![CDATA[+ Added warning if no loop points selection]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Insert%20region%20from%20loop%20points%20and%20edit.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Insert%20region%20from%20loop%20points%20and%20edit.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Remove (clear) time selection then loop points.lua" type="script" desc="Yannick_Remove (clear) time selection then loop points">
@@ -136,11 +171,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-11-03T12:08:09Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/431d8549557d219659ea8d88fedb57d45e75a0f1/Arrange/Yannick_Remove%20(clear)%20time%20selection%20then%20loop%20points.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Remove%20(clear)%20time%20selection%20then%20loop%20points.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Remove contents of loop points (moving later items).lua" type="script" desc="Yannick_Remove contents of loop points (moving later items)">
@@ -152,11 +192,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-11-03T16:24:50Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/94fb132eb9beabed4f697f0344e828f6e459bab3/Arrange/Yannick_Remove%20contents%20of%20loop%20points%20(moving%20later%20items).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Remove%20contents%20of%20loop%20points%20(moving%20later%20items).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Restore (paste) tempo markers to the project by replacing the old ones.lua" type="script" desc="Yannick_Restore (paste) tempo markers to the project by replacing the old ones">
@@ -168,11 +213,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-19T15:53:58Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ffa85fc87cd9df2bdb165efda10538eabcb776c1/Arrange/Yannick_Restore%20(paste)%20tempo%20markers%20to%20the%20project%20by%20replacing%20the%20old%20ones.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Restore%20(paste)%20tempo%20markers%20to%20the%20project%20by%20replacing%20the%20old%20ones.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Save (copy) all tempo markers from the project.lua" type="script" desc="Yannick_Save (copy) all tempo markers from the project">
@@ -184,11 +234,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-14T16:54:19Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7d0e8d5c1254de3e65197989f62769408c814cdd/Arrange/Yannick_Save%20(copy)%20all%20tempo%20markers%20from%20the%20project.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Save%20(copy)%20all%20tempo%20markers%20from%20the%20project.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
@@ -200,7 +255,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -209,6 +264,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
         <changelog><![CDATA[+ Added postfixes]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/Arrange/Yannick_Set%20project%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Set%20project%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set project grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
@@ -220,7 +280,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -229,6 +289,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
         <changelog><![CDATA[+ Fixed typo]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Set%20project%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set selected track color to project markers and regions at edit cursor position.lua" type="script" desc="Yannick_Set selected track color to project markers and regions at edit cursor position">
@@ -240,7 +305,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-11-03T10:15:02Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -255,6 +320,11 @@
 + added setting for detecting regions (only at the starting point or along the entire length of the region)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/fadc295502c18d5d13c8a895af2cc598eeb88767/Arrange/Yannick_Set%20selected%20track%20color%20to%20project%20markers%20and%20regions%20at%20edit%20cursor%20position.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Set%20selected%20track%20color%20to%20project%20markers%20and%20regions%20at%20edit%20cursor%20position.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step.lua" type="script" desc="Yannick_Snap the grid at edit cursor using mousewheel or move edit cursor by step">
       <metadata>
@@ -265,7 +335,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -274,6 +344,11 @@
       <version name="1.1" author="Yannick" time="2021-12-29T15:56:05Z">
         <changelog><![CDATA[+ reduced the step of moving the edit cursor when snapping to grid]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/48d73532df416aa88014323bdef6d30f810b67ea/Arrange/Yannick_Snap%20the%20grid%20at%20edit%20cursor%20using%20mousewheel%20or%20move%20edit%20cursor%20by%20step.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Snap%20the%20grid%20at%20edit%20cursor%20using%20mousewheel%20or%20move%20edit%20cursor%20by%20step.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Switch next grid (alternation of straight and triplet).lua" type="script" desc="Yannick_Switch next grid (alternation of straight and triplet)">
@@ -285,11 +360,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Switch%20next%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Switch%20next%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Switch previous grid (alternation of straight and triplet).lua" type="script" desc="Yannick_Switch previous grid (alternation of straight and triplet)">
@@ -301,11 +381,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Arrange/Yannick_Switch%20previous%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Switch%20previous%20grid%20(alternation%20of%20straight%20and%20triplet).lua</source>
       </version>
     </reapack>
   </category>
@@ -319,7 +404,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-03-23</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -328,6 +413,11 @@
       <version name="1.1" author="Yannick" time="2022-04-14T14:55:10Z">
         <changelog><![CDATA[+ changed donation link]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/755e8e9752acb7acc22d8d5c20165c334d4f8570/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust take pitch using mousewheel (fine).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (fine)">
@@ -339,11 +429,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(fine).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(fine).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust take pitch using mousewheel (semitones).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (semitones)">
@@ -355,11 +450,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(semitones).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Adjust%20take%20pitch%20using%20mousewheel%20(semitones).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bounce selection (like in Studio One).lua" type="script" desc="Yannick_Bounce selection (like in Studio One)">
@@ -371,7 +471,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -380,6 +480,11 @@
       <version name="1.1" author="Yannick" time="2021-11-04T17:06:34Z">
         <changelog><![CDATA[+ Fixed logic with receives in source tracks]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/da2486c202831baa2f38b6d1ee7ccb512a134f2d/Items/Yannick_Bounce%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Bounce%20selection%20(like%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bounce selection (selected items on the track merge into one new item).lua" type="script" desc="Yannick_Bounce selection (selected items on the track merge into one new item)">
@@ -391,7 +496,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-28T18:39:22Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -406,6 +511,11 @@
         <changelog><![CDATA[+ Fixed logic with receives in source tracks]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/da2486c202831baa2f38b6d1ee7ccb512a134f2d/Items/Yannick_Bounce%20selection%20(selected%20items%20on%20the%20track%20merge%20into%20one%20new%20item).lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Bounce%20selection%20(selected%20items%20on%20the%20track%20merge%20into%20one%20new%20item).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Delete item or selected items under mouse cursor.lua" type="script" desc="Yannick_Delete item or selected items under mouse cursor">
       <metadata>
@@ -416,11 +526,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-09T19:11:15Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/4cac129436ad6a76528f90c77aa96a8a870dd5f9/Items/Yannick_Delete%20item%20or%20selected%20items%20under%20mouse%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Delete%20item%20or%20selected%20items%20under%20mouse%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Glue selected items independently.lua" type="script" desc="Yannick_Glue selected items independently">
@@ -432,11 +547,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Glue%20selected%20items%20independently.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Glue%20selected%20items%20independently.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Increase or decrease peaks on all items using mousewheel.lua" type="script" desc="Yannick_Increase or decrease peaks on all items using mousewheel">
@@ -448,11 +568,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Increase%20or%20decrease%20peaks%20on%20all%20items%20using%20mousewheel.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Increase%20or%20decrease%20peaks%20on%20all%20items%20using%20mousewheel.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Mixdown selection (like in Studio One).lua" type="script" desc="Yannick_Mixdown selection (like in Studio One)">
@@ -464,7 +589,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -483,6 +608,11 @@
         <changelog><![CDATA[+ scroll to the new mixdown track now works not only in TCP but also in MCP]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3b6b86fdebd626936bca9930425a8a5b23d7b98f/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks">
       <metadata>
@@ -493,7 +623,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-04-14T11:56:44Z">
         <changelog><![CDATA[+ initial release]]></changelog>
@@ -503,6 +633,11 @@
         <changelog><![CDATA[+ changed how to remove envelope chunk
 # removed setting (for now)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/20016900e2d5a0eb9d11164acfb5b31dae2a0827/Items/Yannick_Move%20pan%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Move%20pan%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks">
@@ -514,7 +649,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-04-14T11:56:44Z">
         <changelog><![CDATA[+ initial release]]></changelog>
@@ -523,6 +658,11 @@
       <version name="1.1" author="Yannick" time="2022-04-14T13:04:59Z">
         <changelog><![CDATA[+ changed how to remove envelope chunk]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/20016900e2d5a0eb9d11164acfb5b31dae2a0827/Items/Yannick_Move%20volume%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Move%20volume%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected item to all selected items.lua" type="script" desc="Yannick_Propagate first selected item to all selected items">
@@ -534,11 +674,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-27T15:55:01Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d9e37b23eb67ca4758c50861899c94cb1d4323c/Items/Yannick_Propagate%20first%20selected%20item%20to%20all%20selected%20items.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20first%20selected%20item%20to%20all%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected MIDI item to all selected MIDI items (with pool them).lua" type="script" desc="Yannick_Propagate first selected MIDI item to all selected MIDI items (with pool them)">
@@ -550,11 +695,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-27T15:55:01Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d9e37b23eb67ca4758c50861899c94cb1d4323c/Items/Yannick_Propagate%20first%20selected%20MIDI%20item%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20first%20selected%20MIDI%20item%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate item under mouse cursor to all selected items.lua" type="script" desc="Yannick_Propagate item under mouse cursor to all selected items">
@@ -566,11 +716,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-27T15:55:01Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d9e37b23eb67ca4758c50861899c94cb1d4323c/Items/Yannick_Propagate%20item%20under%20mouse%20cursor%20to%20all%20selected%20items.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20item%20under%20mouse%20cursor%20to%20all%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate MIDI item under mouse cursor to all selected MIDI items (with pool them).lua" type="script" desc="Yannick_Propagate MIDI item under mouse cursor to all selected MIDI items (with pool them)">
@@ -582,11 +737,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-27T15:55:01Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d9e37b23eb67ca4758c50861899c94cb1d4323c/Items/Yannick_Propagate%20MIDI%20item%20under%20mouse%20cursor%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20MIDI%20item%20under%20mouse%20cursor%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX.lua" type="script" desc="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX">
@@ -598,7 +758,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -632,6 +792,11 @@
         <changelog><![CDATA[+ fixed detection of LV2i, DXi plugins]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/42f7302f96fe57d26f5f6981b71e3513a183928e/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
       </version>
+      <version name="1.8" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Render%20selected%20pre-glued%20items%20that%20have%20active%20MIDI%20takes%20and%20source%20track%20instrument%20to%20new%20take%20without%20FX.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Show or hide peaks on all items (global).lua" type="script" desc="Yannick_Show or hide peaks on all items (global)">
       <metadata>
@@ -642,11 +807,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Show%20or%20hide%20peaks%20on%20all%20items%20(global).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Show%20or%20hide%20peaks%20on%20all%20items%20(global).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Split selected items at grid and set mute state for every even item.lua" type="script" desc="Yannick_Split selected items at grid and set mute state for every even item">
@@ -658,11 +828,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20even%20item.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20even%20item.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Split selected items at grid and set mute state for every odd item.lua" type="script" desc="Yannick_Split selected items at grid and set mute state for every odd item">
@@ -674,11 +849,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20odd%20item.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Split%20selected%20items%20at%20grid%20and%20set%20mute%20state%20for%20every%20odd%20item.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Trim left edge of item or selected items to mouse cursor.lua" type="script" desc="Yannick_Trim left edge of item or selected items to mouse cursor">
@@ -690,11 +870,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Trim%20left%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Trim%20left%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Trim right edge of item or selected items to mouse cursor.lua" type="script" desc="Yannick_Trim right edge of item or selected items to mouse cursor">
@@ -706,11 +891,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Trim%20right%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Trim%20right%20edge%20of%20item%20or%20selected%20items%20to%20mouse%20cursor.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Unselect every even item of selected items.lua" type="script" desc="Yannick_Unselect every even item of selected items">
@@ -722,11 +912,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Unselect%20every%20even%20item%20of%20selected%20items.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Unselect%20every%20even%20item%20of%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Unselect every odd item of selected items.lua" type="script" desc="Yannick_Unselect every odd item of selected items">
@@ -738,7 +933,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -747,6 +942,11 @@
       <version name="1.1" author="Yannick" time="2022-02-21T19:47:16Z">
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6e1ab11f42953f1a512a18cf85bde9345e5a51ec/Items/Yannick_Unselect%20every%20odd%20item%20of%20selected%20items.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Unselect%20every%20odd%20item%20of%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Warn about all items that have the offline takes.lua" type="script" desc="Yannick_Warn about all items that have the offline takes.lua">
@@ -758,11 +958,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Items/Yannick_Warn%20about%20all%20items%20that%20have%20the%20offline%20takes.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Warn%20about%20all%20items%20that%20have%20the%20offline%20takes.lua</source>
       </version>
     </reapack>
   </category>
@@ -776,11 +981,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Erase%20notes%20along%20with%20moving%20edit%20cursor%20(like%20Back%20in%20Studio%20One).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Erase%20notes%20along%20with%20moving%20edit%20cursor%20(like%20Back%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Float instrument from midi editor (from insert or send at track).lua" type="script" desc="Yannick_Float instrument from midi editor (from insert or send at track)">
@@ -792,11 +1002,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/MIDI%20Editor/Yannick_Float%20instrument%20from%20midi%20editor%20(from%20insert%20or%20send%20at%20track).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Float%20instrument%20from%20midi%20editor%20(from%20insert%20or%20send%20at%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set midi editor grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
@@ -808,7 +1023,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -817,6 +1032,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
         <changelog><![CDATA[+ Added postfixes ]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
@@ -828,7 +1048,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -837,6 +1057,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T21:25:40Z">
         <changelog><![CDATA[+ Fixed typo]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/af02a9b55dcc421765288d598a365ead703fb7c9/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
   </category>
@@ -850,11 +1075,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Float%20instruments%20from%20insert%20or%20send%20at%20selected%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Mouse%20modifiers/Yannick_Float%20instruments%20from%20insert%20or%20send%20at%20selected%20track%20or%20toggle%20folder%20collapse.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert item at mouse cursor within a measure (like in Studio One).lua" type="script" desc="Yannick_Insert item at mouse cursor within a measure (like in Studio One)">
@@ -866,11 +1096,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Mouse%20modifiers/Yannick_Insert%20item%20at%20mouse%20cursor%20within%20a%20measure%20(like%20in%20Studio%20One).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Mouse%20modifiers/Yannick_Insert%20item%20at%20mouse%20cursor%20within%20a%20measure%20(like%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Set exclusive record arm for track or toggle folder collapse.lua" type="script" desc="Yannick_Set exclusive record arm for track or toggle folder collapse">
@@ -882,7 +1117,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -891,6 +1126,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T19:17:49Z">
         <changelog><![CDATA[+ Added new setting to unarm tracks with "Record: disable (input monitoring only)" mode - true or false]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/525c2af64bd28986a6c2b4d027faba7edcc2b306/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
       </version>
     </reapack>
   </category>
@@ -904,11 +1144,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-30T12:42:12Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e10a42ca02a0656c94c2524bfaf29a7db57095eb/Tracks/Yannick_Activate%20and%20set%20MIDI%20input%20quantize%20for%20selected%20tracks%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Activate%20and%20set%20MIDI%20input%20quantize%20for%20selected%20tracks%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Add envelope points at gridlines within Razor Edit (automation items support).lua" type="script" desc="Yannick_Add envelope points at gridlines within Razor Edit (automation items support)">
@@ -920,11 +1165,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-26T20:46:20Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/90c5c518cd6bab89fc307ab8b21eac2636f0ec34/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(automation%20items%20support).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(automation%20items%20support).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Add envelope points at gridlines within Razor Edit (no automation items support - faster).lua" type="script" desc="Yannick_Add envelope points at gridlines within Razor Edit (no automation items support - faster)">
@@ -936,11 +1186,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-26T20:46:20Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/90c5c518cd6bab89fc307ab8b21eac2636f0ec34/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(no%20automation%20items%20support%20-%20faster).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(no%20automation%20items%20support%20-%20faster).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n).lua" type="script" desc="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n)">
@@ -952,11 +1207,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T12:54:26Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d70fa389dfc42ee68d6b81a1941646ce7e7c3eea/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Clear%20all%20saves%20(slot%20n).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Clear%20all%20saves%20(slot%20n).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bypass all FX from selected tracks - Restore previous (slot n).lua" type="script" desc="Yannick_Bypass all FX from selected tracks - Restore previous (slot n)">
@@ -968,11 +1228,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T12:54:26Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d70fa389dfc42ee68d6b81a1941646ce7e7c3eea/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Restore%20previous%20(slot%20n).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Restore%20previous%20(slot%20n).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bypass all FX from selected tracks - Save previous (slot n).lua" type="script" desc="Yannick_Bypass all FX from selected tracks - Save previous (slot n)">
@@ -984,11 +1249,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T12:54:26Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d70fa389dfc42ee68d6b81a1941646ce7e7c3eea/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Save%20previous%20(slot%20n).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Bypass%20all%20FX%20from%20selected%20tracks%20-%20Save%20previous%20(slot%20n).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create audio track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create audio track from multichannel VSTi (selected track)">
@@ -1000,11 +1270,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create folder track from selected tracks.lua" type="script" desc="Yannick_Create folder track from selected tracks">
@@ -1016,7 +1291,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1025,6 +1300,11 @@
       <version name="1.1" author="Yannick" time="2021-12-27T19:26:16Z">
         <changelog><![CDATA[+ Added new setting to set the track icon]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/7bed24e83c6e5822ea11606fdc651f32885ab239/Tracks/Yannick_Create%20folder%20track%20from%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20folder%20track%20from%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create midi and audio track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create midi and audio track from multichannel VSTi (selected track)">
@@ -1036,7 +1316,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1045,6 +1325,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T19:50:55Z">
         <changelog><![CDATA[+ Added new record mode settings for MIDI track]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/36c5ffe1f4ac8ebf1464861c729e74aa17f425fb/Tracks/Yannick_Create%20midi%20and%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20midi%20and%20audio%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create midi track from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create midi track from multichannel VSTi (selected track)">
@@ -1056,7 +1341,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1065,6 +1350,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T19:56:09Z">
         <changelog><![CDATA[+ Added new record mode settings for MIDI track]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5ee39fa82d73c600382484d0d772dca4e86c54bd/Tracks/Yannick_Create%20midi%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20midi%20track%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create multichannel routing (send track) from selected tracks.lua" type="script" desc="Yannick_Create multichannel routing (send track) from selected tracks">
@@ -1076,11 +1366,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20multichannel%20routing%20(send%20track)%20from%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20multichannel%20routing%20(send%20track)%20from%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create new track (audio+midi) from multichannel VSTi (selected track).lua" type="script" desc="Yannick_Create new track (audio+midi) from multichannel VSTi (selected track)">
@@ -1092,11 +1387,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Create%20new%20track%20(audio+midi)%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20new%20track%20(audio+midi)%20from%20multichannel%20VSTi%20(selected%20track).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Create send track or create sends from selected track to existed track (windowless).lua" type="script" desc="Yannick_Create send track or create sends from selected track to existed track (windowless)">
@@ -1108,7 +1408,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1127,6 +1427,11 @@
         <changelog><![CDATA[+ Added new experimental setting to set the send track as folder track]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d32a2adbcae2cf23c25c9c0d52a6b0e0687d4f6d/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track%20(windowless).lua</source>
       </version>
+      <version name="1.4" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track%20(windowless).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Create send track or create sends from selected track to existed track.lua" type="script" desc="Yannick_Create send track or create sends from selected track to existed track">
       <metadata>
@@ -1137,7 +1442,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1172,6 +1477,11 @@
         <changelog><![CDATA[+ Restricted track names with " characters]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/50be2d6bc2d55cd66b001c16b2e503f721f4d979/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track.lua</source>
       </version>
+      <version name="1.8" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Create%20send%20track%20or%20create%20sends%20from%20selected%20track%20to%20existed%20track.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Decrease all first identical sends from selected tracks at once.lua" type="script" desc="Yannick_Decrease all first identical sends from selected tracks at once">
       <metadata>
@@ -1182,11 +1492,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Decrease%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Decrease%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Increase all first identical sends from selected tracks at once.lua" type="script" desc="Yannick_Increase all first identical sends from selected tracks at once">
@@ -1198,11 +1513,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Increase%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Increase%20all%20first%20identical%20sends%20from%20selected%20tracks%20at%20once.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Move last project track to last selected track.lua" type="script" desc="Yannick_Move last project track to last selected track">
@@ -1214,11 +1534,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-12-05T20:27:16Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/87e715a5a73b34a1eda21d4faa8ba832f3fe5ec5/Tracks/Yannick_Move%20last%20project%20track%20to%20last%20selected%20track.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Move%20last%20project%20track%20to%20last%20selected%20track.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Mute or unmute all sends and receives from selected tracks.lua" type="script" desc="Yannick_Mute or unmute all sends and receives from selected tracks">
@@ -1230,7 +1555,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-12-05T22:11:51Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1239,6 +1564,11 @@
       <version name="1.1" author="Yannick" time="2021-12-05T22:17:59Z">
         <changelog><![CDATA[+ fixed typos]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/12d1722bcd02d93f155c29ddc72fec716d4c94e5/Tracks/Yannick_Mute%20or%20unmute%20all%20sends%20and%20receives%20from%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Mute%20or%20unmute%20all%20sends%20and%20receives%20from%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Offline all FX from selected tracks - Clear all saves (slot n).lua" type="script" desc="Yannick_Offline all FX from selected tracks - Clear all saves (slot n)">
@@ -1250,7 +1580,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-16T00:07:22Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1264,6 +1594,11 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/9fcac011df35f05c1ea9ff41d04eb21640454a52/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Clear%20all%20saves%20(slot%20n).lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Clear%20all%20saves%20(slot%20n).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Offline all FX from selected tracks - Restore previous (slot n).lua" type="script" desc="Yannick_Offline all FX from selected tracks - Restore previous (slot n)">
       <metadata>
@@ -1274,7 +1609,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-15T22:18:46Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1284,6 +1619,11 @@
         <changelog><![CDATA[+ some code improvements
 + added warning option]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6aeaad9a6e713aafd48ef712a0d30995a8798aeb/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Restore%20previous%20(slot%20n).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Restore%20previous%20(slot%20n).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Offline all FX from selected tracks - Save previous (slot n).lua" type="script" desc="Yannick_Offline all FX from selected tracks - Save previous (slot n)">
@@ -1295,7 +1635,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-15T22:18:46Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1309,6 +1649,11 @@
         <changelog><![CDATA[+ Added new option "offline_all_fx_before_saving" (true by default)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/25bea28a2a010a165bf30e186dc6964900165399/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Save%20previous%20(slot%20n).lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Offline%20all%20FX%20from%20selected%20tracks%20-%20Save%20previous%20(slot%20n).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Rename selected tracks (like in Pro Tools).lua" type="script" desc="Yannick_Rename selected tracks (like in Pro Tools)">
       <metadata>
@@ -1319,11 +1664,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Tracks/Yannick_Rename%20selected%20tracks%20(like%20in%20Pro%20Tools).lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Rename%20selected%20tracks%20(like%20in%20Pro%20Tools).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Render selected tracks to multichannel track obeying time selection (ignore routing).lua" type="script" desc="Yannick_Render selected tracks to multichannel track obeying time selection (ignore routing)">
@@ -1335,7 +1685,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1344,6 +1694,11 @@
       <version name="1.1" author="Yannick" time="2022-02-23T00:56:15Z">
         <changelog><![CDATA[+ improved work with different settings in Prefs]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/629a0798648c53cdeb107b7303b420a2919e4248/Tracks/Yannick_Render%20selected%20tracks%20to%20multichannel%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Render%20selected%20tracks%20to%20multichannel%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing).lua" type="script" desc="Yannick_Render selected tracks to stereo track obeying time selection (ignore routing)">
@@ -1355,7 +1710,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1364,6 +1719,11 @@
       <version name="1.1" author="Yannick" time="2022-02-23T00:56:15Z">
         <changelog><![CDATA[+ improved work with different settings in Prefs]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/629a0798648c53cdeb107b7303b420a2919e4248/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Render%20selected%20tracks%20to%20stereo%20track%20obeying%20time%20selection%20(ignore%20routing).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all envelopes from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle bypass all envelopes from selected tracks (each track is individual)">
@@ -1375,7 +1735,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-19T19:08:45Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1389,6 +1749,11 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d2634c3863db450a49eaf447ffd9e8a57013ce4c/Tracks/Yannick_Toggle%20bypass%20all%20envelopes%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20bypass%20all%20envelopes%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all envelopes from selected tracks - Clear all saves.lua" type="script" desc="Yannick_Toggle bypass all envelopes from selected tracks - Clear all saves">
       <metadata>
@@ -1399,7 +1764,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-19T19:08:45Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1408,6 +1773,11 @@
       <version name="1.1" author="Yannick" time="2022-02-19T19:14:40Z">
         <changelog><![CDATA[+ fixed error in warning text]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/1a18964f92fd25758ec9ea157e6249248cba149b/Tracks/Yannick_Toggle%20bypass%20all%20envelopes%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20bypass%20all%20envelopes%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all FX except Instruments from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle bypass all FX except instruments from selected tracks (each track is individual)">
@@ -1419,7 +1789,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1445,6 +1815,11 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/83dab91f56b10b53b665cf0b27f31a12013c6aad/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
       </version>
+      <version name="1.6" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Toggle bypass all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Yannick_Toggle bypass all FX except instruments from selected tracks - Clear all saves">
       <metadata>
@@ -1455,7 +1830,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1464,6 +1839,11 @@
       <version name="1.1" author="Yannick" time="2022-02-18T20:55:30Z">
         <changelog><![CDATA[+ changed the script name]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e029e20cc62cee4bfe45356bd899d5f1fc4773ee/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20bypass%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Toggle offline all FX except Instruments from selected tracks (each track is individual).lua" type="script" desc="Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)">
@@ -1475,7 +1855,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1501,6 +1881,11 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/83dab91f56b10b53b665cf0b27f31a12013c6aad/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
       </version>
+      <version name="1.6" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20(each%20track%20is%20individual).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Toggle offline all FX except Instruments from selected tracks - Clear all saves.lua" type="script" desc="Yannick_Toggle offline all FX except instruments from selected tracks - Clear all saves">
       <metadata>
@@ -1511,7 +1896,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-18T20:51:47Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1525,6 +1910,11 @@
         <changelog><![CDATA[+ fixed error in warning text]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/acd4a3a72993853acfc6736bda429dddd897efb7/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Toggle%20offline%20all%20FX%20except%20Instruments%20from%20selected%20tracks%20-%20Clear%20all%20saves.lua</source>
+      </version>
     </reapack>
   </category>
   <category name="Various">
@@ -1537,7 +1927,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-29T14:41:13Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1559,6 +1949,11 @@
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/4bf75ed46578346f474b7588c02c6f8ba2fffb26/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
       </version>
+      <version name="1.5" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Copy%20all%20existed%20plugins%20names%20to%20the%20clipboard.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Float instrument from insert or send at selected tracks.lua" type="script" desc="Yannick_Float instrument from insert or send at selected tracks">
       <metadata>
@@ -1569,11 +1964,16 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3ff366111671ab209448d6579fe47408ebacf8ec/Various/Yannick_Float%20instrument%20from%20insert%20or%20send%20at%20selected%20tracks.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Float%20instrument%20from%20insert%20or%20send%20at%20selected%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu.lua" type="script" desc="Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu">
@@ -1585,7 +1985,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1599,6 +1999,11 @@
         <changelog><![CDATA[+ Improved creation of a menu with plugins, the names of which contain ">", "<", "#"]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a6b1967e4833cff6cf7a1b72d4b8a98aafe7cb30/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Insert FX by name to master track or selected tracks or selected items.lua" type="script" desc="Yannick_Insert FX by name to master track or selected tracks or selected items">
       <metadata>
@@ -1609,7 +2014,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1621,6 +2026,11 @@
 + FX name and loading location (master track or track or item) fit into Undo history]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/e155c75bc8038f2d10f0565bd25b251609d93e58/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items.lua</source>
       </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Insert%20FX%20by%20name%20to%20master%20track%20or%20selected%20tracks%20or%20selected%20items.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Insert VSTi by name to new track in Popup Menu.lua" type="script" desc="Yannick_Insert VSTi by name to new track in Popup Menu">
       <metadata>
@@ -1631,7 +2041,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1645,6 +2055,11 @@
         <changelog><![CDATA[+ Added new record mode settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/75f78d601fcbbabdaeb757483033460cfb3ffbbd/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Insert VSTi by name to new track.lua" type="script" desc="Yannick_Insert VSTi by name to new track">
       <metadata>
@@ -1655,7 +2070,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1664,6 +2079,11 @@
       <version name="1.1" author="Yannick" time="2022-01-04T16:56:29Z">
         <changelog><![CDATA[+ Added new record mode settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/45dd835b2af0c291fe4d25f7bc866d68ba2c2c3e/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Insert%20VSTi%20by%20name%20to%20new%20track.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Offline all FX from Master track - Restore previous.lua" type="script" desc="Yannick_Offline all FX from Master track - Restore previous">
@@ -1675,7 +2095,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
         <changelog><![CDATA[initial release]]></changelog>
@@ -1689,6 +2109,11 @@
         <changelog><![CDATA[+ Some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/1bb4ebb70cd91d6a517a625fcaa230a34f9db930/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Restore%20previous.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Restore%20previous.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Offline all FX from Master track - Save previous.lua" type="script" desc="Yannick_Offline all FX from Master track - Save previous">
       <metadata>
@@ -1699,7 +2124,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
         <changelog><![CDATA[initial release]]></changelog>
@@ -1708,6 +2133,11 @@
       <version name="1.1" author="Yannick" time="2022-02-18T13:15:27Z">
         <changelog><![CDATA[Added new option "offline_all_fx_before_saving" (true by default)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/80c3ef8010862c9bfc8b50741851bca1ea38d3db/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Save%20previous.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Offline%20all%20FX%20from%20Master%20track%20-%20Save%20previous.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Offline all Monitoring FX - Restore previous.lua" type="script" desc="Yannick_Offline all Monitoring FX - Restore previous">
@@ -1719,7 +2149,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
         <changelog><![CDATA[initial release]]></changelog>
@@ -1733,6 +2163,11 @@
         <changelog><![CDATA[+ Some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/1bb4ebb70cd91d6a517a625fcaa230a34f9db930/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Restore%20previous.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Restore%20previous.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Offline all Monitoring FX - Save previous.lua" type="script" desc="Yannick_Offline all Monitoring FX - Save previous">
       <metadata>
@@ -1743,7 +2178,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-12T14:55:23Z">
         <changelog><![CDATA[initial release]]></changelog>
@@ -1752,6 +2187,11 @@
       <version name="1.1" author="Yannick" time="2022-02-18T13:15:27Z">
         <changelog><![CDATA[Added new option "offline_all_fx_before_saving" (true by default)]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/80c3ef8010862c9bfc8b50741851bca1ea38d3db/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Save%20previous.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Offline%20all%20Monitoring%20FX%20-%20Save%20previous.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Open project from recent projects list in Popup menu (view project list without paths).lua" type="script" desc="Yannick_Open project from recent projects list in Popup menu (view project list without paths)">
@@ -1763,7 +2203,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2022-02-12T15:50:46Z">
         <changelog><![CDATA[initial release]]></changelog>
@@ -1801,6 +2241,11 @@
         <changelog><![CDATA[+ fixed some bugs]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/95ec3961bef6db717cb2fd584776737bee658d92/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
       </version>
+      <version name="1.9" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Open%20project%20from%20recent%20projects%20list%20in%20Popup%20menu%20(view%20project%20list%20without%20paths).lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Split items at mouse cursor or set track to exclusive solo.lua" type="script" desc="Yannick_Split items at mouse cursor or set track to exclusive solo">
       <metadata>
@@ -1811,7 +2256,7 @@
 {\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
 }
 ]]></description>
-        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
       </metadata>
       <version name="1.0" author="Yannick" time="2021-10-21T22:17:48Z">
         <changelog><![CDATA[Initial release]]></changelog>
@@ -1820,6 +2265,11 @@
       <version name="1.1" author="Yannick" time="2021-12-03T10:47:22Z">
         <changelog><![CDATA[+ Added new settings]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/cd024c9b1a6494c79aff66e0d14b315d65d80c3a/Various/Yannick_Split%20items%20at%20mouse%20cursor%20or%20set%20track%20to%20exclusive%20solo.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-14T15:44:53Z">
+        <changelog><![CDATA[# changed donation link
+# contact link changed]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Various/Yannick_Split%20items%20at%20mouse%20cursor%20or%20set%20track%20to%20exclusive%20solo.lua</source>
       </version>
     </reapack>
   </category>
