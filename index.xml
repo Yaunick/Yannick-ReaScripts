@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="42f7302f96fe57d26f5f6981b71e3513a183928e">
+<index version="1" name="Yannick-ReaScripts" commit="b3df48149aa6c8685cb57be81a0f113890640113">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -478,6 +478,38 @@
       <version name="1.2" author="Yannick" time="2021-11-11T20:32:08Z">
         <changelog><![CDATA[+ scroll to the new mixdown track now works not only in TCP but also in MCP]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/3b6b86fdebd626936bca9930425a8a5b23d7b98f/Items/Yannick_Mixdown%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move pan envelope points form active takes of selected items into pan envelope (pre-fx) from parent tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-04-14T00:43:13Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b3df48149aa6c8685cb57be81a0f113890640113/Items/Yannick_Move%20pan%20envelope%20points%20form%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Move volume envelope points form active takes of selected items into volume envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move volume envelope points form active takes of selected items into volume envelope (pre-fx) from parent tracks">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-04-14T00:43:13Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b3df48149aa6c8685cb57be81a0f113890640113/Items/Yannick_Move%20volume%20envelope%20points%20form%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected item to all selected items.lua" type="script" desc="Yannick_Propagate first selected item to all selected items">
