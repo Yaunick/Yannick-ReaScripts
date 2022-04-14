@@ -1,10 +1,10 @@
 -- @description Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   + changed how to remove envelope chunk
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
   
@@ -15,11 +15,9 @@
   
   local t_str_summa = {}
   local t_str_summa_in_tr = {}
-  local t_str = {}
   local clear_table = false
   for i=0, reaper.CountSelectedMediaItems(0)-1 do
     local t_str = {}
-    local t_new_str = {}
     local item_1 = reaper.GetSelectedMediaItem(0,i)
     local tr_1 = reaper.GetMediaItem_Track(item_1)
     local item_2 = reaper.GetSelectedMediaItem(0,i+1)
@@ -42,11 +40,9 @@
           if s:sub(0,3) == "PT " then
             local number = tonumber(s:match("PT ([%d.]+)")) + start_item
             t_str[#t_str+1] = s:gsub("PT ([%d.]+)", "PT " .. tostring(number))
-          else
-            t_new_str[#t_new_str+1] = s
           end
         end
-        reaper.SetEnvelopeStateChunk( env, table.concat(t_new_str), false)
+        reaper.SetEnvelopeStateChunk( env, str:gsub("\n", "¤¤"), false)
         break
       end
     end

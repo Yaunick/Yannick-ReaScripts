@@ -1,18 +1,13 @@
 -- @description Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   + changed how to remove envelope chunk
+--   # removed setting (for now)
 -- @contact b.yanushevich@gmail.com
 -- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
-  
-  ---------------------------------------------------------------
-  
-    linear_scale_above_minus_3dB_panlaw_on_track_change = false
-  
-  ---------------------------------------------------------------
   
   function bla() end
   function nothing() reaper.defer(bla) end
@@ -21,11 +16,9 @@
   
   local t_str_summa = {}
   local t_str_summa_in_tr = {}
-  local t_str = {}
   local clear_table = false
   for i=0, reaper.CountSelectedMediaItems(0)-1 do
     local t_str = {}
-    local t_new_str = {}
     local item_1 = reaper.GetSelectedMediaItem(0,i)
     local tr_1 = reaper.GetMediaItem_Track(item_1)
     local item_2 = reaper.GetSelectedMediaItem(0,i+1)
@@ -48,11 +41,9 @@
           if s:sub(0,3) == "PT " then
             local number = tonumber(s:match("PT ([%d.]+)")) + start_item
             t_str[#t_str+1] = s:gsub("PT ([%d.]+)", "PT " .. tostring(number))
-          else
-            t_new_str[#t_new_str+1] = s
           end
         end
-        reaper.SetEnvelopeStateChunk( env, table.concat(t_new_str), false)
+        reaper.SetEnvelopeStateChunk( env, str:gsub("\n", "¤¤"), false)
         break
       end
     end
@@ -85,10 +76,6 @@
   for j=1, #t_str_summa_in_tr do
     reaper.SetOnlyTrackSelected(t_str_summa_in_tr[j][1],true)
     reaper.Main_OnCommand(41867,0) -- select pre-fx track envelope
-    if linear_scale_above_minus_3dB_panlaw_on_track_change == true then
-      local retval_tr, str_tr = reaper.GetTrackStateChunk(t_str_summa_in_tr[j][1], '', false)
-      reaper.SetTrackStateChunk(t_str_summa_in_tr[j][1], str_tr:match("(.-\n)VOLPAN ") .. "PANLAWFLAGS 1\n" .. str_tr:match("(VOLPAN .+)"), false)
-    end
     for i=0, reaper.CountTrackEnvelopes(t_str_summa_in_tr[j][1])-1 do
       local env_tr = reaper.GetTrackEnvelope(t_str_summa_in_tr[j][1], i )
       local retval, str_env = reaper.GetEnvelopeStateChunk( env_tr, '', false)
