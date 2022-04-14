@@ -1,12 +1,13 @@
 -- @description Yannick_Create send track or create sends from selected track to existed track (windowless)
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added new experimental setting to set the send track as folder track
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
   --/////////////----USER--INPUTS----\\\\\\\\\----CUSTOMIZE--THIS----//////////////
   

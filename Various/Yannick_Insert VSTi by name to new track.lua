@@ -1,12 +1,13 @@
 -- @description Yannick_Insert VSTi by name to new track
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added new record mode settings
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
   -----------------------------------------------------------------------------------
     name = "ReaSynth (Cockos)"

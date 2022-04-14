@@ -1,12 +1,13 @@
 -- @description Yannick_Rename selected tracks (like in Pro Tools)
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   Initial release
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
   --------------------
   input_width = 120

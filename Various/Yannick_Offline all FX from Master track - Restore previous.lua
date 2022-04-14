@@ -1,12 +1,13 @@
 -- @description Yannick_Offline all FX from Master track - Restore previous
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Some code improvements
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
   ---------------------------------
     show_warning_window = false

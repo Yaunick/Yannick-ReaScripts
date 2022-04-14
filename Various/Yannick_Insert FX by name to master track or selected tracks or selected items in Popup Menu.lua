@@ -1,12 +1,13 @@
 -- @description Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Improved creation of a menu with plugins, the names of which contain ">", "<", "#"
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
     table_fx = {  --- table beginnig (do not erase it!)
   

@@ -1,14 +1,13 @@
 -- @description Yannick_Insert region between the start and end point (relative to edit cursor)
 -- @author Yannick
--- @version 1.01
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Added a new ability to enter the name of the region in the pop-up window 
---   + The creation of a project marker for the start of a region is written in the undo history.
---   + Added protection against incorrect user settings
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
   ---------------------------------------------------------
     marker_name_for_start_of_region = 'START_FOR_REGION'

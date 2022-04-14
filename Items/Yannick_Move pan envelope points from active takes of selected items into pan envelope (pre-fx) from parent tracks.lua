@@ -1,13 +1,13 @@
 -- @description Yannick_Move pan envelope points from active takes of selected items into pan envelope (pre-fx) from parent tracks
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + changed how to remove envelope chunk
---   # removed setting (for now)
--- @contact b.yanushevich@gmail.com
--- @donation https://www.paypal.com/paypalme/yaunick?locale.x=ru_RU
+--   # changed donation link
+--   # contact link changed
+-- @contact yannick-reascripts@yandex.ru
+-- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
   function bla() end
   function nothing() reaper.defer(bla) end
