@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # fixed some bugs
+--   + MIDI items for Melodyne are now locked
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -102,9 +102,11 @@
     local takefx_bl = false
     local itemfx_bl = false
     local item = reaper.GetSelectedMediaItem(0,i)
-    local retval, str = reaper.GetItemStateChunk( item, '', false)
-    local number_melodyne = find_melodyne_number_in_chunk(str, count_number, number_melodyne, take_sel, takefx_bl, itemfx_bl)
-    t_items_with_melodyne[#t_items_with_melodyne+1] = { item, number_melodyne }
+    if reaper.TakeIsMIDI(reaper.GetActiveTake(item)) == false then
+      local retval, str = reaper.GetItemStateChunk( item, '', false)
+      local number_melodyne = find_melodyne_number_in_chunk(str, count_number, number_melodyne, take_sel, takefx_bl, itemfx_bl)
+      t_items_with_melodyne[#t_items_with_melodyne+1] = { item, number_melodyne }
+    end
   end
   
   local t_open_melodynes = {}
