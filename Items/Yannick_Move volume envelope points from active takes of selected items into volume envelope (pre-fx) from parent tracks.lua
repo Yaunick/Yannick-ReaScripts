@@ -1,11 +1,10 @@
 -- @description Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   # fixed typos in code
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -35,10 +34,10 @@
     for j=0, reaper.CountTakeEnvelopes(take)-1 do
       local env = reaper.GetTakeEnvelope( take, j)
       local retval, str = reaper.GetEnvelopeStateChunk( env, '', false)
-      if str:sub(0,8) == "<VOLENV\n" then
+      if str:sub(1,8) == "<VOLENV\n" then
         local start_item = reaper.GetMediaItemInfo_Value(item_1, 'D_POSITION')
         for s in str:gmatch(".-\n") do
-          if s:sub(0,3) == "PT " then
+          if s:sub(1,3) == "PT " then
             local number = tonumber(s:match("PT ([%d.]+)")) + start_item
             t_str[#t_str+1] = s:gsub("PT ([%d.]+)", "PT " .. tostring(number))
           end
@@ -79,8 +78,8 @@
     for i=0, reaper.CountTrackEnvelopes(t_str_summa_in_tr[j][1])-1 do
       local env_tr = reaper.GetTrackEnvelope(t_str_summa_in_tr[j][1], i )
       local retval, str_env = reaper.GetEnvelopeStateChunk( env_tr, '', false)
-      if str_env:sub(0,8) == "<VOLENV\n" then
-        reaper.SetEnvelopeStateChunk( env_tr, str_env:match("(.+\n)>") .. t_str_summa_in_tr[j][2] .. "+\n>", false)
+      if str_env:sub(1,8) == "<VOLENV\n" then
+        reaper.SetEnvelopeStateChunk( env_tr, str_env:match("(.+\n)>") .. t_str_summa_in_tr[j][2] .. ">", false)
       end
     end 
   end
