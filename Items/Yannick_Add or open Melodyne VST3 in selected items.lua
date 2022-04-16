@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + now you can change the name "Melodyne (Celemony)" to any other name in FX Browser
+--   # fixed some bugs
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -37,7 +37,7 @@
   if user_name_melodyne == nil then
     reaper.MB('The Melodyne (Celemony) plugin was not found!\n\n' 
     .. 'Perhaps the plugin is not installed, or you have changed the original name '
-    .. 'of the .vst3 or .dll file of the Melodyne (Celemony) plugin to another name then please return the original name!', 
+    .. 'of the .vst3 file of the Melodyne (Celemony) plugin to another name then please return the original name!', 
     'Error', 0)
     nothing() return
   end
