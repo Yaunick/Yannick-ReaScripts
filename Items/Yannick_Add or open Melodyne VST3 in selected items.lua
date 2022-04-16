@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.5
+-- @version 1.6
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + MIDI items for Melodyne are now locked
+--   # fixed bugs with Melodyne without ARA
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -69,6 +69,9 @@
         if takefx_bl == true then
           if s:match('<[VJALD][SUVX].-\n') then
             number_melodyne = find_melodyne_by_hash(s, count_number)
+            if number_melodyne ~= nil then
+              break
+            end
             count_number = count_number + 1
           end
         end
@@ -84,10 +87,16 @@
         if itemfx_bl == true then
           if s:match('<[VJALD][SUVX].-\n') then
             number_melodyne = find_melodyne_by_hash(s, count_number)
+            if number_melodyne ~= nil then
+              break
+            end
             count_number = count_number + 1
           end
         end
       end
+    end
+    if number_melodyne == nil then
+      number_melodyne = 'no number'
     end
     return number_melodyne
   end
