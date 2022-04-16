@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="f481c83fc156bccbdde17d2106fb8a86b2b78638">
+<index version="1" name="Yannick-ReaScripts" commit="2ab494d6672f902a5efa2b6556da2f315cf4640a">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -418,6 +418,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
+      </version>
+      <version name="1.3" author="Yannick" time="2022-04-16T20:39:44Z">
+        <changelog><![CDATA[+ now you can change the name "Melodyne (Celemony)" to any other name in FX Browser]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/2ab494d6672f902a5efa2b6556da2f315cf4640a/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust take pitch using mousewheel (fine).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (fine)">
