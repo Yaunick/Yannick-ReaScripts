@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="69e9e3bd346b75a44fca3da0a12ab62cef5f097c">
+<index version="1" name="Yannick-ReaScripts" commit="82425b8b986e224c6963c75af7fbb4484f972b32">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -659,6 +659,10 @@
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Move%20pan%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-04-16T23:49:59Z">
+        <changelog><![CDATA[# fixed typos in code]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/82425b8b986e224c6963c75af7fbb4484f972b32/Items/Yannick_Move%20pan%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20pan%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks.lua" type="script" desc="Yannick_Move volume envelope points from active takes of selected items into volume envelope (pre-fx) from parent tracks">
       <metadata>
@@ -683,6 +687,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Move%20volume%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
+      </version>
+      <version name="1.3" author="Yannick" time="2022-04-16T23:49:59Z">
+        <changelog><![CDATA[# fixed typos in code]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/82425b8b986e224c6963c75af7fbb4484f972b32/Items/Yannick_Move%20volume%20envelope%20points%20from%20active%20takes%20of%20selected%20items%20into%20volume%20envelope%20(pre-fx)%20from%20parent%20tracks.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected item to all selected items.lua" type="script" desc="Yannick_Propagate first selected item to all selected items">
