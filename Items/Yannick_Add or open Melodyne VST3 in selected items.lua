@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.6
+-- @version 1.7
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # fixed bugs with Melodyne without ARA
+--   + Now only one last instance of Melodyne opens in multiple items from multiple tracks + multiple tracks are selected, so in ARA mode all items open polyphonically in a single Melodyne.
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -118,7 +118,8 @@
     end
   end
   
-  local t_open_melodynes = {}
+  local t_open_melodyne = {}
+  local t_sel_tracks = {}
   
   for i=1, #t_items_with_melodyne do
     local number_melodyne = t_items_with_melodyne[i][2]
@@ -135,17 +136,22 @@
     if i < #t_items_with_melodyne then
       local tr_it_2 = reaper.GetMediaItem_Track(t_items_with_melodyne[i+1][1])
       if tr_it_1 ~= tr_it_2 then
-        t_open_melodynes[#t_open_melodynes+1] = { t_items_with_melodyne[i][1], number_melodyne }
+        t_sel_tracks[#t_sel_tracks+1] = tr_it_1
       end
     end
     if i == #t_items_with_melodyne then
-      t_open_melodynes[#t_open_melodynes+1] = { t_items_with_melodyne[i][1], number_melodyne }
+      t_open_melodyne[#t_open_melodyne+1] = { t_items_with_melodyne[i][1], number_melodyne }
+      t_sel_tracks[#t_sel_tracks+1] = tr_it_1
     end
   end
+  
+  reaper.Main_OnCommand(40297,0) -- unselect all tracks
 
-  for i=1, #t_open_melodynes do
-    reaper.TakeFX_Show( reaper.GetActiveTake(t_open_melodynes[i][1]), t_open_melodynes[i][2], 3)
+  for i=1, #t_sel_tracks do
+    reaper.SetTrackSelected(t_sel_tracks[i], true)
   end
+  
+  reaper.TakeFX_Show( reaper.GetActiveTake(t_open_melodyne[1][1]), t_open_melodyne[1][2], 3)
   
   reaper.Undo_EndBlock('Add or open Melodyne VST3 in selected items', -1)
   reaper.PreventUIRefresh(-1)
