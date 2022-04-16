@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="8a06b516e53225efe3cdeb3049f5522fe9c7aea4">
+<index version="1" name="Yannick-ReaScripts" commit="69e9e3bd346b75a44fca3da0a12ab62cef5f097c">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -434,6 +434,10 @@
       <version name="1.6" author="Yannick" time="2022-04-16T22:32:00Z">
         <changelog><![CDATA[# fixed bugs with Melodyne without ARA]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/8a06b516e53225efe3cdeb3049f5522fe9c7aea4/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
+      </version>
+      <version name="1.7" author="Yannick" time="2022-04-16T23:10:09Z">
+        <changelog><![CDATA[+ Now only one last instance of Melodyne opens in multiple items from multiple tracks + multiple tracks are selected, so in ARA mode all items open polyphonically in a single Melodyne.]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/69e9e3bd346b75a44fca3da0a12ab62cef5f097c/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust take pitch using mousewheel (fine).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (fine)">
