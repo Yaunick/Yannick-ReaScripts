@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.7
+-- @version 1.8
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + Now only one last instance of Melodyne opens in multiple items from multiple tracks + multiple tracks are selected, so in ARA mode all items open polyphonically in a single Melodyne.
+--   # Fixed bug when only MIDI items are selected
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -42,13 +42,9 @@
     nothing() return
   end
   ---------------------------------------------------------------------------------
-
-  reaper.Undo_BeginBlock()
-  reaper.PreventUIRefresh(1)
   
   function find_melodyne_by_hash(s, count_number)
     if s:find("{5653544D6C70676D656C6F64796E6520}") -- VST3 Melodyne
-    or s:find("<5653544D6C70676D656C6F64796E6520>") -- VST2 Melodyne
     then
       local number_melodyne = count_number
       return number_melodyne
@@ -117,6 +113,13 @@
       t_items_with_melodyne[#t_items_with_melodyne+1] = { item, number_melodyne }
     end
   end
+  
+  if #t_items_with_melodyne == 0 then
+    nothing() return
+  end
+  
+  reaper.Undo_BeginBlock()
+  reaper.PreventUIRefresh(1)
   
   local t_open_melodyne = {}
   local t_sel_tracks = {}
