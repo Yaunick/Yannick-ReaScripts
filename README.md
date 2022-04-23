@@ -17,4 +17,4 @@ https://github.com/Yaunick/Yannick-ReaScripts/raw/master/index.xml
 
 **Contact me** - yannick-reascripts@yandex.ru
 
-**Donation** - 
+**Donation** - https://telegra.ph/How-to-send-me-a-donation-04-14
