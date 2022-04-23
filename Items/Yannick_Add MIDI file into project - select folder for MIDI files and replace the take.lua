@@ -1,10 +1,10 @@
--- @description Yannick_Add MIDI file into project - select folder for MIDI files and replace the take
+\-- @description Yannick_Add MIDI file into project - select folder for MIDI files and replace the take
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   + the length of the item does not change if there is more than one take on the item
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -57,19 +57,28 @@
     end
     
     reaper.Undo_BeginBlock()
+    reaper.PreventUIRefresh(1)
     
     reaper.SetProjExtState( 0, 'YANNICK_REASCR_MIDI_folder_PATH__extname', 'YANNICK_REASCR_MIDI_folder_PATH__key', path )
     
+    local count_takes_more1 = false
     for i=0, count_selected_items-1 do
       local get_sel_item = reaper.GetSelectedMediaItem(0,i)
       local get_act_take = reaper.GetActiveTake(get_sel_item)
+      if reaper.CountTakes(get_sel_item) > 1 then
+        count_takes_more1 = true
+      end
       reaper.BR_SetTakeSourceFromFile( get_act_take, filenameNeed4096, true)
       reaper.GetSetMediaItemTakeInfo_String( get_act_take, 'P_NAME', name, true)
     end
     
-    reaper.Main_OnCommand(42228,0)
+    reaper.UpdateArrange()
+    if count_takes_more1 == false then
+      reaper.Main_OnCommand(42228,0)
+    end
 
     reaper.Undo_EndBlock('Add MIDI file into project - select folder for MIDI files and replace the take',-1)
+    reaper.PreventUIRefresh(-1)
   else
     nothing()
   end
