@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="1bf51116864b3e090824d5f3fd879b977de829d2">
+<index version="1" name="Yannick-ReaScripts" commit="d54e5ecaee4468a1b149f001d0a4eab29d8b5565">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -409,6 +409,10 @@
       <version name="1.0" author="Yannick" time="2022-04-22T20:46:15Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/1bf51116864b3e090824d5f3fd879b977de829d2/Items/Yannick_Add%20MIDI%20file%20into%20project%20-%20select%20folder%20for%20MIDI%20files%20and%20replace%20the%20take.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-23T22:23:32Z">
+        <changelog><![CDATA[+ the length of the item does not change if there is more than one take on the item]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d54e5ecaee4468a1b149f001d0a4eab29d8b5565/Items/Yannick_Add%20MIDI%20file%20into%20project%20-%20select%20folder%20for%20MIDI%20files%20and%20replace%20the%20take.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Add MIDI file into project - switch next MIDI take from recent folder.lua" type="script" desc="Yannick_Add MIDI file into project - switch next MIDI take from recent folder">
