@@ -1,10 +1,10 @@
-\-- @description Yannick_Add MIDI file into project - select folder for MIDI files and replace the take
+-- @description Yannick_Add MIDI file into project - select folder for MIDI files and replace the take
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + the length of the item does not change if there is more than one take on the item
+--   + fixed a typo in the code
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
