@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="d6dcd20aa0247ac3f352734e42d278dc071c9164">
+<index version="1" name="Yannick-ReaScripts" commit="b8a56a11ef02e71e8d52861cd790201d7482a0c9">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -78,6 +78,10 @@
       <version name="1.0" author="Yannick" time="2022-04-24T15:08:55Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d6dcd20aa0247ac3f352734e42d278dc071c9164/Arrange/Yannick_Insert%20=START%20and%20=END%20markers%20within%20selected%20items%20area.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-04-24T16:23:56Z">
+        <changelog><![CDATA[# some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b8a56a11ef02e71e8d52861cd790201d7482a0c9/Arrange/Yannick_Insert%20=START%20and%20=END%20markers%20within%20selected%20items%20area.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert =START marker, then =END marker at edit cursor.lua" type="script" desc="Yannick_Insert =START marker, then =END marker at edit cursor">
