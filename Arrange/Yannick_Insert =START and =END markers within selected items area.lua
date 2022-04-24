@@ -1,10 +1,10 @@
 -- @description Yannick_Insert =START and =END markers within selected items area
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   # some code improvements
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -39,10 +39,12 @@
   local new_start_ts, new_end_ts = reaper.GetSet_LoopTimeRange( false, false, 0, 0, false)
   
   local retval, num_markers, num_regions = reaper.CountProjectMarkers(0)
-  for i=num_markers+num_regions-1, 0, -1  do
-    local retval, _, _, _, name, markrgnindexnumber = reaper.EnumProjectMarkers(i)
-    if name == '=START' or name == '=END' then
-      reaper.DeleteProjectMarker( 0, markrgnindexnumber, false)
+  if num_markers + num_regions > 0 then
+    for i=num_markers+num_regions-1, 0, -1  do
+      local retval, _, _, _, name, markrgnindexnumber = reaper.EnumProjectMarkers(i)
+      if name == '=START' or name == '=END' then
+        reaper.DeleteProjectMarker( 0, markrgnindexnumber, false)
+      end
     end
   end
   
