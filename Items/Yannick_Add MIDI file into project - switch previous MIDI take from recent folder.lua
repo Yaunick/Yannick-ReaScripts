@@ -1,6 +1,6 @@
 -- @description Yannick_Add MIDI file into project - switch previous MIDI take from recent folder
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
@@ -124,23 +124,6 @@
         save_source_name = file_list[i-1]
       end
       break
-    end
-  end
-  
-  if save_source_name == nil then 
-    save_source_name = file_list[1] 
-  end
-  
-  local count_takes_more1 = false
-  for i=0, count_selected_items-1 do
-    local get_sel_item = reaper.GetSelectedMediaItem(0,i)
-    local get_act_take = reaper.GetActiveTake(get_sel_item)
-    if reaper.CountTakes(get_sel_item) > 1 then
-      count_takes_more1 = true
-    end
-    if get_act_take then
-      reaper.BR_SetTakeSourceFromFile( get_act_take, val_path .. '/' .. save_source_name, true)
-      reaper.GetSetMediaItemTakeInfo_String( get_act_take, 'P_NAME', save_source_name, true)
     end
   end
   
