@@ -1,10 +1,10 @@
 -- @description Yannick_Add MIDI file into project - switch previous MIDI take from recent folder
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   + some code improvements
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -35,6 +35,23 @@
   
   local sl = package.config:sub(1,1)
   
+  function load_midi_to_selected_items(count_sel_its, input_path, input_name)
+    local count_takes_more1 = false
+    for i=0, count_sel_its-1 do
+      local get_sel_item = reaper.GetSelectedMediaItem(0,i)
+      local get_act_take = reaper.GetActiveTake(get_sel_item)
+      if reaper.CountTakes(get_sel_item) > 1 then
+        count_takes_more1 = true
+      end
+      reaper.BR_SetTakeSourceFromFile( get_act_take, input_path, true)
+      reaper.GetSetMediaItemTakeInfo_String( get_act_take, 'P_NAME', input_name, true)
+    end
+    reaper.UpdateArrange()
+    if count_takes_more1 == false then
+      reaper.Main_OnCommand(42228,0)
+    end
+  end
+  
   function open_folder()
     local start_path = sl
     ::START::
@@ -58,22 +75,7 @@
       
       reaper.SetProjExtState( 0, 'YANNICK_REASCR_MIDI_folder_PATH__extname', 'YANNICK_REASCR_MIDI_folder_PATH__key', path )
       
-      local count_takes_more1 = false
-      local count_selected_items = reaper.CountSelectedMediaItems(0)
-      for i=0, count_selected_items-1 do
-        local get_sel_item = reaper.GetSelectedMediaItem(0,i)
-        local get_act_take = reaper.GetActiveTake(get_sel_item)
-        if reaper.CountTakes(get_sel_item) > 1 then
-          count_takes_more1 = true
-        end
-        reaper.BR_SetTakeSourceFromFile( get_act_take, filenameNeed4096, true)
-        reaper.GetSetMediaItemTakeInfo_String( get_act_take, 'P_NAME', name, true)
-      end
-      
-      reaper.UpdateArrange()
-      if count_takes_more1 == false then
-        reaper.Main_OnCommand(42228,0)
-      end
+      load_midi_to_selected_items(count_selected_items, filenameNeed4096, name)
       
       reaper.Undo_EndBlock('Select folder for MIDI files',-1)
       reaper.PreventUIRefresh(-1)
@@ -142,11 +144,11 @@
     end
   end
   
-  reaper.UpdateArrange()
-  if count_takes_more1 == false then
-    reaper.Main_OnCommand(42228,0)
+  if save_source_name == nil then 
+    save_source_name = file_list[1] 
   end
+  
+  load_midi_to_selected_items(count_selected_items, val_path .. sl .. save_source_name, save_source_name)
   
   reaper.Undo_EndBlock('Add MIDI file into project - switch previous MIDI take from recent folder',-1)
   reaper.PreventUIRefresh(-1)
-
