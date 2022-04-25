@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="c1802aac8a7fe579a287447019e51ca32ff0c4cc">
+<index version="1" name="Yannick-ReaScripts" commit="6ea34203ae9dd061219c095acb9bdff788db9216">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -477,6 +477,10 @@
       <version name="1.1" author="Yannick" time="2022-04-25T14:15:11Z">
         <changelog><![CDATA[+ some code improvements]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/c1802aac8a7fe579a287447019e51ca32ff0c4cc/Items/Yannick_Add%20MIDI%20file%20into%20project%20-%20switch%20previous%20MIDI%20take%20from%20recent%20folder.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-04-25T14:19:47Z">
+        <changelog><![CDATA[+ some code improvements]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6ea34203ae9dd061219c095acb9bdff788db9216/Items/Yannick_Add%20MIDI%20file%20into%20project%20-%20switch%20previous%20MIDI%20take%20from%20recent%20folder.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Add or open Melodyne VST3 in selected items.lua" type="script" desc="Yannick_Add or open Melodyne VST3 in selected items">
