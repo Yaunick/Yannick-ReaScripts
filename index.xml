@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="b2e4f093b3160527189e5f97dbab19a27f3af671">
+<index version="1" name="Yannick-ReaScripts" commit="a357c528d2d4b5889d87e5121f69a89a8e2b7426">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -41,6 +41,22 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Adjust%20grid%20using%20mousewheel%20(alternation%20of%20straight%20and%20triplet).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Adjust grid using mousewheel.lua" type="script" desc="Yannick_Adjust grid using mousewheel">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-01T18:40:42Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a357c528d2d4b5889d87e5121f69a89a8e2b7426/Arrange/Yannick_Adjust%20grid%20using%20mousewheel.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Horizontal zoom center settings in Popup Menu.lua" type="script" desc="Yannick_Horizontal zoom center settings in Popup Menu">
