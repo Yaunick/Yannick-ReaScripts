@@ -1,11 +1,10 @@
 -- @description Yannick_Mixdown selection (like in Studio One)
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + fixed script work if items are located on item lanes
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -157,8 +156,11 @@
       reaper.SetMediaTrackInfo_Value(t_s_tr[d], 'I_SOLO', 2)
       for i=0, reaper.CountTrackMediaItems(t_s_tr[d])-1 do
         local item = reaper.GetTrackMediaItem(t_s_tr[d],i)
-        if reaper.GetMediaItemInfo_Value(item, 'D_POSITION') >= new_start 
-        and reaper.GetMediaItemInfo_Value(item, 'D_POSITION') <= new_end + Tail_for_new_track + 1
+        local pos_item = reaper.GetMediaItemInfo_Value(item, 'D_POSITION')
+        local end_item = pos_item + reaper.GetMediaItemInfo_Value(item, 'D_LENGTH')
+        if end_item >= new_start and end_item <= new_end + Tail_for_new_track + 1
+        or pos_item >= new_start and pos_item <= new_end + Tail_for_new_track + 1
+        or pos_item < new_start and end_item > new_end + Tail_for_new_track + 1
         then
           count_mute[#count_mute+1] = { item, reaper.GetMediaItemInfo_Value(item, 'B_MUTE') }
           if reaper.IsMediaItemSelected(item) == false then
@@ -238,5 +240,5 @@
     end
     
   reaper.UpdateArrange()
-  reaper.Undo_EndBlock('Mixdown items selection', -1)
+  reaper.Undo_EndBlock('Mixdown selection (like in Studio One)', -1)
   reaper.PreventUIRefresh(-1)

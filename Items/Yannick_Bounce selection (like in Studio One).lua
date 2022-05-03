@@ -1,11 +1,10 @@
 -- @description Yannick_Bounce selection (like in Studio One)
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + fixed script work if items are located on item lanes
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
@@ -145,8 +144,11 @@
   local sel_track = reaper.GetSelectedTrack(0,0)
   for i=0, reaper.CountTrackMediaItems(sel_track)-1 do
     local item = reaper.GetTrackMediaItem(sel_track,i)
-    if reaper.GetMediaItemInfo_Value(item, 'D_POSITION') >= crnt_start 
-    and reaper.GetMediaItemInfo_Value(item, 'D_POSITION') <= crnt_end + tail_for_every_item + 1
+    local pos_item = reaper.GetMediaItemInfo_Value(item, 'D_POSITION')
+    local end_item = pos_item + reaper.GetMediaItemInfo_Value(item, 'D_LENGTH')
+    if end_item >= crnt_start and end_item <= crnt_end + tail_for_every_item + 1
+    or pos_item >= crnt_start and pos_item <= crnt_end + tail_for_every_item + 1
+    or pos_item < crnt_start and end_item > crnt_end + tail_for_every_item + 1
     then
       count_mute[#count_mute+1] = { item, reaper.GetMediaItemInfo_Value(item, 'B_MUTE') }
       if reaper.IsMediaItemSelected(item) == false then

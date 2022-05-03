@@ -1,11 +1,10 @@
 -- @description Yannick_Bounce selection (selected items on the track merge into one new item)
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + fixed script work if items are located on item lanes
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
@@ -105,8 +104,11 @@
       local sel_track = reaper.GetSelectedTrack(0,0)
       for i=0, reaper.CountTrackMediaItems(sel_track)-1 do
         local item = reaper.GetTrackMediaItem(sel_track,i)
-        if reaper.GetMediaItemInfo_Value(item, 'D_POSITION') >= get_st 
-        and reaper.GetMediaItemInfo_Value(item, 'D_POSITION') <= get_en + tail_for_new_item + 1
+        local pos_item = reaper.GetMediaItemInfo_Value(item, 'D_POSITION')
+        local end_item = pos_item + reaper.GetMediaItemInfo_Value(item, 'D_LENGTH')
+        if end_item >= get_st and end_item <= get_en + tail_for_new_item + 1
+        or pos_item >= get_st and pos_item <= get_en + tail_for_new_item + 1
+        or pos_item < get_st and end_item > get_en + tail_for_new_item + 1
         then
           count_mute[#count_mute+1] = { item, reaper.GetMediaItemInfo_Value(item, 'B_MUTE') }
           if reaper.IsMediaItemSelected(item) == false then
