@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="a357c528d2d4b5889d87e5121f69a89a8e2b7426">
+<index version="1" name="Yannick-ReaScripts" commit="b0d173b005262da21d90370d1ba9a3a9fa0b982f">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -57,6 +57,22 @@
       <version name="1.0" author="Yannick" time="2022-05-01T18:40:42Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a357c528d2d4b5889d87e5121f69a89a8e2b7426/Arrange/Yannick_Adjust%20grid%20using%20mousewheel.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Delete all regions that have start and end points within time selection.lua" type="script" desc="Yannick_Delete all regions that have start and end points within time selection">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-02T16:27:58Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/b0d173b005262da21d90370d1ba9a3a9fa0b982f/Arrange/Yannick_Delete%20all%20regions%20that%20have%20start%20and%20end%20points%20within%20time%20selection.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Horizontal zoom center settings in Popup Menu.lua" type="script" desc="Yannick_Horizontal zoom center settings in Popup Menu">
