@@ -1,10 +1,10 @@
 -- @description Yannick_Duplicate in one file Lua script from my repository by name from clipboard for customisation
 -- @author Yannick
--- @version 1.0
+-- @version 1.1
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + initial release
+--   + fixed some bugs
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -199,6 +199,10 @@
   for s in text_from_clipboard:gmatch('.') do
     if s == ' ' then
       strr = '_'
+    elseif s == '=' then
+      strr = '-'
+    elseif s == ',' then
+      strr = ''
     else
       strr = s
     end
