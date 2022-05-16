@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="c503eb85bb8f3fedf675c5d119325f0f452a0f93">
+<index version="1" name="Yannick-ReaScripts" commit="6d932ff1731bb57044bb91fee9406d824ff1e9be">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1150,6 +1150,10 @@
       <version name="1.0" author="Yannick" time="2022-05-16T16:32:11Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/c503eb85bb8f3fedf675c5d119325f0f452a0f93/Managing%20Yannick%20Scripts/Yannick_Duplicate%20in%20one%20file%20Lua%20script%20from%20my%20repository%20by%20name%20from%20clipboard%20for%20customisation.lua</source>
+      </version>
+      <version name="1.1" author="Yannick" time="2022-05-16T16:56:05Z">
+        <changelog><![CDATA[+ fixed some bugs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d932ff1731bb57044bb91fee9406d824ff1e9be/Managing%20Yannick%20Scripts/Yannick_Duplicate%20in%20one%20file%20Lua%20script%20from%20my%20repository%20by%20name%20from%20clipboard%20for%20customisation.lua</source>
       </version>
     </reapack>
   </category>
