@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="6d932ff1731bb57044bb91fee9406d824ff1e9be">
+<index version="1" name="Yannick-ReaScripts" commit="51567264908af84c7973e857ea496a9912a614a8">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1154,6 +1154,38 @@
       <version name="1.1" author="Yannick" time="2022-05-16T16:56:05Z">
         <changelog><![CDATA[+ fixed some bugs]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/6d932ff1731bb57044bb91fee9406d824ff1e9be/Managing%20Yannick%20Scripts/Yannick_Duplicate%20in%20one%20file%20Lua%20script%20from%20my%20repository%20by%20name%20from%20clipboard%20for%20customisation.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Open folder with duplicates.lua" type="script" desc="Yannick_Open folder with duplicates">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-16T18:54:34Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/51567264908af84c7973e857ea496a9912a614a8/Managing%20Yannick%20Scripts/Yannick_Open%20folder%20with%20duplicates.lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Open repository folder.lua" type="script" desc="Yannick_Open repository folder">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-16T18:54:34Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/51567264908af84c7973e857ea496a9912a614a8/Managing%20Yannick%20Scripts/Yannick_Open%20repository%20folder.lua</source>
       </version>
     </reapack>
   </category>
