@@ -1,10 +1,10 @@
 -- @description Yannick_Duplicate in one file Lua script from my repository by name from clipboard for customisation
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + fixed some bugs
+--   + Limitation on an extremely large number of characters in the clipboard, which is impossible for the name of the scripts. This will prevent the script from freezing with a very large number of characters in the clipboard (more than 5000) if the user accidentally runs the script
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -79,6 +79,14 @@
     reaper.MB('You have an empty clipboard!', 'Error', 0)
     nothing() return
   end
+  if text_from_clipboard:len() > 5000 then
+    reaper.MB("Too many characters in the clipboard (more than 5000). " ..
+    "Most likely you didn't copy the name of the script, the name of which cannot contain that many characters, " ..
+    "or you have too many spaces at the beginning and end of the name. " ..
+    "Try to accurately select the text of the script name without extra spaces. " .. 
+    "You can also copy the script name from the Action list menu by right-clicking on the script", 'Error', 0)
+    nothing() return
+  end
   
   --- remove spaces from the text ----------------------------------------------------------------------------------------------
   
@@ -101,7 +109,6 @@
   end
   
   local text_from_clipboard = text_from_clipboard:sub(count_l_space + 1, text_from_clipboard:len() - count_r_space )
-  
   
   --- find global directory for duplicates -------------------------------------------------------------------------------------
   
