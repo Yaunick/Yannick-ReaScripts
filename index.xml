@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="a0b009f6d95e4ced8236628b310534b0de906a3e">
+<index version="1" name="Yannick-ReaScripts" commit="c503eb85bb8f3fedf675c5d119325f0f452a0f93">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1132,6 +1132,24 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Warn%20about%20all%20items%20that%20have%20the%20offline%20takes.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Managing Yannick Scripts">
+    <reapack name="Yannick_Duplicate in one file Lua script from my repository by name from clipboard for customisation.lua" type="script" desc="Yannick_Duplicate in one file Lua script from my repository by name from clipboard for customisation">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-16T16:32:11Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/c503eb85bb8f3fedf675c5d119325f0f452a0f93/Managing%20Yannick%20Scripts/Yannick_Duplicate%20in%20one%20file%20Lua%20script%20from%20my%20repository%20by%20name%20from%20clipboard%20for%20customisation.lua</source>
       </version>
     </reapack>
   </category>
