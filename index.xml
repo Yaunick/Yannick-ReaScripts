@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="4f0e9e3b0b2c5343e17ed0c012ba78afa9f380fc">
+<index version="1" name="Yannick-ReaScripts" commit="608802329b6c3cd1de709b441af254feeb73cc93">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1284,6 +1284,10 @@
 # contact link changed]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
+      <version name="1.3" author="Yannick" time="2022-05-23T13:32:15Z">
+        <changelog><![CDATA[+ Added setting "hide window header"]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/608802329b6c3cd1de709b441af254feeb73cc93/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20size%20preserve%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu.lua" type="script" desc="Yannick_Set midi editor grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu">
       <metadata>
@@ -1308,6 +1312,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.3" author="Yannick" time="2022-05-23T13:32:15Z">
+        <changelog><![CDATA[+ Added setting "hide window header"]]></changelog>
+        <source main="midi_editor">https://github.com/Yaunick/Yannick-ReaScripts/raw/608802329b6c3cd1de709b441af254feeb73cc93/MIDI%20Editor/Yannick_Set%20midi%20editor%20grid%20type%20(normal,%20triplet,%20quintuplet,%20septuplet,%20dotted)%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
   </category>
