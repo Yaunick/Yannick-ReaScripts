@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="0ff8f8fbbfb61dbd95839bd8b0521f1ab65fb08c">
+<index version="1" name="Yannick-ReaScripts" commit="ebc168c61402a000bef2bd03d82db7f484ae408a">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1458,6 +1458,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(no%20automation%20items%20support%20-%20faster).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-05-23T19:16:29Z">
+        <changelog><![CDATA[+ fixed some bugs]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/ebc168c61402a000bef2bd03d82db7f484ae408a/Tracks/Yannick_Add%20envelope%20points%20at%20gridlines%20within%20Razor%20Edit%20(no%20automation%20items%20support%20-%20faster).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n).lua" type="script" desc="Yannick_Bypass all FX from selected tracks - Clear all saves (slot n)">
