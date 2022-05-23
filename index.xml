@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="baa62b36d40d0729a84d450bf70a774b6ae6c154">
+<index version="1" name="Yannick-ReaScripts" commit="0ff8f8fbbfb61dbd95839bd8b0521f1ab65fb08c">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -94,6 +94,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Arrange/Yannick_Horizontal%20zoom%20center%20settings%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.3" author="Yannick" time="2022-05-23T14:22:01Z">
+        <changelog><![CDATA[+ Added setting "hide window header"]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/0ff8f8fbbfb61dbd95839bd8b0521f1ab65fb08c/Arrange/Yannick_Horizontal%20zoom%20center%20settings%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Insert =START and =END markers within selected items area.lua" type="script" desc="Yannick_Insert =START and =END markers within selected items area">
@@ -1408,6 +1412,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Tracks/Yannick_Activate%20and%20set%20MIDI%20input%20quantize%20for%20selected%20tracks%20in%20Popup%20Menu.lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-05-23T14:22:01Z">
+        <changelog><![CDATA[+ Added setting "hide window header"]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/0ff8f8fbbfb61dbd95839bd8b0521f1ab65fb08c/Tracks/Yannick_Activate%20and%20set%20MIDI%20input%20quantize%20for%20selected%20tracks%20in%20Popup%20Menu.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Add envelope points at gridlines within Razor Edit (automation items support).lua" type="script" desc="Yannick_Add envelope points at gridlines within Razor Edit (automation items support)">
