@@ -1,11 +1,10 @@
 -- @description Yannick_Toggle offline all FX except instruments from selected tracks (each track is individual)
 -- @author Yannick
--- @version 1.6
+-- @version 1.7
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Melodyne search optimization, in case it is added to exceptions relative to other FX
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
@@ -56,34 +55,13 @@
   reaper.PreventUIRefresh(1)
   
   function Offline_all_fx(tr)
-    local save_count_hash = -10
-    if vst3_melodyne_offline == false then
-      local retval, str = reaper.GetTrackStateChunk( tr, '', false)
-      local count_hash = 0
-      local find = false
-      for s in str:gmatch('.-\n') do -- find ARA2 Melodyne hash
-        if s:match('<FXCHAIN\n') then
-          find = true
-        elseif s:match('<FXCHAIN_REC\n') then
-          find = false
-        end
-        if find == true then
-          if s:match('<[VJALD][SUVX].-\n') then
-            if s:find("{5653544D6C70676D656C6F64796E6520}") -- VST3 Melodyne
-            or s:find("<5653544D6C70676D656C6F64796E6520>") -- VST2 Melodyne
-            then
-              save_count_hash = count_hash
-            end
-            count_hash = count_hash + 1
-          end
-        end
-      end
-    end
     local offline_str = {}
     local count_tra_fx = reaper.TrackFX_GetCount(tr)
     local instr = reaper.TrackFX_GetInstrument( tr ) + 1
     while instr <= count_tra_fx-1 do
-      if instr ~= save_count_hash then
+      local retval, buf = reaper.TrackFX_GetNamedConfigParm( tr, instr, 'fx_ident')
+      if (not buf:find("{5653544D6C70676D656C6F64796E6520") and vst3_melodyne_offline == false) 
+      or vst3_melodyne_offline == true then
         if reaper.TrackFX_GetOffline(tr, instr) == true then
           offline_state = 0
         else
