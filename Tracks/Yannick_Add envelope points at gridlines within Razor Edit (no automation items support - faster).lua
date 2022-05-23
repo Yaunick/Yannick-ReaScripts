@@ -1,11 +1,10 @@
 -- @description Yannick_Add envelope points at gridlines within Razor Edit (no automation items support - faster)
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + fixed some bugs
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -50,7 +49,7 @@
               retval_en, value_en,_,_,_ = reaper.Envelope_Evaluate( env, point_pos, 0, 0)
               if point_pos >= tonumber(table_razor[i2][2])-0.000001 then
                 bool_find_end = true
-                t_points[#t_points+1] = 'PT '..table_razor[i2][2]..' '..tostring(value_en)..' 0'
+                t_points[#t_points+1] = 'PT '..table_razor[i2][2]..' '..tostring(value_en)..' 0'..'\n'
               else
                 t_points[#t_points+1] = 'PT '..tostring(point_pos)..' '..tostring(value_en)..' 0'..'\n'
               end
