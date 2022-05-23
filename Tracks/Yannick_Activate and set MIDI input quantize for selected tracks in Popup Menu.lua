@@ -1,19 +1,24 @@
 -- @description Yannick_Activate and set MIDI input quantize for selected tracks in Popup Menu
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Added setting "hide window header"
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
-  ----------------------------------------------------------------
+  --Menu settings------------------------------------------------
+  
     menu_position_x = -65
     menu_position_y = 20
     menu_width_x = 170
     menu_width_y = 4
+    
+  --Menu header settings-----------------------------------------
+  
+    show_window_header = true
+  
   ---------------------------------------------------------------
   
   function bla() end
@@ -25,9 +30,26 @@
   or not tonumber(menu_position_y)
   or not tonumber(menu_width_x)
   or not tonumber(menu_width_y)
+  or (show_window_header ~= true and show_window_header ~= false)
   then
     reaper.MB('Incorrect values at the beginnig of the script', 'Error', 0)
     nothing() return
+  end
+  
+  if show_window_header == false then
+    if not reaper.ReaPack_AddSetRepository then
+      reaper.MB("Please install ReaPack package manager", "Error", 0)
+      nothing() return
+    end
+    if not reaper.JS_Window_Find then
+      reaper.MB("Please install 'js_ReaScriptAPI: API functions for ReaScripts then restart Reaper", "Error", 0)
+      local ok, err = reaper.ReaPack_AddSetRepository
+      ( "ReaTeam Extensions", "https://github.com/ReaTeam/Extensions/raw/master/index.xml", true, 1 )
+      if ok then reaper.ReaPack_BrowsePackages( "js_ReaScriptAPI" )
+      else reaper.MB( err, "Something went wrong...", 0)
+      end
+      nothing() return
+    end
   end
   
   if reaper.CountSelectedTracks(0) == 0 then
@@ -37,7 +59,7 @@
   
   quan_string = ""
   
-  function Zoom(num_menu)
+  function Set_input_q(num_menu)
     
     if num_menu == 1 then
       reaper.Main_OnCommand(42043,0)  -- 1/4
@@ -73,6 +95,13 @@
   
   local x, y = reaper.GetMousePosition()
   gfx.init("Set input quintize...",menu_width_x,menu_width_y,0,x+menu_position_x,y+menu_position_y)
+  if show_window_header == false then
+    local hwnd = reaper.JS_Window_Find("Set input quintize...", true )
+    if hwnd then
+      reaper.JS_Window_Show( hwnd, "HIDE" )
+    end
+    gfx.x, gfx.y = gfx.mouse_x+menu_position_x, gfx.mouse_y+menu_position_y
+  end
   
   table_menu = {
       
@@ -115,20 +144,15 @@
     nothing()
   else
     reaper.Main_OnCommand(42063,0)
-    for i=1, #table_menu do
-      if retval == i then
-        reaper.Undo_BeginBlock()
-        gfx.quit()
-        Zoom(i)
-        if quan_string == 'disable' then
-          undo_string_quan = 'Disable MIDI input quantize for selected tracks'
-        else
-          undo_string_quan = 'Activate and set MIDI input quantize' .. quan_string .. 'for selected tracks'
-        end
-        reaper.Undo_EndBlock(undo_string_quan, -1)
-        break
-      end
+    reaper.Undo_BeginBlock()
+    gfx.quit()
+    Set_input_q(retval)
+    if quan_string == 'disable' then
+      undo_string_quan = 'Disable MIDI input quantize for selected tracks'
+    else
+      undo_string_quan = 'Activate and set MIDI input quantize' .. quan_string .. 'for selected tracks'
     end
+    reaper.Undo_EndBlock(undo_string_quan, -1)
   end
 
   
