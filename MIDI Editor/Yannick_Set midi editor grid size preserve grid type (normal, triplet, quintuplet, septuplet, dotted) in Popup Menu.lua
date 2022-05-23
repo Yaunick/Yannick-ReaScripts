@@ -1,11 +1,10 @@
 -- @description Yannick_Set midi editor grid size preserve grid type (normal, triplet, quintuplet, septuplet, dotted) in Popup Menu
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Added setting "hide window header"
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
     
@@ -17,10 +16,46 @@
      menu_header_width_x = 110
      menu_header_width_y = 4
      
-   -------------------------------------------
+  --Menu header settings---------------------
+  
+    show_window_header = true
+    
+  -------------------------------------------
    
    function bla() end
    function nothing() reaper.defer(bla) end
+   
+   if header_name ~= tostring(header_name)
+   or not tonumber(menu_header_position_x)
+   or not tonumber(menu_header_position_y)
+   or not tonumber(menu_header_width_x)
+   or not tonumber(menu_header_width_y)
+   or (show_window_header ~= false and show_window_header ~= true) 
+   then
+     reaper.MB
+     (
+     'Incorrect values at the beginning of the script',
+     'Error',
+     0
+     )
+     nothing() return
+   end
+   
+   if show_window_header == false then
+     if not reaper.ReaPack_AddSetRepository then
+       reaper.MB("Please install ReaPack package manager", "Error", 0)
+       nothing() return
+     end
+     if not reaper.JS_Window_Find then
+       reaper.MB("Please install 'js_ReaScriptAPI: API functions for ReaScripts then restart Reaper", "Error", 0)
+       local ok, err = reaper.ReaPack_AddSetRepository
+       ( "ReaTeam Extensions", "https://github.com/ReaTeam/Extensions/raw/master/index.xml", true, 1 )
+       if ok then reaper.ReaPack_BrowsePackages( "js_ReaScriptAPI" )
+       else reaper.MB( err, "Something went wrong...", 0)
+       end
+       nothing() return
+     end
+   end
    
    local ME = reaper.MIDIEditor_GetActive()
    if ME then
@@ -171,21 +206,19 @@
      
      local x, y = reaper.GetMousePosition()
      gfx.init(header_name, menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)
+     if show_window_header == false then
+       local hwnd = reaper.JS_Window_Find(header_name, true )
+       if hwnd then
+         reaper.JS_Window_Show( hwnd, "HIDE" )
+       end
+       gfx.x, gfx.y = gfx.mouse_x+menu_header_position_x, gfx.mouse_y+menu_header_position_y
+     end
      
      local retval = gfx.showmenu(string)
      
      if retval > 0 then
-       for i=1, #grid_one_t do
-         if retval == i then
-           reaper.SetMIDIEditorGrid(0, t_save_dv[i+2])
-           gfx.quit()
-           nothing()
-           break
-         end
-       end
-     else
-       nothing()
+       reaper.SetMIDIEditorGrid(0, t_save_dv[retval+2])
+       gfx.quit()
      end
-   else
-     nothing()
    end
+   nothing()
