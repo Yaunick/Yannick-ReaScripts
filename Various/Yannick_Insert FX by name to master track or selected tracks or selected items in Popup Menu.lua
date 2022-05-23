@@ -1,11 +1,10 @@
 -- @description Yannick_Insert FX by name to master track or selected tracks or selected items in Popup Menu
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Added setting "hide window header"
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -32,11 +31,18 @@
   --Menu settings-------------------------------------
   
     number_of_spaces = 3
+    
     header_name = "Select FX..."
-    menu_header_position_x = -70 
+    menu_header_position_x = -60 
     menu_header_position_y = 25
-    menu_header_width_x = 140
+    menu_header_width_x = 150
     menu_header_width_y = 4
+  
+  ---------------------------------------------------------------
+  
+  --Menu header settings-----------------------------------------
+  
+    show_window_header = true
   
   ---------------------------------------------------------------
   
@@ -65,6 +71,7 @@
   or not tonumber(menu_header_position_y)
   or not tonumber(menu_header_width_x)
   or not tonumber(menu_header_width_y)
+  or (show_window_header ~= true and show_window_header ~= false)
   or (add_fx_to_track ~= true and add_fx_to_track ~= false)
   or (add_fx_to_item ~= true and add_fx_to_item ~= false)
   or (add_fx_to_track == false and add_fx_to_item == false)
@@ -78,6 +85,22 @@
   if not test_SWS then
     reaper.MB('Please install or update SWS extension', 'Error', 0) 
     nothing() return
+  end
+  
+  if show_window_header == false then
+    if not reaper.ReaPack_AddSetRepository then
+      reaper.MB("Please install ReaPack package manager", "Error", 0)
+      nothing() return
+    end
+    if not reaper.JS_Window_Find then
+      reaper.MB("Please install 'js_ReaScriptAPI: API functions for ReaScripts then restart Reaper", "Error", 0)
+      local ok, err = reaper.ReaPack_AddSetRepository
+      ( "ReaTeam Extensions", "https://github.com/ReaTeam/Extensions/raw/master/index.xml", true, 1 )
+      if ok then reaper.ReaPack_BrowsePackages( "js_ReaScriptAPI" )
+      else reaper.MB( err, "Something went wrong...", 0)
+      end
+      nothing() return
+    end
   end
  
   function Add_FX(name)
@@ -216,20 +239,23 @@
     if retval == 0 then
       nothing()
     else
-      for i=1, #count_table do
-        if retval == i then
-          find_ret = true
-          gfx.quit()
-          reaper.Undo_BeginBlock()
-          Add_FX(count_table[i])
-          reaper.Undo_EndBlock('Insert "' .. count_table[i] .. '" FX ' .. insert_string, -1)
-          break
-        end
-      end
+      find_ret = true
+      gfx.quit()
+      reaper.Undo_BeginBlock()
+      Add_FX(count_table[retval])
+      reaper.Undo_EndBlock('Insert "' .. count_table[retval] .. '" FX ' .. insert_string, -1)
     end
   end
   
   local x, y = reaper.GetMousePosition()
+  
   gfx.init(header_name, menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)
+  if show_window_header == false then
+    local hwnd = reaper.JS_Window_Find(header_name, true )
+    if hwnd then
+      reaper.JS_Window_Show( hwnd, "HIDE" )
+    end
+    gfx.x, gfx.y = gfx.mouse_x+menu_header_position_x, gfx.mouse_y+menu_header_position_y
+  end
   Main()
   

@@ -1,11 +1,10 @@
 -- @description Yannick_Insert VSTi by name to new track in Popup Menu
 -- @author Yannick
--- @version 1.3
+-- @version 1.4
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Added setting "hide window header"
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
  
@@ -32,12 +31,18 @@
     }  --- table end (do not erase it!)
   
   --Menu coordinate settings---------------------------------------------------------
-
-    number_of_spaces = 3           
-    menu_header_position_x = -70 
+  
+    number_of_spaces = 3       
+    
+    header_name = "Select Instrument..."
+    menu_header_position_x = -60 
     menu_header_position_y = 25
     menu_header_width_x = 180
     menu_header_width_y = 4
+    
+  --Menu header settings-------------------------------------------------------------
+  
+    show_window_header = true
   
   --Instrument settings--------------------------------------------------------------
     
@@ -91,10 +96,12 @@
   end
   
   if (not tonumber(number_of_spaces) or number_of_spaces < 0)
+  or header_name ~= tostring(header_name)
   or not tonumber(menu_header_position_x)
   or not tonumber(menu_header_position_y)
   or not tonumber(menu_header_width_x)
   or not tonumber(menu_header_width_y)
+  or (show_window_header ~= true and show_window_header ~= false)
   or (#table_fx == 0 or find_number(table_fx) == true)
   or (defaults_for_new_track ~= true and defaults_for_new_track ~= false)
   or (monitor_rec_for_new_track ~= true and monitor_rec_for_new_track ~= false)
@@ -111,6 +118,22 @@
     0
     )
     nothing() return
+  end
+  
+  if show_window_header == false then
+    if not reaper.ReaPack_AddSetRepository then
+      reaper.MB("Please install ReaPack package manager", "Error", 0)
+      nothing() return
+    end
+    if not reaper.JS_Window_Find then
+      reaper.MB("Please install 'js_ReaScriptAPI: API functions for ReaScripts then restart Reaper", "Error", 0)
+      local ok, err = reaper.ReaPack_AddSetRepository
+      ( "ReaTeam Extensions", "https://github.com/ReaTeam/Extensions/raw/master/index.xml", true, 1 )
+      if ok then reaper.ReaPack_BrowsePackages( "js_ReaScriptAPI" )
+      else reaper.MB( err, "Something went wrong...", 0)
+      end
+      nothing() return
+    end
   end
  
   function Add_VSTi(name)
@@ -263,19 +286,21 @@
     if retval == 0 then
       nothing()
     else
-      for i=1, #count_table do
-        if retval == i then
-          gfx.quit()
-          reaper.Undo_BeginBlock()
-          Add_VSTi(count_table[i])
-          reaper.Undo_EndBlock('Insert "' .. count_table[i] .. '" Instrument to new track', -1)
-          break
-        end
-      end
+      gfx.quit()
+      reaper.Undo_BeginBlock()
+      Add_VSTi(count_table[retval])
+      reaper.Undo_EndBlock('Insert "' .. count_table[retval] .. '" Instrument to new track', -1)
     end
-  
   end
   
   local x, y = reaper.GetMousePosition()
-  gfx.init("Select Instrument...", menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)
+  
+  gfx.init(header_name, menu_header_width_x, menu_header_width_y, 0, x + menu_header_position_x, y + menu_header_position_y)  
+  if show_window_header == false then
+    local hwnd = reaper.JS_Window_Find(header_name, true )
+    if hwnd then
+      reaper.JS_Window_Show( hwnd, "HIDE" )
+    end
+    gfx.x, gfx.y = gfx.mouse_x+menu_header_position_x, gfx.mouse_y+menu_header_position_y
+  end
   Main()
