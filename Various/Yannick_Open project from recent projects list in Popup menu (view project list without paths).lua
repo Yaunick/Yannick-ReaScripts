@@ -1,11 +1,10 @@
 -- @description Yannick_Open project from recent projects list in Popup menu (view project list without paths)
 -- @author Yannick
--- @version 1.9
+-- @version 1.10
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + Added setting "hide window header"
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -14,10 +13,38 @@
     menu_position_x = -60
     menu_position_y = 25
     
+  --Menu header settings---------------------------
+  
+    show_window_header = true
+    
   -------------------------------------------------
   
   function bla() end
   function nothing() reaper.defer(bla) end
+  
+  if not tonumber(menu_position_x)
+  or not tonumber(menu_position_y)
+  or (show_window_header ~= true and show_window_header ~= false)
+  then
+    reaper.MB("Incorrect values at the beginning of the script", "Error", 0)
+    nothing() return
+  end
+  
+  if show_window_header == false then
+    if not reaper.ReaPack_AddSetRepository then
+      reaper.MB("Please install ReaPack package manager", "Error", 0)
+      nothing() return
+    end
+    if not reaper.JS_Window_Find then
+      reaper.MB("Please install 'js_ReaScriptAPI: API functions for ReaScripts then restart Reaper", "Error", 0)
+      local ok, err = reaper.ReaPack_AddSetRepository
+      ( "ReaTeam Extensions", "https://github.com/ReaTeam/Extensions/raw/master/index.xml", true, 1 )
+      if ok then reaper.ReaPack_BrowsePackages( "js_ReaScriptAPI" )
+      else reaper.MB( err, "Something went wrong...", 0)
+      end
+      nothing() return
+    end
+  end
   
   local filename = reaper.get_ini_file()
   if reaper.file_exists(filename) == false then
@@ -129,6 +156,14 @@
     
     local x, y = reaper.GetMousePosition()
     gfx.init("Recent projects...",160,4,0,x+menu_position_x,y+menu_position_y)
+    if show_window_header == false then
+      local hwnd = reaper.JS_Window_Find("Recent projects...", true )
+      if hwnd then
+        reaper.JS_Window_Show( hwnd, "HIDE" )
+      end
+      gfx.x, gfx.y = gfx.mouse_x+menu_position_x, gfx.mouse_y+menu_position_y
+    end
+    
     local retval = gfx.showmenu(
     new_table_proj_names_concat
     .. projects_not_found_str 
