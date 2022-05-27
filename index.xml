@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="6c24d2606d803fda89e28a53bc1b4bf3b6d1b70c">
+<index version="1" name="Yannick-ReaScripts" commit="d3456cbdfb1baad0670a8f8ace954c1aee44ef5c">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -1389,6 +1389,40 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Mouse%20modifiers/Yannick_Set%20exclusive%20record%20arm%20for%20track%20or%20toggle%20folder%20collapse.lua</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Scripts with config files/Transport">
+    <reapack name="Yannick_Transport - Off or On toolbar button - Stop or Pause (save state after REAPER reboot).lua" type="script" desc="Yannick_Transport - Off or On toolbar button - Stop or Pause (save state after REAPER reboot)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-27T18:16:25Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d3456cbdfb1baad0670a8f8ace954c1aee44ef5c/Scripts%20with%20config%20files/Transport/Yannick_Transport%20-%20Off%20or%20On%20toolbar%20button%20-%20Stop%20or%20Pause%20(save%20state%20after%20REAPER%20reboot).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Yannick_Transport - Toggle Play or Stop-Pause project depending on toolbar button state.lua" type="script" desc="Yannick_Transport - Toggle Play or Stop-Pause project depending on toolbar button state">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md\par}
+}
+]]></description>
+        <link rel="donation">https://telegra.ph/How-to-send-me-a-donation-04-14</link>
+      </metadata>
+      <version name="1.0" author="Yannick" time="2022-05-27T18:16:25Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/d3456cbdfb1baad0670a8f8ace954c1aee44ef5c/Scripts%20with%20config%20files/Transport/Yannick_Transport%20-%20Toggle%20Play%20or%20Stop-Pause%20project%20depending%20on%20toolbar%20button%20state.lua</source>
       </version>
     </reapack>
   </category>
