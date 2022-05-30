@@ -1,10 +1,10 @@
 -- @description Yannick_Bounce selection (like in Studio One)
 -- @author Yannick
--- @version 1.4
+-- @version 1.5
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + many fixes for fixed item lanes
+--   + unselect muted items before render
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
@@ -87,10 +87,10 @@
   function FindTracksWithSelectedItems()
     local t = {}
     for i=0, items_count-1 do
-      t[#t+1] = {
-        reaper.GetSelectedMediaItem(0,i),
-        reaper.GetMediaItemTrack( reaper.GetSelectedMediaItem(0,i) )
-      }
+      local item = reaper.GetSelectedMediaItem(0,i)
+      if reaper.GetMediaItemInfo_Value(item, 'B_MUTE') == 0 then
+        t[#t+1] = { item, reaper.GetMediaItemTrack(item) }
+      end
     end
     return t
   end
