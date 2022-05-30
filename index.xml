@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="d3456cbdfb1baad0670a8f8ace954c1aee44ef5c">
+<index version="1" name="Yannick-ReaScripts" commit="67601a0d5f69349057b5caae54c3c2b327ccf065">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -645,6 +645,10 @@
       <version name="1.3" author="Yannick" time="2022-05-03T15:18:41Z">
         <changelog><![CDATA[+ fixed script work if items are located on item lanes]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/a0b009f6d95e4ced8236628b310534b0de906a3e/Items/Yannick_Bounce%20selection%20(like%20in%20Studio%20One).lua</source>
+      </version>
+      <version name="1.4" author="Yannick" time="2022-05-30T14:20:10Z">
+        <changelog><![CDATA[+ many fixes for fixed item lanes]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/67601a0d5f69349057b5caae54c3c2b327ccf065/Items/Yannick_Bounce%20selection%20(like%20in%20Studio%20One).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Bounce selection (selected items on the track merge into one new item).lua" type="script" desc="Yannick_Bounce selection (selected items on the track merge into one new item)">
