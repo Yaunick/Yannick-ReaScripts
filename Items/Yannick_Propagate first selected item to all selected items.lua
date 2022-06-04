@@ -1,17 +1,17 @@
 -- @description Yannick_Propagate first selected item to all selected items
 -- @author Yannick
--- @version 1.1
+-- @version 1.2
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   + added new setting "duplicate by item snap offset" (false by default)
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
   ----------------------------------------------
   
     duplicate_envelopes_under_items = false
+    duplicate_by_item_snap_offset = false
   
   ----------------------------------------------
   
@@ -19,6 +19,7 @@
   function nothing() reaper.defer(bla) end
   
   if duplicate_envelopes_under_items ~= false and duplicate_envelopes_under_items ~= true
+  or (duplicate_by_item_snap_offset ~= false and duplicate_by_item_snap_offset ~= true)
   then
     reaper.MB('Incorrect values at the beginnig of the script','Error',0)
     nothing() return
@@ -29,13 +30,18 @@
     nothing() return
   end
   
+  reaper.Undo_BeginBlock()
+  reaper.PreventUIRefresh(1)
+  
   local t_items = {}
   local t_items_restore = {}
   local t_tracks = {}
   local sel_item = reaper.GetSelectedMediaItem(0,0)
-  
-  reaper.Undo_BeginBlock()
-  reaper.PreventUIRefresh(1)
+  if duplicate_by_item_snap_offset == false then
+    offs_it = reaper.GetMediaItemInfo_Value(sel_item, 'D_SNAPOFFSET')
+  else
+    offs_it = 0
+  end
   
   for i=0, reaper.CountSelectedMediaItems(0)-1 do
     local item = reaper.GetSelectedMediaItem(0,i)
@@ -68,7 +74,7 @@
     if i == 1 then
       t_items_restore[#t_items_restore+1] = sel_item
     else
-      reaper.SetEditCurPos(t_items[i][1],0,0)
+      reaper.SetEditCurPos(t_items[i][1] + offs_it,0,0)
       reaper.SetOnlyTrackSelected(t_items[i][2], true)
       reaper.Main_OnCommand(42398,0) --- past items
       t_items_restore[#t_items_restore+1] = reaper.GetSelectedMediaItem(0,0)
