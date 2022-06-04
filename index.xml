@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="90a1786791f8b8a1fe1d1534aed376aac391ab6d">
+<index version="1" name="Yannick-ReaScripts" commit="5fba59b0e2849a0735882e60ff6f2ce1fa6599bd">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -881,6 +881,10 @@
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20first%20selected%20item%20to%20all%20selected%20items.lua</source>
       </version>
+      <version name="1.2" author="Yannick" time="2022-06-04T17:49:27Z">
+        <changelog><![CDATA[+ added new setting "duplicate by item snap offset" (false by default)]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5fba59b0e2849a0735882e60ff6f2ce1fa6599bd/Items/Yannick_Propagate%20first%20selected%20item%20to%20all%20selected%20items.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Propagate first selected MIDI item to all selected MIDI items (with pool them).lua" type="script" desc="Yannick_Propagate first selected MIDI item to all selected MIDI items (with pool them)">
       <metadata>
@@ -901,6 +905,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20first%20selected%20MIDI%20item%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-06-04T17:49:27Z">
+        <changelog><![CDATA[+ added new setting "duplicate by item snap offset" (false by default)]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5fba59b0e2849a0735882e60ff6f2ce1fa6599bd/Items/Yannick_Propagate%20first%20selected%20MIDI%20item%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Propagate item under mouse cursor to all selected items.lua" type="script" desc="Yannick_Propagate item under mouse cursor to all selected items">
@@ -923,6 +931,10 @@
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20item%20under%20mouse%20cursor%20to%20all%20selected%20items.lua</source>
       </version>
+      <version name="1.2" author="Yannick" time="2022-06-04T17:49:27Z">
+        <changelog><![CDATA[+ added new setting "duplicate by item snap offset" (false by default)]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5fba59b0e2849a0735882e60ff6f2ce1fa6599bd/Items/Yannick_Propagate%20item%20under%20mouse%20cursor%20to%20all%20selected%20items.lua</source>
+      </version>
     </reapack>
     <reapack name="Yannick_Propagate MIDI item under mouse cursor to all selected MIDI items (with pool them).lua" type="script" desc="Yannick_Propagate MIDI item under mouse cursor to all selected MIDI items (with pool them)">
       <metadata>
@@ -943,6 +955,10 @@
         <changelog><![CDATA[# changed donation link
 # contact link changed]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/f481c83fc156bccbdde17d2106fb8a86b2b78638/Items/Yannick_Propagate%20MIDI%20item%20under%20mouse%20cursor%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
+      </version>
+      <version name="1.2" author="Yannick" time="2022-06-04T17:49:27Z">
+        <changelog><![CDATA[+ added new setting "duplicate by item snap offset" (false by default)]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/5fba59b0e2849a0735882e60ff6f2ce1fa6599bd/Items/Yannick_Propagate%20MIDI%20item%20under%20mouse%20cursor%20to%20all%20selected%20MIDI%20items%20(with%20pool%20them).lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX.lua" type="script" desc="Yannick_Render selected pre-glued items that have active MIDI takes and source track instrument to new take without FX">
