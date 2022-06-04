@@ -1,10 +1,10 @@
 -- @description Yannick_Add or open Melodyne VST3 in selected items
 -- @author Yannick
--- @version 1.9
+-- @version 1.10
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   + code optimization
+--   + fixed bug with MIDI and AUDIO items
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
   
@@ -48,9 +48,6 @@
   end
   ---------------------------------------------------------------------------------
   
-  reaper.Undo_BeginBlock()
-  reaper.PreventUIRefresh(1)
-  
   function find_melodyne_number_in_item(take, number_melodyne)
     for i=0, reaper.TakeFX_GetCount(take) - 1 do
       local retval, buf = reaper.TakeFX_GetNamedConfigParm( take, i, 'fx_ident' )
@@ -65,47 +62,52 @@
   end
   
   local count_sel_items = reaper.CountSelectedMediaItems(0)
+  
+  for i=0, count_sel_items-1 do
+    local item = reaper.GetSelectedMediaItem(0,i)
+    local take = reaper.GetActiveTake(item)
+    if reaper.TakeIsMIDI(take) == true then
+      reaper.MB('Please select only audio items', 'Error', 0)
+      nothing() return
+    end
+  end
+  
+  reaper.Undo_BeginBlock()
+  reaper.PreventUIRefresh(1)
+  
   local t_open_melodyne = {}
   local t_sel_tracks = {}
-  
+
   for i=0, count_sel_items-1 do
     local number_melodyne = 'no number'
     local item = reaper.GetSelectedMediaItem(0,i)
     local take = reaper.GetActiveTake(item)
-    if reaper.TakeIsMIDI(take) == false then
-      local number_melodyne = find_melodyne_number_in_item(take, number_melodyne)
-      if number_melodyne == 'no number' then
-        reaper.TakeFX_AddByName( take, user_name_melodyne, -1)
-        number_melodyne = find_melodyne_number_in_item(take, number_melodyne)
-      end
-      local tr_it_1 = reaper.GetMediaItem_Track(item)
-      if i < count_sel_items-1 then
-        local item_2 = reaper.GetSelectedMediaItem(0,i+1)
-        local tr_it_2 = reaper.GetMediaItem_Track(item_2)
-        if tr_it_1 ~= tr_it_2 then
-          t_sel_tracks[#t_sel_tracks+1] = tr_it_1
-        end
-      else
+    local number_melodyne = find_melodyne_number_in_item(take, number_melodyne)
+    if number_melodyne == 'no number' then
+      reaper.TakeFX_AddByName( take, user_name_melodyne, -1)
+      number_melodyne = find_melodyne_number_in_item(take, number_melodyne)
+    end
+    local tr_it_1 = reaper.GetMediaItem_Track(item)
+    if i < count_sel_items-1 then
+      local item_2 = reaper.GetSelectedMediaItem(0,i+1)
+      local tr_it_2 = reaper.GetMediaItem_Track(item_2)
+      if tr_it_1 ~= tr_it_2 then
         t_sel_tracks[#t_sel_tracks+1] = tr_it_1
       end
-      last_item = item
-      last_number_melodyne = number_melodyne
     else
-      find_midi = true
+      t_sel_tracks[#t_sel_tracks+1] = tr_it_1
     end
+    last_item = item
+    last_number_melodyne = number_melodyne
+  end
+
+  reaper.Main_OnCommand(40297,0) -- unselect all tracks
+
+  for i=1, #t_sel_tracks do
+    reaper.SetTrackSelected(t_sel_tracks[i], true)
   end
   
-  if find_midi == true then
-    reaper.MB('Please select only audio items', 'Error', 0)
-  else
-    reaper.Main_OnCommand(40297,0) -- unselect all tracks
-  
-    for i=1, #t_sel_tracks do
-      reaper.SetTrackSelected(t_sel_tracks[i], true)
-    end
-    
-    reaper.TakeFX_Show( reaper.GetActiveTake(last_item), last_number_melodyne, 3)
-  end
+  reaper.TakeFX_Show( reaper.GetActiveTake(last_item), last_number_melodyne, 3)
 
   reaper.Undo_EndBlock('Add or open Melodyne VST3 in selected items', -1)
   reaper.PreventUIRefresh(-1)
