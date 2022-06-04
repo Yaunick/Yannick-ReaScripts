@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="Yannick-ReaScripts" commit="73b1689fcb99d7689edd67612e4c6d28fe02527f">
+<index version="1" name="Yannick-ReaScripts" commit="90a1786791f8b8a1fe1d1534aed376aac391ab6d">
   <category name="Arrange">
     <reapack name="Yannick_Ableton loop (ctrl+L).lua" type="script" desc="Yannick_Ableton loop (ctrl+L)">
       <metadata>
@@ -578,6 +578,10 @@
       <version name="1.9" author="Yannick" time="2022-06-03T19:09:47Z">
         <changelog><![CDATA[+ code optimization]]></changelog>
         <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/73b1689fcb99d7689edd67612e4c6d28fe02527f/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
+      </version>
+      <version name="1.10" author="Yannick" time="2022-06-04T17:15:29Z">
+        <changelog><![CDATA[+ fixed bug with MIDI and AUDIO items]]></changelog>
+        <source main="main">https://github.com/Yaunick/Yannick-ReaScripts/raw/90a1786791f8b8a1fe1d1534aed376aac391ab6d/Items/Yannick_Add%20or%20open%20Melodyne%20VST3%20in%20selected%20items.lua</source>
       </version>
     </reapack>
     <reapack name="Yannick_Adjust take pitch using mousewheel (fine).lua" type="script" desc="Yannick_Adjust take pitch using mousewheel (fine)">
