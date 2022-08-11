@@ -1,11 +1,10 @@
 -- @description Yannick_Create folder track from selected tracks
 -- @author Yannick
--- @version 1.2
+-- @version 1.3
 -- @about
 --   go to the guide https://github.com/Yaunick/Yannick-ReaScripts-Guide/blob/main/Guide%20to%20using%20my%20scripts.md
 -- @changelog
---   # changed donation link
---   # contact link changed
+--   added new settings
 -- @contact yannick-reascripts@yandex.ru
 -- @donation https://telegra.ph/How-to-send-me-a-donation-04-14
 
@@ -14,8 +13,13 @@
     number_of_custom_layouts = 0          ---- enter from 0 to 20 number of layouts for new folder track, 0 = disable layout
     icon_name = ""                        ---- enter the track icon name in REAPER conf folder, "" or '' = disable track icon
     name_for_folder_track = ''            ---- '' or "" is no name for new folder track, 'Bass' or "Bass" as example for new name  
-    user_input = false                    ---- show user input to entering new folder name
+    
+    user_input = 0                        ---- 0 = no input
+                                          ---- 1 = show user input to entering new folder name
+                                          ---- 2 = highlight the folder name in TCP
+                                          
     defaults_for_folder_track = false     ---- set default parameters for new folder track from global prefs
+    rec_input_none = false                ---- set the record input to "none" (regardless of default settings)
     
   ----------------------------------------------------------------------------------------------------------------------------------  
   
@@ -46,13 +50,13 @@
   
   if Find(number_of_custom_layouts) == false
   or name_for_folder_track ~= tostring(name_for_folder_track)
-  or (user_input ~= true and user_input ~= false)
+  or (user_input ~= 0 and user_input ~= 1 and user_input ~= 2)
   or (defaults_for_folder_track ~= true and defaults_for_folder_track ~= false)
   or (not tonumber(R) or not tonumber(G) or not tonumber(B))
   or (R < 0 or G < 0 or B < 0)
+  or (rec_input_none ~= true and rec_input_none ~= false)
   then
-    reaper.MB('Incorrect value for "number_of_custom_layouts" or "name_for_folder_track" ' ..
-    'or "user_input" or "defaults_for_folder_track" or RGB parameters. Look at the beginning of the script', 'Error', 0)
+    reaper.MB('Incorrect values at the beginning of the script', 'Error', 0)
     nothing() return
   end
   
@@ -61,7 +65,7 @@
     nothing()return 
   end
   
-  if user_input == true then
+  if user_input == 1 then
     retval, name = 
     reaper.GetUserInputs
     (
@@ -123,8 +127,15 @@
   
   reaper.GetSetMediaTrackInfo_String(tr, 'P_NAME', name, true)
   
-
-  reaper.Undo_EndBlock("Create folder track from selected tracks", -1)
-  reaper.PreventUIRefresh(-1)
+  if rec_input_none == true then
+    reaper.SetMediaTrackInfo_Value( tr, 'I_RECINPUT', -1 )
+  end
   
-    
+  reaper.PreventUIRefresh(-1)
+  reaper.Undo_EndBlock("Create folder track from selected tracks", -1)
+  
+  if user_input == 2 then
+    reaper.Main_OnCommand(40914,0)
+    reaper.Main_OnCommand(40696,0)
+  end
+  
